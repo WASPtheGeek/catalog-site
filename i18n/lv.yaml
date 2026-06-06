@@ -1,0 +1,59 @@
+- id: socials
+  translation: Socīālās platformas
+
+- id: social_media
+  translation: Sociālie tīkli
+
+- id: send_message
+  translation: Sūtīt ziņu
+
+- id: message
+  translation: Ziņa
+
+- id: quick_links
+  translation: Ātrās saites
+
+- id: location_contact
+  translation: Atrašanās vieta un kontakts
+
+- id: recent_posts
+  translation: Jaunākās ziņas no
+
+- id: related_articles
+  translation: Līdzīgi raksti
+
+- id: full_name
+  translation: Pilnais vārds
+
+- id: email
+  translation: E-pasta adrese
+
+- id: send_a_message
+  translation: Sūtīt ziņu
+
+- id: your_message
+  translation: Jūsu ziņa
+
+- id: phone
+  translation: Tālrunis
+
+- id: contact_us
+  translation: Kontaktinformācija
+
+- id: get_in_touch
+  translation: Get In Touch
+
+- id: form_thanks_message
+  translation: Thanks for your submission!
+
+- id: form_error_message
+  translation: Oops! There was a problem submitting your form
+
+- id: min_read
+  translation: Min read
+
+- id: cookie_message
+  translation: "Šī vietne izmanto sīkdatnes. Turpinot izmantot šo vietni, jūs piekrītat to izmantošanai."
+
+- id: cookie_accept
+  translation: "Piekrītu"

@@ -1,0 +1,23 @@
+{{ $ctx := .context }}
+<div class="{{ .wrapperClass }} select-language-wrapper">
+  <select class="select-language border-0 font-weight-bold" id="{{ .id }}" onchange="location = this.value;">
+    {{ $siteLanguages := site.Languages }}
+    {{ $pageLang := $ctx.Page.Lang }}
+    {{ range $ctx.Page.AllTranslations }}
+      {{ $translation := . }}
+      {{ range $siteLanguages }}
+        {{ if eq $translation.Lang .Lang }}
+          {{ if eq $pageLang .Lang }}
+            <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}" selected>
+              {{ .LanguageName }}
+            </option>
+          {{ else }}
+            <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}">
+              {{ .LanguageName }}
+            </option>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </select>
+</div>

@@ -1,0 +1,59 @@
+- id: socials
+  translation: Социальные сети
+
+- id: social_media
+  translation: Социальные сети
+
+- id: send_message
+  translation: Отправить сообщение
+
+- id: message
+  translation: Сообщение
+
+- id: quick_links
+  translation: Быстрые ссылки
+
+- id: location_contact
+  translation: Местоположение и контактная информация
+
+- id: recent_posts
+  translation: Недавние сообщения от
+
+- id: related_articles
+  translation: Связанные статьи
+
+- id: full_name
+  translation: Полное имя
+
+- id: email
+  translation: Адрес электронной почты
+
+- id: send_a_message
+  translation: Отправить сообщение
+
+- id: your_message
+  translation: Ваше сообщение
+
+- id: phone
+  translation: Телефон
+
+- id: contact_us
+  translation: Связаться с нами
+
+- id: get_in_touch
+  translation: Связаться
+
+- id: form_thanks_message
+  translation: Спасибо за вашу отправку!
+
+- id: form_error_message
+  translation: Ой! Возникла проблема при отправке вашей формы
+
+- id: min_read
+  translation: Min read
+
+- id: cookie_message
+  translation: "Этот сайт использует файлы cookie. Продолжая использовать этот сайт, вы соглашаетесь с их использованием."
+
+- id: cookie_accept
+  translation: "Я принимаю"

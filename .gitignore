@@ -30,3 +30,9 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+/exampleSite
+/node_modules
+/dist
+/public
+/resources
