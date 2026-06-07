@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script>
+      (function(){
+        // Supported site languages
+        var supported = ['lv','en','ru'];
+        console.log("location.pathname", location.pathname, "match", m);
+
+        // 1) If referrer includes language (works when server serves root /404.html), use it
+        try {
+          var ref = document.referrer || '';
+          var refPath = (new URL(ref, location.href)).pathname;
+          var r = refPath.match(/^\/(lv|en|ru)\b/);
+          if (r && supported.indexOf(r[1]) !== -1) {
+            location.replace('/' + r[1] + '/404.html');
+            return;
+          }
+        } catch(e) {}
+
+        // 2) If path already includes language, use it
+        var m = location.pathname.match(/^\/(lv|en|ru)\b/);
+        if (m && supported.indexOf(m[1]) !== -1) {
+          location.replace('/' + m[1] + '/404.html');
+          return;
+        }
+
+        // 3) If a language is stored in localStorage (some themes use this), use it
+        try {
+          var stored = localStorage.getItem('siteLang') || localStorage.getItem('lang') || null;
+          if (stored && supported.indexOf(stored) !== -1) {
+            location.replace('/' + stored + '/404.html');
+            return;
+          }
+        } catch(e){}
+        // 4) Use browser-preferred language (try navigator.languages list first)
+        try {
+          var navs = (navigator.languages || [navigator.language || navigator.userLanguage || '']);
+          for (var i=0;i<navs.length;i++){
+            var code = (navs[i]||'').split('-')[0];
+            if (code && supported.indexOf(code) !== -1) {
+              location.replace('/' + code + '/404.html');
+              return;
+            }
+          }
+        } catch(e){}
+
+        // Fallback to default site language (Latvian)
+        location.replace('/lv/404.html');
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Page not found. If you are not redirected, try one of:
+      <a href="/lv/404.html">Latviešu</a> ·
+      <a href="/en/404.html">English</a> ·
+      <a href="/ru/404.html">Русский</a>
+    </p>
+  </body>
+</html>

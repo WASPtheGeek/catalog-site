@@ -1,14 +1,17 @@
 ---
 # banner
 banner:
-  title: "Andromeda is the most intuitive way to prototype Designs"
-  button: "Get Premium Version"
-  button_link: "https://gethugothemes.com/products/andromeda/"
+  subtitle: "ALPOS A3000"
+  title: "A modern POS system for your business"
+  # Apskatīt
+  button: ""
+  button_link: "/en/pricing"
   image: "images/banner-app.png"
 
 # brands
 brands_carousel:
   enable: true
+  title: "our_clients"
   brand_images:
     - "images/brands/01-colored.png"
     - "images/brands/02-colored.png"
@@ -25,32 +28,26 @@ brands_carousel:
 # features
 features:
   enable: true
-  subtitle: "Special Features"
-  title: "Elements to <br> get you started"
-  description: "Lorem ipsum dolor sit amet, consecteturre adipiscing elit. Morbi egestas <br> Werat viverra id et aliquet. vulputate egestas sollicitudin."
+  subtitle: "100% SRS (VID) Compliance"
+  title: "Who is this system for?"
+  description: "The system is fully certified in accordance with Latvian legislation (Cabinet Regulations No. 95/96). It automatically generates Z-reports and is fully prepared for any audits"
   features_blocks:
-    - icon: "las la-lock"
-      title: "Updated Security"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
-    - icon: "las la-magnet"
-      title: "Magnetic Turning"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
-    - icon: "las la-tachometer-alt"
-      title: "Secured &amp; upto date"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
-    - icon: "las la-link"
-      title: "Instant Link Shareing"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
-    - icon: "las la-lock"
-      title: "Updated Security"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
-    - icon: "las la-magnet"
-      title: "Magnetic Turning"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
+    - icon: "las la-fish"
+      title: "Restaurants and Cafes"
+      content: "Table management and mapping, bill splitting, meal courses, and kitchen display system integration."
+    - icon: "las la-hamburger"
+      title: "Street Food / Food Trucks"
+      content: "Full operation without an internet connection (offline mode) and maximum mobility on a tablet."
+    - icon: "las la-heart"
+      title: "Beauty Industry / Salons"
+      content: "Customer appointment scheduling and calendar management, along with accurate material consumption tracking."
+    - icon: "las la-shopping-basket"
+      title: "Retail / Shops"
+      content: "Lightning-fast barcode scanning, quick stock receiving, and automated inventory management."
 
 # intro_video
 intro_video:
-  enable: true
+  enable: false
   subtitle: "Short Intro Video"
   title: "Built exclusively for you"
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas <br> Werat viverra id et aliquet. vulputate egestas sollicitudin."
@@ -58,24 +55,48 @@ intro_video:
   video_thumbnail: "images/video-popup.jpg"
 
 
-# how_it_works
-how_it_works:   
+# products
+# products
+products:   
   enable: true
+  title: "Professional equipment for your business"
+  subtitle: "Products"
+  description: "A full range of hardware that is perfectly suited and technically aligned to work with the ALPOS system"
   block:
-  - subtitle: "Primary Speciality"
-    title: "You Will Not miss Your All misunderstandings"
-    description: "Protect your design vision and leave nothing up to interpretation with interaction recipes. Quickly share and access all your team members interactions by using libraries, ensuring consistency throughout the."
-    image: "images/features-01.png"
+  - subtitle: ""
+    title: "POS terminals"
+    description: "Durable all-in-one touchscreen cash registers designed for high volume workloads in restaurants and retail stores"
+    image: "images/features/features-01.png"
+    link: "products/monoblocks"
 
-  - subtitle: "Secondary Speciality"
-    title: "Say hello to no-code The Advance Creation"
-    description: "From the simplest of interactions to those that use Excel-gradeing formulas, ProtoPie can handle them all. Make mind-blowing of New interactions everyday without ever having to write any new code."
-    image: "images/features-02.png"
+  - subtitle: ""
+    title: "Receipt and kitchen printers"
+    description: "High-speed thermal printers for instant receipt printing at the checkout or order ticket output in the kitchen/bar"
+    image: "images/features/features-04.png"
+    link: "products/printers"
+
+  - subtitle: "ALPOS A3000"
+    title: "POS systems"
+    description: "Comprehensive solutions that fully comply with the legislation of the Republic of Latvia and are certified according to SRS (VID) requirements"
+    image: "images/features/features-02.png"
+    link: "products/pos-systems"
+
+  - subtitle: ""
+    title: "Self-service kiosks"
+    description: "Modern interactive screens and outdoor/indoor kiosks that allow customers to place orders independently, reducing queues"
+    image: "images/features/features-06.png"
+    link: "products/kiosks"
+
+  - subtitle: ""
+    title: "POS peripherals"
+    description: "Additional equipment for complete operations: cash drawers, barcode scanners, customer displays, and card terminal stands"
+    image: "images/features/features-03.png"
+    link: "products/peripherals"
 
 
 # testimonials
 testimonials:
-  enable: true
+  enable: false
   subtitle: "Our Testimonial"
   title: "Don't take our word for it"
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas <br> Werat viverra id et aliquet. vulputate egestas sollicitudin."

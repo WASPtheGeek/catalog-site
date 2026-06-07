@@ -6,39 +6,61 @@ name = "Home"
 url = ""
 weight = 1
 
-[[main]]
-name = "About"
-url = "about/"
-weight = 2
+# [[main]]
+# name = "About"
+# url = "about/"
+# weight = 2
 
 
 [[main]]
-name = "Blog"
-url = "blog/"
+name = "Terms & Conditions"
+url = "terms-and-conditions/"
 weight = 3
 
 [[main]]
 weight = 4
-name = "Pages"
+name = "Products"
 hasChildren = true
 
   [[main]]
-  parent = "Pages"
-  name = "Blog Details"
-  url = "blog/post-1/"
+  parent = "Products"
+  name = "POS Terminals"
+  url = "/products/monoblocks/"
   weight = 1
 
-
   [[main]]
-  parent = "Pages"
-  name = "Terms & Conditions"
-  url = "terms-and-conditions/"
+  parent = "Products"
+  name = "Receipt Printers"
+  url = "/products/printers/"
   weight = 2
 
+  [[main]]
+  parent = "Products"
+  name = "POS Systems"
+  url = "/products/pos-systems/"
+  weight = 3
+
+  [[main]]
+  parent = "Products"
+  name = "Self-Service Kiosks"
+  url = "/products/kiosks/"
+  weight = 4
+
+  [[main]]
+  parent = "Products"
+  name = "POS Peripherals"
+  url = "/products/peripherals/"
+  weight = 5
+
 [[main]]
-name = "Contact"
-url = "contact/"
+name = "Pricing"
+url = "pricing/"
 weight = 5
+
+[[main]]
+name = "Contacts"
+url = "contact/"
+weight = 6
 
 
 
@@ -47,18 +69,18 @@ weight = 5
 
 # footer menu
 [[footer]]
-name = "About"
-url = "about/"
+name = "Contacts"
+url = "contact/"
 weight = 1
 
 [[footer]]
-name = "Blog"
-url = "blog/"
+name = "Pricing"
+url = "pricing/"
 weight = 2
 
 [[footer]]
-name = "Blog Details"
-url = "blog/post-1/"
+name = "Products"
+url = "products/"
 weight = 3
 
 [[footer]]

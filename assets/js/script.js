@@ -152,19 +152,19 @@ window.onload = () => {
     false
   );
 
-  const buyPremiumPopup = document.querySelector('.buyPremium');
+  const alposPopup = document.querySelector('.alposPopup');
   const overlay = document.querySelector('.overlay');
-  const closeBtn = document.querySelector('.buyPremium .close');
+  const closeBtn = document.querySelector('.alposPopup .close');
   
-  if (buyPremiumPopup && overlay && closeBtn) {
+  if (alposPopup && overlay && closeBtn) {
       let popupShown = false;
       let lastPopupTime = 0;
   
       // Function to show the popup
       function showPopup() {
         const currentTime = Date.now();
-        if (!popupShown && (currentTime - lastPopupTime) >= 30000) { // 30 seconds = 30000 ms
-          buyPremiumPopup.classList.add('show');
+        if (!popupShown && (currentTime - lastPopupTime) >= 120000) { // 40 seconds
+          alposPopup.classList.add('show');
           overlay.classList.add('fade', 'show');
           popupShown = true; // Set the flag to true
           lastPopupTime = currentTime; // Update the last shown time
@@ -173,14 +173,14 @@ window.onload = () => {
   
       // Function to hide the popup
       function hidePopup() {
-        buyPremiumPopup.classList.remove('show');
+        alposPopup.classList.remove('show');
         overlay.classList.remove('fade', 'show');
         popupShown = false; // Reset the flag
       }
   
       // Check scroll position
       window.addEventListener('scroll', function() {
-        if (window.scrollY > 1000 && !popupShown) {
+        if (window.scrollY > 2000 && !popupShown) { // show popup after scrolling 2000px
           showPopup();
         }
       });

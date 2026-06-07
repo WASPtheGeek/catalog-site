@@ -1,23 +1,74 @@
 {{ $ctx := .context }}
-<div class="{{ .wrapperClass }} select-language-wrapper">
-  <select class="select-language border-0 font-weight-bold" id="{{ .id }}" onchange="location = this.value;">
-    {{ $siteLanguages := site.Languages }}
-    {{ $pageLang := $ctx.Page.Lang }}
-    {{ range $ctx.Page.AllTranslations }}
-      {{ $translation := . }}
-      {{ range $siteLanguages }}
-        {{ if eq $translation.Lang .Lang }}
-          {{ if eq $pageLang .Lang }}
-            <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}" selected>
-              {{ .LanguageName }}
-            </option>
-          {{ else }}
-            <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}">
-              {{ .LanguageName }}
-            </option>
+<div class="{{ .wrapperClass }} select-language-wrapper language-selector">
+  {{ $siteLanguages := site.Languages }}
+  {{ $pageLang := $ctx.Page.Lang }}
+
+  <button
+    class="select-language-btn border-0 font-weight-bold"
+    type="button"
+    id="{{ .id }}"
+    aria-expanded="false">
+    {{ range $siteLanguages }}
+      {{ if eq .Lang $pageLang }}
+        {{ .LanguageName }}
+      {{ end }}
+    {{ end }}
+  </button>
+
+  <ul class="language-dropdown-menu language-selector-menu" aria-labelledby="{{ .id }}">
+    {{ range $siteLanguages }}
+      {{ $language := . }}
+      {{ if eq $language.Lang $pageLang }}
+        <li>
+          <a class="language-selector-item active" href="{{ $ctx.Page.RelPermalink }}">
+            {{ $language.LanguageName }}
+          </a>
+        </li>
+      {{ else }}
+        {{ range $ctx.Page.AllTranslations }}
+          {{ if eq .Lang $language.Lang }}
+            <li>
+              <a class="language-selector-item" href="{{ .RelPermalink }}">
+                {{ $language.LanguageName }}
+              </a>
+            </li>
           {{ end }}
         {{ end }}
       {{ end }}
     {{ end }}
-  </select>
+  </ul>
+
+  <script>
+    (function() {
+      const button = document.getElementById('{{ .id }}');
+      if (!button) return;
+
+      const wrapper = button.closest('.language-selector');
+      if (!wrapper) return;
+
+      const menu = wrapper.querySelector('.language-selector-menu');
+      if (!menu) return;
+
+      const closeMenu = () => {
+        if (menu.classList.contains('show')) {
+          menu.classList.remove('show');
+          button.setAttribute('aria-expanded', 'false');
+        }
+      };
+
+      button.addEventListener('click', function(event) {
+        event.stopPropagation();
+        const isOpen = menu.classList.toggle('show');
+        button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      menu.addEventListener('click', function(event) {
+        event.stopPropagation();
+      });
+
+      document.addEventListener('click', function() {
+        closeMenu();
+      });
+    })();
+  </script>
 </div>

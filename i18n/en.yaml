@@ -1,8 +1,9 @@
-- id: socials
-  translation: Socials
+######## Navigation ########
+- id: navigation_button
+  translation: "Contact Us"
 
-- id: social_media
-  translation: Social Media
+- id: home
+  translation: "Home"
 
 - id: send_message
   translation: Send Message
@@ -10,11 +11,20 @@
 - id: message
   translation: Message
 
-- id: quick_links
-  translation: Quick Links
+- id: contacts
+  translation: Contacts
 
-- id: location_contact
-  translation: Location & Contact
+- id: bank_details
+  translation: Bank Details
+
+- id: office_address
+  translation: Office Address
+
+- id: legal_address
+  translation: Legal Address
+
+- id: legal_information
+  translation: Legal Information
 
 - id: recent_posts
   translation: Recent Posts by
@@ -52,8 +62,57 @@
 - id: min_read
   translation: Min read
 
+######## Cookie Policy ########
 - id: cookie_message
   translation: "This site uses cookies. By continuing to use this website, you agree to their use."
 
 - id: cookie_accept
   translation: "I Accept"
+
+
+######## Terms & Conditions ########
+- id: valid_from
+  translation: "Valid from"
+
+######## 404 page ########
+- id: page_not_found
+  translation: "Page Not Found"
+
+- id: back_to_home
+  translation: "Back To Home"
+
+######## call-to-action ########
+- id: cta_title
+  translation: "Want to see ALPOS in action?"
+
+- id: cta_content
+  translation: "Submit a request, and our specialist will provide a brief online demonstration, answer all your questions, and help tailor the menu to your specific business needs."
+
+- id: cta_button
+  translation: "Book a Demo"
+
+######## Footer ########
+- id: footer_info
+  translation: "Smart POS solutions designed to boost efficiency for restaurants and retail businesses"
+
+- id: quick_links
+  translation: Quick Links
+
+######## Popup ########
+- id: popup_button
+  translation: "Get a Free Consultation"
+
+######## Common ########
+- id: last_updated
+  translation: "Last updated"
+
+######## Products ########
+- id: see_product_button
+  translation: "See Product Description"
+
+- id: open_catalog
+  translation: "Open Catalog"
+
+######## Brands ########
+- id: our_clients
+  translation: "Our Clients"

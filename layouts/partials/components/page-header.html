@@ -15,11 +15,11 @@
                 class="breadcrumb justify-content-center bg-transparent p-0 mb-0">
                 <li class="breadcrumb-item">
                   <a class="link-primary" href="{{ site.BaseURL | relLangURL }}"
-                    >Home</a
+                    >{{ i18n "home" }}</a
                   >
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  {{ .Title }}
+                  {{ .Title | humanize }}
                 </li>
               </ol>
             </nav>

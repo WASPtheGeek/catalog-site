@@ -1,0 +1,89 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Главная"
+url = ""
+weight = 1
+
+# [[main]]
+# name = "О нас"
+# url = "about/"
+# weight = 2
+
+
+[[main]]
+name = "Политика конфиденциальности"
+url = "terms-and-conditions/"
+weight = 3
+
+[[main]]
+weight = 4
+name = "Продукты"
+hasChildren = true
+
+  [[main]]
+  parent = "Продукты"
+  name = "POS-Моноблоки"
+  url = "/products/monoblocks/"
+  weight = 1
+
+  [[main]]
+  parent = "Продукты"
+  name = "Принтеры чеков"
+  url = "/products/printers/"
+  weight = 2
+
+  [[main]]
+  parent = "Продукты"
+  name = "Кассовые системы"
+  url = "/products/pos-systems/"
+  weight = 3
+
+  [[main]]
+  parent = "Продукты"
+  name = "Киоски самообслуживания"
+  url = "/products/kiosks/"
+  weight = 4
+
+  [[main]]
+  parent = "Продукты"
+  name = "POS-Периферия"
+  url = "/products/peripherals/"
+  weight = 5
+
+[[main]]
+name = "Цены"
+url = "pricing/"
+weight = 5
+
+[[main]]
+name = "Контакты"
+url = "contact/"
+weight = 6
+
+
+
+
+
+
+# footer menu
+[[footer]]
+name = "Контакты"
+url = "contact/"
+weight = 1
+
+[[footer]]
+name = "Цены"
+url = "pricing/"
+weight = 2
+
+[[footer]]
+name = "Продукты"
+url = "products/"
+weight = 3
+
+[[footer]]
+name = "Политика конфиденциальности"
+url = "terms-and-conditions/"
+weight = 4
