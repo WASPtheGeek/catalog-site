@@ -1,8 +1,9 @@
-- id: socials
-  translation: Социальные сети
+######## Navigation ########
+- id: navigation_button
+  translation: "Связаться с нами"
 
-- id: social_media
-  translation: Социальные сети
+- id: home
+  translation: "Главная"
 
 - id: send_message
   translation: Отправить сообщение
@@ -13,8 +14,20 @@
 - id: quick_links
   translation: Быстрые ссылки
 
-- id: location_contact
-  translation: Местоположение и контактная информация
+- id: contacts
+  translation: Контактная информация
+
+- id: bank_details
+  translation: Реквизиты
+
+- id: office_address
+  translation: Адрес офиса
+
+- id: legal_address
+  translation: Юридический адрес
+
+- id: legal_information
+  translation: Юридическая информация
 
 - id: recent_posts
   translation: Недавние сообщения от
@@ -52,8 +65,63 @@
 - id: min_read
   translation: Min read
 
+######## Cookie Policy ########
 - id: cookie_message
   translation: "Этот сайт использует файлы cookie. Продолжая использовать этот сайт, вы соглашаетесь с их использованием."
 
 - id: cookie_accept
   translation: "Я принимаю"
+
+######## Terms & Conditions ########
+- id: valid_from
+  translation: "Действительно с"
+
+######## 404 page ########
+- id: page_not_found
+  translation: "Страница не найдена"
+
+- id: back_to_home
+  translation: "Назад на главную"
+
+######## call-to-action ########
+- id: cta_title
+  translation: "Хотите увидеть ALPOS в действии?"
+
+- id: cta_content
+  translation: "Оставьте заявку, и наш специалист проведет короткую онлайн-демонстрацию, ответит на все вопросы и поможет настроить меню под специфику Вашего бизнеса."
+
+- id: cta_button
+  translation: "Получить демо"
+
+######## Footer ########
+- id: footer_info
+  translation: "Умные POS-решения для повышения эффективности Вашего торгового бизнеса"
+
+######## Popup ########
+- id: popup_button
+  translation: "Получить консультацию"
+
+######## Common ########
+- id: last_updated
+  translation: "Последнее обновление"
+
+######## Products ########
+- id: see_product_button
+  translation: "Посмотреть описание"
+
+- id: open_catalog
+  translation: "Открыть каталог"
+
+######## Brands ########
+- id: our_clients
+  translation: "Наши клиенты"
+
+######## Contacts page ########
+- id: contact_agree
+  translation: "Я ознакомился и согласен с"
+
+- id: contact_to_terms
+  translation: "политикой конфиденциальности"
+
+- id: contact_need_to_agree
+  translation: "Для подачи заявки необходимо согласиться с политикой конфиденциальности"

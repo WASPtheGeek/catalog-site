@@ -1,8 +1,10 @@
-- id: socials
-  translation: Socīālās platformas
 
-- id: social_media
-  translation: Sociālie tīkli
+######## Navigation ########
+- id: navigation_button
+  translation: "Sazināties"
+
+- id: home
+  translation: "Sākums"
 
 - id: send_message
   translation: Sūtīt ziņu
@@ -13,8 +15,20 @@
 - id: quick_links
   translation: Ātrās saites
 
-- id: location_contact
-  translation: Atrašanās vieta un kontakts
+- id: contacts
+  translation: Kontakti
+
+- id: bank_details
+  translation: Rekvizīti
+
+- id: office_address
+  translation: Biroja adrese
+
+- id: legal_address
+  translation: Juridiskā adrese
+
+- id: legal_information
+  translation: Juridiskā informācija
 
 - id: recent_posts
   translation: Jaunākās ziņas no
@@ -41,10 +55,10 @@
   translation: Kontaktinformācija
 
 - id: get_in_touch
-  translation: Get In Touch
+  translation: Sazināties ar mums
 
 - id: form_thanks_message
-  translation: Thanks for your submission!
+  translation: Paldies par iesniegumu!
 
 - id: form_error_message
   translation: Oops! There was a problem submitting your form
@@ -52,8 +66,63 @@
 - id: min_read
   translation: Min read
 
+######## Cookie Policy ########
 - id: cookie_message
   translation: "Šī vietne izmanto sīkdatnes. Turpinot izmantot šo vietni, jūs piekrītat to izmantošanai."
 
 - id: cookie_accept
   translation: "Piekrītu"
+
+######## Terms & Conditions ########
+- id: valid_from
+  translation: "Spēkā no"
+
+######## 404 page ########
+- id: page_not_found
+  translation: "Lapa nav atrasta"
+
+- id: back_to_home
+  translation: "Atpakaļ uz sākumu"
+
+######## call-to-action ########
+- id: cta_title
+  translation: "Vēlaties redzēt ALPOS darbībā?"
+
+- id: cta_content
+  translation: "Atstājiet pieteikumu, un mūsu speciālists nodrošinās īsu tiešsaistes demonstrāciju, atbildēs uz visiem jautājumiem un palīdzēs pielāgot izvēlni Jūsu biznesa specifikai."
+
+- id: cta_button
+  translation: "Sazināties ar mums"
+
+######## Footer ########
+- id: footer_info
+  translation: "Viedi risinājumi Jūsu tirdzniecības biznesa efektivitātes paaugstināšanai"
+
+######## Popup ########
+- id: popup_button
+  translation: "Saņemt konsultāciju"
+
+######## Common ########
+- id: last_updated
+  translation: "Pēdējo reizi atjaunināts"
+
+######## Products ########
+- id: see_product_button
+  translation: "Skatīt aprakstu"
+
+- id: open_catalog
+  translation: "Atvērt katalogu"
+
+######## Brands ########
+- id: our_clients
+  translation: "Mūsu klienti"
+
+######## Contacts page ########
+- id: contact_agree
+  translation: "Esmu iepazinies un piekrītu"
+
+- id: contact_to_terms
+  translation: "privātuma politikai"
+
+- id: contact_need_to_agree
+  translation: "Lai nosūtītu pieteikumu, Jums jāpiekrīt privātuma politikai"

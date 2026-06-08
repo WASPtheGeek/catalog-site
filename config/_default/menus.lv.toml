@@ -1,0 +1,88 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Sākums"
+url = ""
+weight = 1
+
+# [[main]]
+# name = "Par Mums"
+# url = "about/"
+# weight = 2
+
+[[main]]
+name = "Privātuma politika"
+url = "terms-and-conditions/"
+weight = 3
+
+[[main]]
+weight = 4
+name = "Produkti"
+hasChildren = true
+
+  [[main]]
+  parent = "Produkti"
+  name = "POS Monobloki"
+  url = "/products/monoblocks/"
+  weight = 1
+
+  [[main]]
+  parent = "Produkti"
+  name = "Čeku printeri"
+  url = "/products/printers/"
+  weight = 2
+
+  [[main]]
+  parent = "Produkti"
+  name = "Kases sistēmas"
+  url = "/products/pos-systems/"
+  weight = 3
+
+  [[main]]
+  parent = "Produkti"
+  name = "Pašapkalpošanās kioski"
+  url = "/products/kiosks/"
+  weight = 4
+
+  [[main]]
+  parent = "Produkti"
+  name = "POS Perifērija"
+  url = "/products/peripherals/"
+  weight = 5
+
+[[main]]
+name = "Cenas"
+url = "pricing/"
+weight = 5
+
+[[main]]
+name = "Kontakti"
+url = "contact/"
+weight = 6
+
+
+
+
+
+
+# footer menu
+[[footer]]
+name = "Kontakti"
+url = "contact/"
+weight = 1
+
+[[footer]]
+name = "Cenas"
+url = "pricing/"
+weight = 2
+
+[[footer]]
+name = "Produkti"
+url = "products/"
+weight = 3
+
+[[footer]]
+name = "Privātuma politika"
+url = "terms-and-conditions/"
+weight = 4

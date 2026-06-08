@@ -1,0 +1,23 @@
+{{ define "main" }}
+  {{ partial "components/page-header.html" . }}
+
+
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center" data-aos="fade-in">
+        <div class="col-lg-8">
+          <p class="mb-3 fw-600 text-primary">
+            {{ i18n "last_updated" }}: {{ .PublishDate.Format "2006.01.02" }}
+          </p>
+          <p class="lead text-black-200 mb-5">
+            {{ .Description | markdownify }}
+          </p>
+
+          <div class="content">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

@@ -19,6 +19,7 @@
                 <h3>{{ T `send_a_message` }}</h3>
               </div>
               <form id="contact-form" action="{{ . }}" method="POST">
+                {{/*  <input type="hidden" name="_next" value="paldies/">  */}}
                 <p id="form-status" class="form-status"></p>
                 <div class="form-group mb-4">
                   <label class="mb-2" for="name">{{ T `full_name` }}</label>
@@ -52,7 +53,15 @@
                     placeholder="{{ T `message` }}"
                     required></textarea>
                 </div>
-
+                <div class="form-check mb-3 text-left">
+                  <input class="form-check-input" type="checkbox" id="privacyPolicy" name="privacy_policy_agreement" required>
+                  <label class="form-check-label small text-muted" for="privacyPolicy">
+                    {{T `contact_agree`}} <a href="{{ "/terms-and-conditions" | relLangURL }}" target="_blank">{{T `contact_to_terms`}}</a>.
+                  </label>
+                  <div class="invalid-feedback" style="display: block; color: #dc3545; font-size: 80%; margin-top: 5px;">
+                    {{T `contact_need_to_agree`}}
+                  </div>
+                
                 <button
                   class="btn btn-primary w-100 mt-4"
                   type="submit"
@@ -83,6 +92,23 @@
           });
         }
         form.addEventListener("submit", handleSubmit)
+
+
+      (function () {
+        'use strict'
+        var forms = document.querySelectorAll('.needs-validation')
+
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
       </script>
         {{ end }}
       </div>
@@ -139,27 +165,24 @@
             </div>
           {{ end }}
 
-          {{ with site.Params.social }}
-            <div
-              class="col-xl-3 col-lg-4 col-md-12 contact-widget"
-              data-aos="fade-up"
-              data-aos-delay="200">
+          {{ with site.Params.contact_info.office_address }}
+            <div class="col-12 mt-4" id="office-address" data-aos="fade-up" data-aos-delay="200">
               <div class="block text-center">
-                <h3 class="mb-4">{{ T `social_media` }}</h3>
-                <ul class="list-unstyled">
-                  {{ range . }}
-                    {{ if . }}
-                      <li>
-                        <a href="{{ .link }}"
-                          ><i class="{{ .icon }}"></i>{{ .title }}</a
-                        >
-                      </li>
-                    {{ end }}
-                  {{ end }}
-                </ul>
+                <h3 class="mb-4">{{ T `office_address` }}</h3>
+                <div class="ratio ratio-16x9">
+                  <iframe
+                    src="https://www.google.com/maps?q={{ . | urlquery }}&z=15&output=embed"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+                <p class="mt-3 mb-0">{{ . }}</p>
               </div>
             </div>
           {{ end }}
+
         </div>
       </div>
     </div>

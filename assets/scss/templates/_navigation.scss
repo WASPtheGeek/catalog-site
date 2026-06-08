@@ -52,7 +52,7 @@ header {
     }
     @include mobile-xs {
       img {
-        height: 1.5rem;
+        height: 2.5rem;
       }
     }
   }
@@ -226,6 +226,77 @@ header {
     }
   }
 
+  .language-selector {
+    position: relative;
+
+    .select-language-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      max-width: 14rem;
+      padding: 0.75rem 1.1rem;
+      border-radius: 1.5rem;
+      background-color: transparent !important;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      color: inherit;
+      cursor: pointer;
+      outline: none;
+      transition: 0.2s ease-in-out;
+      box-shadow: none;
+
+      &:focus,
+      &:hover {
+        border-color: rgba(0, 0, 0, 0.16);
+        background-color: rgba(0, 0, 0, 0.04) !important;
+      }
+    }
+
+    .language-selector-menu {
+      margin-top: 0.75rem;
+      min-width: 10rem;
+      width: max-content;
+      border-radius: 0.75rem;
+      border: 1px solid rgba($black, 0.08);
+      background-color: $white;
+      box-shadow: 0 0.75rem 1.5rem rgba($black, 0.08);
+      overflow: hidden;
+      z-index: 2000;
+      position: absolute;
+      left: 50%;
+      transform: translate(-40%, 70%);
+      display: none;
+
+      &.show {
+        display: block;
+      }
+
+      > li {
+        list-style: none;
+      }
+    }
+
+    .language-selector-item {
+      padding: 0.75rem 1rem;
+      color: lighten($black, 13.33);
+      font-weight: 500;
+      white-space: nowrap;
+      display: block;
+
+      &:hover,
+      &:focus {
+        color: $color-primary;
+        background-color: rgba($color-primary, 0.08);
+      }
+
+      &.active {
+        color: $color-primary;
+        background-color: rgba($color-primary, 0.05);
+      }
+    }
+  }
+
   @include desktop {
     .navbar-nav {
       max-width: 18.75rem;
@@ -253,27 +324,6 @@ header {
       margin-right: 0.5rem;
     }
 
-    .select-language {
-      min-width: 8rem;
-      padding: 0.75rem 1.1rem;
-      border-radius: 1.5rem;
-      background-color: transparent !important;
-      border: 1px solid transparent;
-      color: inherit;
-      cursor: pointer;
-      outline: none;
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-    }
-
-    .select-language:focus {
-      outline: none;
-      box-shadow: none;
-      border-color: rgba(0, 0, 0, 0.08);
-      background-color: transparent !important;
-    }
-
     .dropdown-menu {
       padding: 1px 0.9rem;
       text-align: center;
@@ -282,6 +332,11 @@ header {
 
     .nav-item .nav-link {
       padding: 0.31rem 1.25rem !important;
+    }
+
+    .language-selector .language-selector-menu {
+      left: 50% !important;
+      transform: translate(-50%, 0%);
     }
   }
 }

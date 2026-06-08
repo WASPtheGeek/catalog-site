@@ -1,0 +1,42 @@
+{{ $popup := index site.Data .Lang "popup" }}
+{{ if and site.Params.popup $popup }}
+<div class="alposPopup position-fixed fade">
+  <div class="block p-4 p-lg-5 bg-white rounded-lg shadow-lg call-to-action has-bg-color">
+    <div class="position-relative" style="z-index: 2;">
+      {{ with $popup.title }}
+        <h2 class="text-center mb-4">{{ . | markdownify }}</h2>
+      {{ end }}
+
+      {{ with $popup.content }}
+        <p class="mb-4">{{ . | safeHTML }}</p>
+      {{ end }}
+
+      {{ with $popup.button }}
+        {{ if .enable }}
+          <div class="text-center">
+            <a
+              href="{{ .link | relLangURL }}"
+              class="btn btn-primary mt-2">
+              {{ i18n .label }}
+            </a>
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
+    <button type="button" class="close" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+
+    <div class="has-circle has-bg-anim" style="opacity: .5">
+      {{ partial "image.html" (dict "Src" "images/waves/05.svg" "Class" "wave-1 w-100") }}
+      <span class="circle-1 ratio-32"></span>
+      <span class="circle-2 ratio-37"></span>
+      <span class="circle-3 ratio-47"></span>
+      <span class="circle-4 ratio-20"></span>
+      <span class="circle-5 ratio-73"></span>
+      <span class="circle-6 ratio-37"></span>
+    </div>
+  </div>
+  <div class="overlay"></div>
+</div>
+{{ end }}

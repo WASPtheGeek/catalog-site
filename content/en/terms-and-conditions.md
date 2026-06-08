@@ -1,44 +1,65 @@
 ---
-title: "Terms & Conditions"
-date: "2023-01-14"
+title: "PRIVACY POLICY"
+date: "2026-06-07"
 layout: "terms-and-conditions"
 draft: false
 
-description: "By Using The Service Or Clicking “I Agree”, The User Is Agreeing To Be Bound By This Agreement. If You Are Agreeing To This Agreement On Behalf Of Or For The Benefit Of A Company, Then The User Represents And Warrants That It Has The Necessary Authority To Agree To This Agreement On The Company’s"
+description: "This Privacy Policy describes how SIA \"ALPOS\" (hereinafter – \"We\", \"Our\" or \"Company\") collects, uses, and processes personal data when you visit our website www.alpos.lv (hereinafter – \"Website\") or contact us using contact forms."
 ---
+We care about your privacy and are committed to protecting your personal data in accordance with the General Data Protection Regulation (GDPR) and other applicable laws.
 
-### 1. Definitions
+### 1. CONTROLLER AND CONTACT PERSON
 
-We collect certain identifying personal data when you sign up to our Service such as your name, email address, PayPal address (if different from email address), and telephone number. The personal data we collect from you is disclosed only in accordance with our Terms of Service and/or this Privacy Policy.Conclude collects Slack account and access information from Users for the purposes of connecting to the Slack API and to authenticate access to information on the Conclude website. Whenever you visit our Site, we may collect non-identifying information from you, such as referring URL, browser, operating system, cookie information, and Internet Service Provider. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, this information alone cannot usually be used to identify you.The term "personal data" does not include any anonymized and aggregated data made on the basis of personal data, which are wholly owned by Conclude.
+The controller of personal data processing is:
+SIA "ALPOS"
+Reg. No. 40103341175
+Legal address: Biķernieku iela 226–19, Rīga, LV-1079
+E-mail for data protection inquiries: alpos@alpos.lv
 
-### 2. General Terms
+### 2. WHAT PERSONAL DATA WE COLLECT
 
-#### Service Provided AS IS:
+We collect only the data that you voluntarily provide in the Website's contact forms:
 
-The Service is provided for free during this pilot project, and is provided "as is" with no warranty. Conclude will provide User support for the Service, however; Conclude is not committed to any level of service or availability of the Service. A further description of the Service and our user support is available at the Site.
+- First Name, Last Name;
+- Phone number;
+- E-mail address;
+- Company name (optional).
 
-#### Interoperation with Slack:
+### 3. PURPOSE AND LEGAL BASIS OF DATA PROCESSING
 
-The Service interoperates with Slack.com, and depends on the continuing availability and access to Slack. If for any reason Conclude cannot access or use Slack (including without limitation, change in terms or increase in fees charged by Slack), Conclude may not be able to provide all of the functions of its Service. No refund or credit, if applicable, will be provided for temporary unavailability of Slack (for example, maintenance windows).
+Your provided personal data is processed for the following purposes:
 
-#### Company Liability:
+- To contact you and provide information about our POS system (upon your request);
+- To prepare a personalized offer for your business;
+- To arrange a time for a system demonstration.
 
-If you enter into this agreement on behalf of a company, you hereby agree that the company is responsible under this Agreement for all actions and omissions conducted by its designated users of the Service.
+The legal basis for data processing is your **consent** (Article 6(1)(a) of the GDPR), which you provide by checking the checkbox before submitting the form.
 
-### 4. Rules of Use
+### 4. DATA RETENTION PERIOD
 
-1. must keep passwords secure and confidential;
-2. are solely responsible for User Data and all activity in their account while using the Service;
-3. must use commercially reasonable efforts to prevent unauthorized access to their account, and notify Conclude promptly of any such unauthorized access; and
-4. may use the Service only in accordance with Conclude's online user guide and all applicable laws and regulations.
+We store your personal data for as long as necessary to achieve the purposes mentioned in Section 3, or until you withdraw your consent, but no longer than [SPECIFY PERIOD, e.g., 1 year] from the moment of the last communication. If the communication results in the conclusion of a contract, the data will be processed in accordance with the terms of the contract.
 
-#### You must not:
+### 5. DATA TRANSFER TO THIRD PARTIES
 
-- Enhance or improve User experience, our Site, or our Service.
-- Process transactions.
-- Send emails about our Site or respond to inquiries.
-- As this Privacy Policy and our Terms of Service.
+We do not transfer your personal data to third parties for commercial purposes. Data may only be transferred to:
 
-### 5. Intellectual Property Rights
+- Our authorized service providers who ensure the operation of the Website or e-mail delivery (for example, server hosts);
+- Law enforcement authorities in cases specified by applicable laws.
 
-Your information may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the privacy laws may not be as protective as those in your jurisdiction. If you choose to provide information to us, Conclude transfers Personal Information to Google Cloud Platform and processes it there. Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
+### 6. YOUR RIGHTS
+
+You have the right to:
+
+- Access your personal data and receive information about its processing;
+- Request the correction of inaccurate data;
+- Request the erasure of your personal data ("the right to be forgotten");
+- Object to data processing or request its restriction;
+- Withdraw your consent at any time by writing to the e-mail: alpos@alpos.lv. The withdrawal of consent does not affect the lawfulness of processing based on consent before its withdrawal.
+
+### 7. COOKIES
+
+Our Website uses cookies to improve user experience and analyze website visit statistics.
+
+### 8. SUBMISSION OF COMPLAINTS
+
+If you believe that the processing of your personal data violates GDPR requirements, you have the right to file a complaint with the national data protection supervisory authority. In Latvia, it is the Data State Inspectorate (Datu valsts inspekcija - www.dvi.gov.lv).

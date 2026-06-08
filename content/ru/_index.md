@@ -1,14 +1,16 @@
 ---
 # banner
 banner:
-  title: "Andromeda is the most intuitive way to prototype Designs"
-  button: "Get Premium Version"
-  button_link: "https://gethugothemes.com/products/andromeda/"
+  subtitle: "ALPOS A3000"
+  title: "Современная POS-система для вашего бизнеса"
+  button: ""
+  button_link: "/ru/pricing"
   image: "images/banner-app.png"
 
 # brands
 brands_carousel:
   enable: true
+  title: "our_clients"
   brand_images:
     - "images/brands/01-colored.png"
     - "images/brands/02-colored.png"
@@ -25,32 +27,26 @@ brands_carousel:
 # features
 features:
   enable: true
-  subtitle: "Special Features"
-  title: "Elements to <br> get you started"
-  description: "Lorem ipsum dolor sit amet, consecteturre adipiscing elit. Morbi egestas <br> Werat viverra id et aliquet. vulputate egestas sollicitudin."
+  subtitle: "100% Соответствие требованиям СГД (VID)"
+  title: "Для кого предназначена эта система?"
+  description: "Система полностью сертифицирована согласно латвийскому законодательству (Правила КМ № 95/96), автоматически формирует Z-отчеты и готова к любым проверкам"
   features_blocks:
-    - icon: "las la-lock"
-      title: "Updated Security"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
-    - icon: "las la-magnet"
-      title: "Magnetic Turning"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
-    - icon: "las la-tachometer-alt"
-      title: "Secured &amp; upto date"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
-    - icon: "las la-link"
-      title: "Instant Link Shareing"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
-    - icon: "las la-lock"
-      title: "Updated Security"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
-    - icon: "las la-magnet"
-      title: "Magnetic Turning"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
+    - icon: "las la-coffee"
+      title: "Кафе и быстрое обслуживание"
+      content: "Быстрое оформление заказов на кассе, мгновенная печать бегунков на кухню или бар, простое управление меню и интеграция с банковскими терминалами."
+    - icon: "las la-hamburger"
+      title: "Уличная торговля / Food Trucks"
+      content: "Работа без интернета (автономный offline-режим) и максимальная мобильность при работе на планшете."
+    - icon: "las la-heart"
+      title: "Индустрия красоты / Салоны"
+      content: "Удобная предварительная запись клиентов, календарь мастеров, а также учет расходных материалов."
+    - icon: "las la-shopping-basket"
+      title: "Розничная торговля / Магазины"
+      content: "Быстрое сканирование штрих-кодов, оперативный прием товара и автоматизированная инвентаризация склада."
 
 # intro_video
 intro_video:
-  enable: true
+  enable: false
   subtitle: "Short Intro Video"
   title: "Built exclusively for you"
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas <br> Werat viverra id et aliquet. vulputate egestas sollicitudin."
@@ -58,24 +54,48 @@ intro_video:
   video_thumbnail: "images/video-popup.jpg"
 
 
-# how_it_works
-how_it_works:   
+# products
+# products
+products:   
   enable: true
+  title: "Профессиональное оборудование для Вашего бизнеса"
+  subtitle: "Продукты"
+  description: "Полный спектр оборудования, которое идеально подходит и технически согласовано для работы с системой ALPOS"
   block:
-  - subtitle: "Primary Speciality"
-    title: "You Will Not miss Your All misunderstandings"
-    description: "Protect your design vision and leave nothing up to interpretation with interaction recipes. Quickly share and access all your team members interactions by using libraries, ensuring consistency throughout the."
-    image: "images/features-01.png"
+  - subtitle: ""
+    title: "POS-терминалы"
+    description: "Надежные сенсорные кассовые компьютеры класса «все в одном», созданные для высоких нагрузок в ресторанах и торговых точках"
+    image: "images/features/features-01.png"
+    link: "products/monoblocks"
 
-  - subtitle: "Secondary Speciality"
-    title: "Say hello to no-code The Advance Creation"
-    description: "From the simplest of interactions to those that use Excel-gradeing formulas, ProtoPie can handle them all. Make mind-blowing of New interactions everyday without ever having to write any new code."
-    image: "images/features-02.png"
+  - subtitle: ""
+    title: "Принтеры чеков и кухни"
+    description: "Высокоскоростные термопринтеры для мгновенной печати чеков на кассе или вывода счетов для заказов на кухне/в баре"
+    image: "images/features/features-04.png"
+    link: "products/printers"
+
+  - subtitle: "ALPOS A3000"
+    title: "Кассовые системы"
+    description: "Комплексные решения, которые полностью соответствуют законодательству Латвийской Республики и сертифицированы согласно требованиям СГД (VID)"
+    image: "images/features/features-02.png"
+    link: "products/pos-systems"
+
+  - subtitle: ""
+    title: "Киоски самообслуживания"
+    description: "Современные интерактивные экраны и уличные/внутренние киоски, позволяющие клиентам делать заказы самостоятельно, сокращая очереди"
+    image: "images/features/features-06.png"
+    link: "products/kiosks"
+
+  - subtitle: ""
+    title: "POS-периферия"
+    description: "Дополнительное оборудование для полноценной работы: денежные ящики, сканеры штрих-кодов, дисплеи покупателя и штативы для карточных терминалов"
+    image: "images/features/features-03.png"
+    link: "products/peripherals"
 
 
 # testimonials
 testimonials:
-  enable: true
+  enable: false
   subtitle: "Our Testimonial"
   title: "Don't take our word for it"
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas <br> Werat viverra id et aliquet. vulputate egestas sollicitudin."
