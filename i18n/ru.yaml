@@ -95,7 +95,7 @@
 
 ######## Footer ########
 - id: footer_info
-  translation: "Умные POS-решения для повышения эффективности Вашего ресторанного и торгового бизнеса"
+  translation: "Умные POS-решения для повышения эффективности Вашего торгового бизнеса"
 
 ######## Popup ########
 - id: popup_button
@@ -115,3 +115,13 @@
 ######## Brands ########
 - id: our_clients
   translation: "Наши клиенты"
+
+######## Contacts page ########
+- id: contact_agree
+  translation: "Я ознакомился и согласен с"
+
+- id: contact_to_terms
+  translation: "политикой конфиденциальности"
+
+- id: contact_need_to_agree
+  translation: "Для подачи заявки необходимо согласиться с политикой конфиденциальности"

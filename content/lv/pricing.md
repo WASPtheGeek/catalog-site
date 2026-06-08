@@ -3,7 +3,7 @@ title: "Cenas"
 date: "2026-06-07"
 layout: "pricing"
 draft: false
-description: "Izvēlieties savam biznesam piemērotāko plānu. Izdevīgi un caurspīdīgi ALPOS POS sistēmas tarifi jebkura izmēra restorāniem un tirdzniecības uzņēmumiem Latvijā."
+description: "Izvēlieties savam biznesam piemērotāko plānu. Izdevīgi un caurspīdīgi ALPOS POS sistēmas tarifi jebkura izmēra tirdzniecības uzņēmumiem Latvijā."
 
 # Блок цен (Pricing section)
 pricing:
@@ -26,7 +26,7 @@ pricing:
     - name: "ALPOS Pro"
       price: "49€"
       period: "mēnesī"
-      description: "Mūsu populārākais plāns restorāniem, bāriem un vidējiem veikaliem."
+      description: "Mūsu populārākais plāns vidējiem veikaliem."
       features:
         - "Līdz 3 kases darba vietām"
         - "Galdu karte un pasūtījumu sadale"
@@ -40,7 +40,7 @@ pricing:
     - name: "ALPOS Enterprise"
       price: "Individuāli"
       period: "pēc pieprasījuma"
-      description: "Risinājums restorānu tīkliem, franšīzēm un lieliem tirdzniecības centriem."
+      description: "Risinājums franšīzēm un lieliem tirdzniecības centriem."
       features:
         - "Neierobežots kasu un filiāļu skaits"
         - "Multilokalizācija un centralizēta vadība"

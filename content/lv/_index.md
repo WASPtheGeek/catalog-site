@@ -31,9 +31,9 @@ features:
   title: "Kam šī sistēma paredzēta?"
   description: "Sistēma ir pilnībā sertificēta saskaņā ar Latvijas Republikas likumdošanu (MK noteikumi Nr. 95/96). Tā automātiski ģenerē Z-atskaites un ir pilnībā gatava jebkurām pārbaudēm"
   features_blocks:
-    - icon: "las la-fish"
-      title: "Restorāni un Kafejnīcas"
-      content: "Galdu karte un vadība, rēķinu sadalīšana, ēdienu pasniegšanas kārtas (kursi) un virtuves monitoru integrācija."
+    - icon: "las la-coffee"
+      title: "Kafejnīcas un Ātrā apkalpošana"
+      content: "Ātra pasūtījumu pieņemšana pie kases, tūlītēja čeku izdruka virtuvē vai bārā, vienkārša izvēlnes (menu) pārvaldība un integrācija ar bankas termināļiem."
     - icon: "las la-hamburger"
       title: "Ielu tirdzniecība / Food Trucks"
       content: "Pilnvērtīgs darbs bez interneta pieslēguma (bezsaistes režīms) un maksimāla mobilitāte, izmantojot planšetdatoru."
@@ -42,7 +42,7 @@ features:
       content: "Klientu pierakstu sistēma un kalendārs, kā arī precīza izmantoto materiālu un preču uzskaite."
     - icon: "las la-shopping-basket"
       title: "Mazumtirdzniecība / Veikali"
-      content: "Zibenīga svītrkodu skenēšana, ātra preču pieņemšana un automatizēta noliktavas inventarizācija."
+      content: "Zibenīga svītrkodu skenēšana, ātra preču pieņemšana un noliktavas inventarizācija."
 
 # intro_video
 intro_video:
@@ -63,7 +63,7 @@ products:
   block:
   - subtitle: ""
     title: "POS termināļi"
-    description: "Izturīgi all-in-one kases datori ar skārienekrānu, kas paredzēti lielai slodzei restorānos un tirdzniecības vietās"
+    description: "Izturīgi all-in-one kases datori ar skārienekrānu, kas paredzēti tirdzniecības vietās"
     image: "images/features/features-01.png"
     link: "products/monoblocks"
 

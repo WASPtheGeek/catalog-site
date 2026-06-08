@@ -1,7 +1,7 @@
 ---
 title: "Profesionāls POS aprīkojums un aparatūra"
 date: "2026-06-07"
-description: "Pilns tirdzniecības un restorānu aprīkojuma klāsts. VID sertificētas kases sistēmas, skārienjūtīgi monobloki un čeku printeri ar garantiju."
+description: "Pilns tirdzniecības aprīkojuma klāsts. VID sertificētas kases sistēmas, skārienjūtīgi monobloki un čeku printeri ar garantiju."
 image: "images/products/all-hardware.png"
 ---
 

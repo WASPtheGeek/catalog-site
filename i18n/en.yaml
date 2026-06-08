@@ -93,7 +93,7 @@
 
 ######## Footer ########
 - id: footer_info
-  translation: "Smart POS solutions designed to boost efficiency for restaurants and retail businesses"
+  translation: "Smart POS solutions designed to boost efficiency for retail businesses"
 
 - id: quick_links
   translation: Quick Links
@@ -116,3 +116,13 @@
 ######## Brands ########
 - id: our_clients
   translation: "Our Clients"
+
+######## Contacts page ########
+- id: contact_agree
+  translation: "I have read and agree to the"
+
+- id: contact_to_terms
+  translation: "privacy policy"
+
+- id: contact_need_to_agree
+  translation: "To submit an application, you must agree to the privacy policy"

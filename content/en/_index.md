@@ -32,9 +32,9 @@ features:
   title: "Who is this system for?"
   description: "The system is fully certified in accordance with Latvian legislation (Cabinet Regulations No. 95/96). It automatically generates Z-reports and is fully prepared for any audits"
   features_blocks:
-    - icon: "las la-fish"
-      title: "Restaurants and Cafes"
-      content: "Table management and mapping, bill splitting, meal courses, and kitchen display system integration."
+    - icon: "las la-coffee"
+      title: "Cafes & Quick Service"
+      content: "Fast order processing at the counter, instant order ticket printing for kitchen or bar, simple menu management, and seamless card terminal integration."
     - icon: "las la-hamburger"
       title: "Street Food / Food Trucks"
       content: "Full operation without an internet connection (offline mode) and maximum mobility on a tablet."

@@ -60,16 +60,23 @@ img {
   }
 }
 
+@media (min-width: 1550px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
 .container-xxl {
-  max-width: 1440px;
+  // max-width: 1440px;
   width: 100%;
+  max-width: 100%;
   padding-right: 0.9rem;
   padding-left: 0.9rem;
   margin-right: auto;
   margin-left: auto;
 
   @include desktop-xl {
-    max-width: 1260px;
+    // max-width: 1260px;
   }
 }
 

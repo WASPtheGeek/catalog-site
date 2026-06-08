@@ -96,7 +96,7 @@
 
 ######## Footer ########
 - id: footer_info
-  translation: "Viedi risinājumi Jūsu restorāna un tirdzniecības biznesa efektivitātes paaugstināšanai"
+  translation: "Viedi risinājumi Jūsu tirdzniecības biznesa efektivitātes paaugstināšanai"
 
 ######## Popup ########
 - id: popup_button
@@ -116,3 +116,13 @@
 ######## Brands ########
 - id: our_clients
   translation: "Mūsu klienti"
+
+######## Contacts page ########
+- id: contact_agree
+  translation: "Esmu iepazinies un piekrītu"
+
+- id: contact_to_terms
+  translation: "privātuma politikai"
+
+- id: contact_need_to_agree
+  translation: "Lai nosūtītu pieteikumu, Jums jāpiekrīt privātuma politikai"

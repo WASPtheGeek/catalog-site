@@ -53,7 +53,15 @@
                     placeholder="{{ T `message` }}"
                     required></textarea>
                 </div>
-
+                <div class="form-check mb-3 text-left">
+                  <input class="form-check-input" type="checkbox" id="privacyPolicy" name="privacy_policy_agreement" required>
+                  <label class="form-check-label small text-muted" for="privacyPolicy">
+                    {{T `contact_agree`}} <a href="{{ "/terms-and-conditions" | relLangURL }}" target="_blank">{{T `contact_to_terms`}}</a>.
+                  </label>
+                  <div class="invalid-feedback" style="display: block; color: #dc3545; font-size: 80%; margin-top: 5px;">
+                    {{T `contact_need_to_agree`}}
+                  </div>
+                
                 <button
                   class="btn btn-primary w-100 mt-4"
                   type="submit"
@@ -84,6 +92,23 @@
           });
         }
         form.addEventListener("submit", handleSubmit)
+
+
+      (function () {
+        'use strict'
+        var forms = document.querySelectorAll('.needs-validation')
+
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
       </script>
         {{ end }}
       </div>
