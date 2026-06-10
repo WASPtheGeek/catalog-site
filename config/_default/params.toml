@@ -53,8 +53,8 @@ link = "/contact"
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["ALPOS", "POS sistēmas", "kases sistēmas", "kases aparāti", "moderna kases sistēma", "kases sistēmas restorāniem", "kases sistēmas tirdzniecībai", "kases sistēmas veikalam", "kases sistēmas kafejnīcām", "kases sistēmas bāriem", "kases sistēmas picērijām", "kases sistēmas krodziņiem", "kases sistēmas frizētavām", "kases sistēmas skaistumkopšanas saloniem", "kases sistēmas degvielas uzpildes stacijām"]
-description = "ALPOS - VID sertificētas POS sistēmas un aprīkojums restorāniem, kafejnīcām un tirdzniecībai Latvijā"
+keywords = ["ALPOS", "POS sistēmas", "kases sistēmas", "kases aparāti", "moderna kases sistēma", "kases sistēmas tirdzniecībai", "kases sistēmas veikalam", "kases sistēmas kafejnīcām", "kases sistēmas bāriem", "kases sistēmas picērijām", "kases sistēmas krodziņiem", "kases sistēmas frizētavām", "kases sistēmas skaistumkopšanas saloniem", "kases sistēmas degvielas uzpildes stacijām"]
+description = "ALPOS - VID sertificētas POS sistēmas un aprīkojums kafejnīcām un tirdzniecībai Latvijā"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 # matomo tracking: see https://matomo.org/

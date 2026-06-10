@@ -6,84 +6,103 @@ name = "Home"
 url = ""
 weight = 1
 
-# [[main]]
-# name = "About"
-# url = "about/"
-# weight = 2
-
-
 [[main]]
-name = "Terms & Conditions"
-url = "terms-and-conditions/"
-weight = 3
-
-[[main]]
-weight = 4
-name = "Products"
+name = "Solutions"
+url = "/solutions"
+weight = 2
 hasChildren = true
 
   [[main]]
-  parent = "Products"
-  name = "POS Terminals"
+  parent = "Solutions"
+  name = "Retail & Services"
+  url = "/solutions/retail-services"
+  weight = 1
+
+  [[main]]
+  parent = "Solutions"
+  name = "Car Washes & Custom Projects"
+  url = "/solutions/custom-projects"
+  weight = 2
+
+  [[main]]
+  parent = "Solutions"
+  name = "Services & Prices"
+  url = "/solutions/services-and-prices"
+  weight = 3
+
+[[main]]
+name = "ALPOS Software"
+url = "/software"
+weight = 3
+
+[[main]]
+name = "POS Hardware"
+url = "/hardware"
+weight = 4
+hasChildren = true
+
+  [[main]]
+  parent = "POS Hardware"
+  name = "POS Monoblocks"
   url = "/products/monoblocks/"
   weight = 1
 
   [[main]]
-  parent = "Products"
+  parent = "POS Hardware"
   name = "Receipt Printers"
   url = "/products/printers/"
   weight = 2
 
   [[main]]
-  parent = "Products"
+  parent = "POS Hardware"
   name = "POS Systems"
   url = "/products/pos-systems/"
   weight = 3
 
   [[main]]
-  parent = "Products"
+  parent = "POS Hardware"
   name = "Self-Service Kiosks"
   url = "/products/kiosks/"
   weight = 4
 
   [[main]]
-  parent = "Products"
+  parent = "POS Hardware"
   name = "POS Peripherals"
   url = "/products/peripherals/"
   weight = 5
-
-[[main]]
-name = "Pricing"
-url = "pricing/"
-weight = 5
 
 [[main]]
 name = "Contacts"
 url = "contact/"
 weight = 6
 
-
-
-
-
-
 # footer menu
 [[footer]]
-name = "Contacts"
-url = "contact/"
+name = "FAQ"
+url = "faq/"
 weight = 1
 
 [[footer]]
-name = "Pricing"
-url = "pricing/"
+name = "Instructions"
+url = "instructions/"
 weight = 2
 
 [[footer]]
-name = "Products"
-url = "products/"
+name = "About Us"
+url = "about/"
 weight = 3
 
 [[footer]]
-name = "Terms & Conditions"
-url = "terms-and-conditions/"
+name = "Contacts"
+url = "contact/"
 weight = 4
+
+[[footer]]
+name = "Services & Prices"
+url = "/solutions/services-and-prices"
+weight = 5
+
+[[footer]]
+name = "Privacy Policy"
+url = "terms-and-conditions/"
+weight = 6

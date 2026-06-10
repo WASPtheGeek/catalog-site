@@ -457,7 +457,7 @@ form:invalid button[type="submit"] {
 
   .features-card {
     text-align: center;
-    padding: 4.3rem 1.875rem;
+    padding: 2rem 1rem;
     border: 1px solid transparent;
     box-shadow: 0px 0.25rem 1.5rem 0px rgba($black, 0.1);
     margin: 1.25rem 0.9rem;
@@ -994,7 +994,12 @@ img.filmed-image {
 // footer style
 footer.footer {
   margin-top: 6.25rem;
+
+  a {
+    text-decoration: underline;
+  }
 }
+
 .footer-widget {
   .footer-links {
     li:not(:last-child) {

@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "/" # Base url will be prepended to all relative URLs.
+baseURL = "https://alpos.lv/" # Base url will be prepended to all relative URLs.
 title = "ALPOS"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "Europe/Helsinki"

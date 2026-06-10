@@ -1,4 +1,4 @@
-############# English navigation ##############
+############# Russian navigation ##############
 
 # main menu
 [[main]]
@@ -6,84 +6,103 @@ name = "Главная"
 url = ""
 weight = 1
 
-# [[main]]
-# name = "О нас"
-# url = "about/"
-# weight = 2
-
-
 [[main]]
-name = "Политика конфиденциальности"
-url = "terms-and-conditions/"
-weight = 3
-
-[[main]]
-weight = 4
-name = "Продукты"
+name = "Решения"
+url = "/solutions"
+weight = 2
 hasChildren = true
 
   [[main]]
-  parent = "Продукты"
-  name = "POS-Моноблоки"
+  parent = "Решения"
+  name = "Торговля и услуги"
+  url = "/solutions/retail-services"
+  weight = 1
+
+  [[main]]
+  parent = "Решения"
+  name = "Автомойки и спецпроекты"
+  url = "/solutions/custom-projects"
+  weight = 2
+
+  [[main]]
+  parent = "Решения"
+  name = "Услуги и цены"
+  url = "/solutions/services-and-prices"
+  weight = 3
+
+[[main]]
+name = "Софт"
+url = "/software"
+weight = 3
+
+[[main]]
+name = "Оборудование"
+url = "/hardware"
+weight = 4
+hasChildren = true
+
+  [[main]]
+  parent = "Оборудование"
+  name = "POS-моноблоки"
   url = "/products/monoblocks/"
   weight = 1
 
   [[main]]
-  parent = "Продукты"
+  parent = "Оборудование"
   name = "Принтеры чеков"
   url = "/products/printers/"
   weight = 2
 
   [[main]]
-  parent = "Продукты"
+  parent = "Оборудование"
   name = "Кассовые системы"
   url = "/products/pos-systems/"
   weight = 3
 
   [[main]]
-  parent = "Продукты"
+  parent = "Оборудование"
   name = "Киоски самообслуживания"
   url = "/products/kiosks/"
   weight = 4
 
   [[main]]
-  parent = "Продукты"
-  name = "POS-Периферия"
+  parent = "Оборудование"
+  name = "POS-периферия"
   url = "/products/peripherals/"
   weight = 5
-
-[[main]]
-name = "Цены"
-url = "pricing/"
-weight = 5
 
 [[main]]
 name = "Контакты"
 url = "contact/"
 weight = 6
 
-
-
-
-
-
 # footer menu
 [[footer]]
-name = "Контакты"
-url = "contact/"
+name = "FAQ - Часто задаваемые вопросы"
+url = "faq/"
 weight = 1
 
 [[footer]]
-name = "Цены"
-url = "pricing/"
+name = "Инструкции"
+url = "instructions/"
 weight = 2
 
 [[footer]]
-name = "Продукты"
-url = "products/"
+name = "О нас"
+url = "about/"
 weight = 3
+
+[[footer]]
+name = "Контакты"
+url = "contact/"
+weight = 4
+
+[[footer]]
+name = "Услуги и цены"
+url = "/solutions/services-and-prices"
+weight = 5
 
 [[footer]]
 name = "Политика конфиденциальности"
 url = "terms-and-conditions/"
-weight = 4
+weight = 6

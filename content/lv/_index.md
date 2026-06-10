@@ -1,10 +1,10 @@
 ---
 # banner
 banner:
-  subtitle: "ALPOS A3000"
-  title: "Mūsdienīga POS sistēma Jūsu biznesam"
-  button: "Apskatīt produktu"
-  button_link: "/lv/pricing"
+  subtitle: "Gatavi risinājumi tirdzniecībai un pakalpojumiem, individuālas integrācijas automazgātavām un uzticams serviss visā Latvijā"
+  title: "Sertificētas kases sistēmas un POS aprīkojums Jūsu biznesam"
+  button: "Risinājumi"
+  button_link: "/lv/solutions"
   image: "images/banner-app.png"
 
 # brands
@@ -12,21 +12,63 @@ brands_carousel:
   enable: true
   title: "our_clients"
   brand_images:
-    - "images/brands/01-colored.png"
-    - "images/brands/02-colored.png"
-    - "images/brands/04-colored.png"
-    - "images/brands/03-colored.png"
-    - "images/brands/05-colored.png"
-    - "images/brands/06-colored.png"
-    - "images/brands/04-colored.png"
-    - "images/brands/02-colored.png"
-    - "images/brands/01-colored.png"
-    - "images/brands/06-colored.png"
-    - "images/brands/05-colored.png"
+    - "images/brands/brand-1.png"
+    - "images/brands/brand-2.png"
+    - "images/brands/brand-3.svg"
+    - "images/brands/brand-4.png"
+    - "images/brands/brand-6.svg"
+    - "images/brands/brand-7.svg"
+    - "images/brands/brand-9.png"
+    - "images/brands/brand-10.png"
+    - "images/brands/brand-11.png"
+    - "images/brands/brand-12.png"
+
+top_products:
+  enable: true
+  subtitle: ""
+  title: "Top preces"
+  description: ""
+  button: "Apskatīties"
+  products:
+    - image: "images/banner-app1.png"
+      title: "Product 1"
+      content: "Apraksts būs šeit"
+      price: "19.99 EUR"
+      link: "/hardware/monoblocks/1"
+    - image: "images/banner-app1.png"
+      title: "Product 2"
+      content: "Apraksts būs šeit"
+      price: "19.99 EUR"
+      link: "/hardware/monoblocks/2"
+    - image: "images/banner-app1.png"
+      title: "Product 2"
+      content: "Apraksts būs šeit"
+      price: "19.99 EUR"
+      link: "/hardware/monoblocks/2"
+    - image: "images/banner-app1.png"
+      title: "Product 2"
+      content: "Apraksts būs šeit"
+      price: "19.99 EUR"
+      link: "/hardware/monoblocks/2"
+    - image: "images/banner-app1.png"
+      title: "Product 2"
+      content: "Apraksts būs šeit"
+      price: "19.99 EUR"
+      link: "/hardware/monoblocks/2"
+    - image: "images/banner-app1.png"
+      title: "Product 2"
+      content: "Apraksts būs šeit"
+      price: "19.99 EUR"
+      link: "/hardware/monoblocks/2"
+    - image: "images/banner-app1.png"
+      title: "Product 2"
+      content: "Apraksts būs šeit"
+      price: "19.99 EUR"
+      link: "/hardware/monoblocks/2"
 
 # features
 features:
-  enable: true
+  enable: false
   subtitle: "100% Atbilstība VID prasībām"
   title: "Kam šī sistēma paredzēta?"
   description: "Sistēma ir pilnībā sertificēta saskaņā ar Latvijas Republikas likumdošanu (MK noteikumi Nr. 95/96). Tā automātiski ģenerē Z-atskaites un ir pilnībā gatava jebkurām pārbaudēm"
@@ -43,6 +85,37 @@ features:
     - icon: "las la-shopping-basket"
       title: "Mazumtirdzniecība / Veikali"
       content: "Zibenīga svītrkodu skenēšana, ātra preču pieņemšana un noliktavas inventarizācija."
+
+# business_directions
+business_directions:
+  enable: true
+  subtitle: "Biznesa virzieni"
+  title: "Gatavi risinājumi un individuāla pieeja"
+  description: "Nodrošinām visu nepieciešamo Jūsu uzņēmuma efektivitātei — no sertificētām kases sistēmām līdz sarežģītiem tehnoloģiskiem specprojektiem."
+  directions_blocks:
+    - icon: "las la-key"
+      title: "Kases sistēmas «zem atslēgas»"
+      link: "/lv/solutions"
+      features_list:
+        - "Gatavi risinājumi tirdzniecībai un pakalpojumiem"
+        - "Pilnīga atbilstība VID prasībām (MK Nr. 95/96)"
+        - "Pilns tehniskais atbalsts un uzstādīšana"
+    
+    - icon: "las la-cash-register"
+      title: "POS aprīkojuma iegāde"
+      link: "/lv/products"
+      features_list:
+        - "Izturīgi monobloki, čeku printeri un perifērija"
+        - "Oficiālā garantija un iekārtu apkope"
+        - "Ātra piegāde un pieslēgšana visā Latvijā"
+
+    - icon: "las la-tools"
+      title: "Individuāli integrācijas risinājumi"
+      link: "/lv/integrations"
+      features_list:
+        - "Sistēmas automazgātavām un pašapkalpošanās kioskiem"
+        - "Unikālu funkciju izstrāde pēc specprojekta"
+        - "Tehniskais atbalsts un monitorings 24/7"
 
 # intro_video
 intro_video:

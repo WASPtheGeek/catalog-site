@@ -86,6 +86,33 @@
     </section>
   {{ end }}
 
+  {{ with .Params.brands_carousel }}
+    {{ if .enable }}
+      <section class="section overflow-hidden">
+        <div class="container">
+          <div class="row">
+            <div class="section-title text-center mb-0">
+              <h2 class="title">{{i18n .title}}</h2>
+            </div>
+            <div class="col-md-12" data-aos="fade-left">
+              <div class="brand-carousel swiper-container">
+                <div class="swiper-wrapper">
+                  {{ range .brand_images }}
+                    <div class="swiper-slide">
+                      <div class="brand-item">
+                        {{ partial "image.html" (dict "Src" . "Alt" "Brand Image") }}
+                      </div>
+                    </div>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+
   {{ with .Params.features }}
     {{ if .enable }}
       <section class="section features overflow-hidden">
@@ -118,6 +145,125 @@
                     {{ end }}
                   </div>
                   <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+
+  {{ with .Params.business_directions }}
+    {{ if .enable }}
+      <section class="section features overflow-hidden bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12" data-aos="fade-up">
+              <div class="section-title text-center">
+                <p class="text-uppercase text-primary font-weight-bold">{{ .subtitle | markdownify }}</p>
+                <h2 class="title">{{ .title | markdownify }}</h2>
+                <p>{{ .description | markdownify }}</p>
+              </div>
+            </div>
+          </div>
+
+          {{ with .directions_blocks }}
+            <div class="row">
+              <div class="col-lg-12" data-aos="fade-left" data-aos-delay="200">
+                <div class="features-carousel swiper-container">
+                  <div class="swiper-wrapper align-items-center">
+                    {{ range . }}
+                      <div class="swiper-slide h-auto">
+                        <!-- Карточка как ссылка -->
+                        <a href="{{ .link }}" class="features-card d-flex flex-column h-100 text-decoration-none text-dark p-4">
+                          
+                          <div class="icon text-primary mb-3">
+                            <i class="{{ .icon }}"></i>
+                          </div>
+                          
+                          <h3 class="title h5 mb-3">{{ .title | markdownify }}</h3>
+                          
+                          <!-- Список буллитов -->
+                          <ul class="list-unstyled text-start mb-0 flex-grow-1">
+                            {{ range .features_list }}
+                              <li class="small text-muted mb-2 d-flex align-items-start">
+                                <i class="las la-check text-primary me-2 mt-1" style="font-size: 12px; min-width: 12px;"></i>
+                                <span>{{ . | markdownify }}</span>
+                              </li>
+                            {{ end }}
+                          </ul>
+
+                        </a>
+                      </div>
+                    {{ end }}
+                  </div>
+                  <div class="swiper-pagination" style="position: relative; margin-top: 30px;"></div>
+                </div>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+
+
+  {{ with .Params.top_products }}
+    {{ if .enable }}
+      <section class="section features overflow-hidden">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12" data-aos="fade-up">
+              <div class="section-title text-center">
+                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
+                <h2 class="title">{{ .title | markdownify }}</h2>
+                <p>{{ .description | markdownify }}</p>
+              </div>
+            </div>
+          </div>
+
+          {{ $btnText := .button }}
+          {{ with .products }}
+            <div class="row">
+              <div class="col-lg-12" data-aos="fade-left" data-aos-delay="200">
+                <div class="features-carousel swiper-container">
+                  <div class="swiper-wrapper align-items-center">
+                    {{ range . }}
+                      <div class="swiper-slide h-auto">
+                        <a href="{{ .link }}" class="features-card d-flex flex-column h-100 text-decoration-none">                          
+                          
+                          <div class="text-center mb-3">
+                            {{ if fileExists (add `assets/` .image) }}
+                              {{ $img:= resources.Get .image }}
+                              {{ $img:= $img.Resize "575x" }}
+                              <img
+                                loading="lazy"
+                                decoding="async"
+                                class="img-fluid filmed-image rounded"
+                                width="{{ $img.Width }}"
+                                height="{{ $img.Height }}"
+                                src="{{ $img.RelPermalink }}"
+                                alt="{{ .title }}"
+                                onerror="this.onerror=null;this.src='{{ $img.RelPermalink }}'" />
+                            {{ end }}
+                          </div>
+
+                          <div class="card-content flex-grow-1 d-flex flex-column">
+                            <h3 class="title h5 mb-2">{{ .title | markdownify }}</h3>
+                            <p class="mb-4 text-muted small flex-grow-1">{{ .content | markdownify }}</p>
+                            
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                              <span class="font-weight-bold text-primary h6 mb-0">{{ .price | markdownify }}</span>
+                              <span class="btn btn-sm btn-outline-primary">{{ $btnText }}</span>
+                            </div>
+                          </div>
+
+                        </a>
+                      </div>
+                    {{ end }}
+                  </div>
+                  <div class="swiper-pagination" style="position: relative; margin-top: 30px;"></div>
                 </div>
               </div>
             </div>
@@ -247,33 +393,6 @@
               </div>
             </div>
           {{ end }}
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.brands_carousel }}
-    {{ if .enable }}
-      <section class="section overflow-hidden">
-        <div class="container">
-          <div class="row">
-            <div class="section-title text-center mb-0">
-              <h2 class="title">{{i18n .title}}</h2>
-            </div>
-            <div class="col-md-12" data-aos="fade-left">
-              <div class="brand-carousel swiper-container">
-                <div class="swiper-wrapper">
-                  {{ range .brand_images }}
-                    <div class="swiper-slide">
-                      <div class="brand-item">
-                        {{ partial "image.html" (dict "Src" . "Alt" "Brand Image") }}
-                      </div>
-                    </div>
-                  {{ end }}
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
     {{ end }}
