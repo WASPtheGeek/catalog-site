@@ -1,0 +1,66 @@
+{{ define "main" }}
+  {{ partial "components/page-header.html" . }}
+
+  {{ with .Params.solutions_section }}
+    {{ if .enable }}
+      <section class="section features overflow-hidden">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12" data-aos="fade-up">
+              <div class="section-title text-center">
+                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
+                <h2 class="title">{{ .title | markdownify }}</h2>
+                <p>{{ .description | markdownify }}</p>
+              </div>
+            </div>
+          </div>
+
+          {{ with .solutions_cards }}
+            <div class="row">
+              <div class="col-lg-12" data-aos="fade-left" data-aos-delay="200">
+                <div class="features-carousel swiper-container">
+                  <div class="swiper-wrapper align-items-center">
+                    {{ range . }}
+                      <div class="swiper-slide">
+                        <a href="{{ .link }}" class="features-card">
+                          <div class="icon text-primary">
+                            <i class="{{ .icon }}"></i>
+                          </div>
+                          <span class="text-uppercase text-primary small font-weight-bold mb-1">{{ .card_subtitle | markdownify }}</span>
+                          <h3 class="title">{{ .title | markdownify }}</h3>
+                           <ul class="features-list-bullets list-unstyled mb-0 flex-grow-1">
+                              {{ range .features_list }}
+                                <li class="feature-list mb-2 d-flex">
+                                  <i class="check-point las la-check text-success mt-1"></i>
+                                  <span>{{ . | markdownify }}</span>
+                                </li>
+                              {{ end }}
+                            </ul>
+                          <!-- Action Button inside card -->
+                          <div class="mt-4">
+                            <div href="{{ .link | relURL }}" class="btn btn-primary font-weight-bold px-4 py-2">
+                              {{ .button_text | markdownify }}
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+
+  {{ if .Content }}
+  <div class="row mt-5">
+    <div class="col-12 seo-content-block bg-light p-4 rounded shadow-sm">
+      {{ .Content }}
+    </div>
+  </div>
+  {{ end }}
+
+{{ end }}

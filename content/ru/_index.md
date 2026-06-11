@@ -1,10 +1,11 @@
 ---
 # banner
 banner:
-  subtitle: "ALPOS A3000"
-  title: "Современная POS-система для вашего бизнеса"
-  button: ""
-  button_link: "/ru/pricing"
+  title: "Современные кассовые аппараты и POS-системы для Вашего бизнеса"
+  subtitle: "Готовые решения для торговли и сферы услуг, индивидуальные интеграции для автомоек и надежный сервис по всей Латвии"
+
+  button: "Решения"
+  button_link: "/ru/solutions"
   image: "images/banner-app.png"
 
 # brands
@@ -12,124 +13,148 @@ brands_carousel:
   enable: true
   title: "our_clients"
   brand_images:
-    - "images/brands/01-colored.png"
-    - "images/brands/02-colored.png"
-    - "images/brands/04-colored.png"
-    - "images/brands/03-colored.png"
-    - "images/brands/05-colored.png"
-    - "images/brands/06-colored.png"
-    - "images/brands/04-colored.png"
-    - "images/brands/02-colored.png"
-    - "images/brands/01-colored.png"
-    - "images/brands/06-colored.png"
-    - "images/brands/05-colored.png"
+    - "images/brands/brand-1.png"
+    - "images/brands/brand-2.png"
+    - "images/brands/brand-3.svg"
+    - "images/brands/brand-4.png"
+    - "images/brands/brand-6.svg"
+    - "images/brands/brand-7.svg"
+    - "images/brands/brand-9.png"
+    - "images/brands/brand-10.png"
+    - "images/brands/brand-11.png"
+    - "images/brands/brand-12.png"
+
+top_products:
+  enable: false
+  subtitle: ""
+  title: "Топ товары"
+  description: ""
+  button: "Посмотреть"
+  products:
+    - image: "images/banner-app1.png"
+      title: "Product 1"
+      content: "Описание будет здесь"
+      price: "19.99 EUR"
+      link: "/ru/hardware/monoblocks/1"
+    - image: "images/banner-app1.png"
+      title: "Product 2"
+      content: "Описание будет здесь"
+      price: "19.99 EUR"
+      link: "/ru/hardware/monoblocks/2"
+    - image: "images/banner-app1.png"
+      title: "Product 2"
+      content: "Описание будет здесь"
+      price: "19.99 EUR"
+      link: "/ru/hardware/monoblocks/2"
+    - image: "images/banner-app1.png"
+      title: "Product 2"
+      content: "Описание будет здесь"
+      price: "19.99 EUR"
+      link: "/ru/hardware/monoblocks/2"
+    - image: "images/banner-app1.png"
+      title: "Product 2"
+      content: "Описание будет здесь"
+      price: "19.99 EUR"
+      link: "/ru/hardware/monoblocks/2"
+    - image: "images/banner-app1.png"
+      title: "Product 2"
+      content: "Описание будет здесь"
+      price: "19.99 EUR"
+      link: "/ru/hardware/monoblocks/2"
+    - image: "images/banner-app1.png"
+      title: "Product 2"
+      content: "Описание будет здесь"
+      price: "19.99 EUR"
+      link: "/ru/hardware/monoblocks/2"
 
 # features
 features:
-  enable: true
-  subtitle: "100% Соответствие требованиям СГД (VID)"
+  enable: false
+  subtitle: "100% Соответствие требованиям СГД"
   title: "Для кого предназначена эта система?"
-  description: "Система полностью сертифицирована согласно латвийскому законодательству (Правила КМ № 95/96), автоматически формирует Z-отчеты и готова к любым проверкам"
+  description: "Система полностью сертифицирована согласно законодательству Латвийской Республики (правила КМ № 95/96). Она автоматически генерирует Z-отчеты и на 100% готова к любым проверкам."
   features_blocks:
     - icon: "las la-coffee"
-      title: "Кафе и быстрое обслуживание"
-      content: "Быстрое оформление заказов на кассе, мгновенная печать бегунков на кухню или бар, простое управление меню и интеграция с банковскими терминалами."
+      title: "Кафе и быстрый сервис"
+      content: "Быстрый прием заказов на кассе, мгновенная печать чеков на кухне или в баре, простое управление меню и интеграция с банковскими терминалами."
     - icon: "las la-hamburger"
       title: "Уличная торговля / Food Trucks"
-      content: "Работа без интернета (автономный offline-режим) и максимальная мобильность при работе на планшете."
+      content: "Полноценная работа без подключения к интернету (автономный режим) и максимальная мобильность благодаря использованию планшетов."
     - icon: "las la-heart"
       title: "Индустрия красоты / Салоны"
-      content: "Удобная предварительная запись клиентов, календарь мастеров, а также учет расходных материалов."
+      content: "Система записи клиентов и календарь, а также точный учет использованных материалов и товаров."
     - icon: "las la-shopping-basket"
       title: "Розничная торговля / Магазины"
-      content: "Быстрое сканирование штрих-кодов, оперативный прием товара и автоматизированная инвентаризация склада."
+      content: "Молниеносное сканирование штрихкодов, быстрый прием товаров и инвентаризация склада."
 
-# intro_video
-intro_video:
-  enable: false
-  subtitle: "Short Intro Video"
-  title: "Built exclusively for you"
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas <br> Werat viverra id et aliquet. vulputate egestas sollicitudin."
-  video_url: "https://www.youtube.com/embed/dyZcRRWiuuw"
-  video_thumbnail: "images/video-popup.jpg"
+# business_directions
+business_directions:
+  enable: true
+  subtitle: "Направления бизнеса"
+  title: "Готовые решения и POS-технологии"
+  description: "Обеспечиваем всё необходимое для эффективности Вашей компании — от сертифицированных кассовых аппаратов до умного складского ПО."
+  directions_blocks:
+    - icon: "las la-key"
+      title: "Кассовые системы и POS-софт"
+      link: "/ru/solutions/retail-services"
+      button_text: "Узнать больше"
+      features_list:
+        - "Готовые POS-системы для кафе, баров и магазинов"
+        - "Мобильные кассовые аппараты и бесконтактные платежные терминалы"
+        - "Полное соответствие требованиям СГД (VID) и удаленное управление"
+    
+    - icon: "las la-cash-register"
+      title: "Покупка торгового оборудования"
+      link: "/ru/products"
+      button_text: "Узнать больше"
+      features_list:
+        - "Сертифицированные кассовые аппараты, принтеры чеков и денежные ящики"
+        - "Сканеры штрихкодов и электронные торговые весы"
+        - "Официальная гарантия, настройка и доставка по всей Латвии"
 
+    - icon: "las la-tools"
+      title: "Индивидуальные системы и интеграция"
+      link: "/ru/solutions/custom-projects"
+      button_text: "Узнать больше"
+      features_list:
+        - "Интеграция систем складского учета (Inventory management)"
+        - "Решения для киосков самообслуживания и автомоек"
+        - "Реализуем нестандартные спецпроекты по договоренности"
 
-# products
 # products
 products:   
-  enable: true
+  enable: false
   title: "Профессиональное оборудование для Вашего бизнеса"
   subtitle: "Продукты"
-  description: "Полный спектр оборудования, которое идеально подходит и технически согласовано для работы с системой ALPOS"
+  description: "Полный спектр оборудования, идеально подходящего и технически адаптированного для работы с системой ALPOS"
   block:
   - subtitle: ""
     title: "POS-терминалы"
-    description: "Надежные сенсорные кассовые компьютеры класса «все в одном», созданные для высоких нагрузок в ресторанах и торговых точках"
+    description: "Надежные моноблоки all-in-one с сенсорным экраном, разработанные для интенсивной работы на торговых точках"
     image: "images/features/features-01.png"
     link: "products/monoblocks"
 
   - subtitle: ""
     title: "Принтеры чеков и кухни"
-    description: "Высокоскоростные термопринтеры для мгновенной печати чеков на кассе или вывода счетов для заказов на кухне/в баре"
+    description: "Высокоскоростные термопринтеры для мгновенной печати чеков на кассе или вывода заказов на кухню/в бар"
     image: "images/features/features-04.png"
     link: "products/printers"
 
   - subtitle: "ALPOS A3000"
     title: "Кассовые системы"
-    description: "Комплексные решения, которые полностью соответствуют законодательству Латвийской Республики и сертифицированы согласно требованиям СГД (VID)"
+    description: "Комплексные решения, полностью соответствующие законодательству Латвийской Республики и сертифицированные под требования СГД"
     image: "images/features/features-02.png"
     link: "products/pos-systems"
 
   - subtitle: ""
     title: "Киоски самообслуживания"
-    description: "Современные интерактивные экраны и уличные/внутренние киоски, позволяющие клиентам делать заказы самостоятельно, сокращая очереди"
+    description: "Современные интерактивные экраны, уличные и внутренние киоски, позволяющие клиентам оформлять заказы самостоятельно и сокращать очереди"
     image: "images/features/features-06.png"
     link: "products/kiosks"
 
   - subtitle: ""
     title: "POS-периферия"
-    description: "Дополнительное оборудование для полноценной работы: денежные ящики, сканеры штрих-кодов, дисплеи покупателя и штативы для карточных терминалов"
+    description: "Дополнительное оборудование для полноценной работы: денежные ящики, сканеры штрихкодов, дисплеи покупателя и штативы для платежных терминалов"
     image: "images/features/features-03.png"
     link: "products/peripherals"
-
-
-# testimonials
-testimonials:
-  enable: false
-  subtitle: "Our Testimonial"
-  title: "Don't take our word for it"
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas <br> Werat viverra id et aliquet. vulputate egestas sollicitudin."
-  image_left: "images/testimonials-01.png"
-  image_right: "images/testimonials-02.png"
-
-  testimonials_quotes:
-    - quote: "Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs dolor faucibus"
-      name: "David Cameron"
-      designation: "CEO, Nexuspay"
-      image: "images/user-img/05-i.jpg"
-
-    - quote: "Conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor faucibus"
-      name: "David Cameron"
-      designation: "CEO, Nexuspay"
-      image: "images/user-img/06-i.jpg"
-
-    - quote: "Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor"
-      name: "David Cameron"
-      designation: "CEO, Nexuspay"
-      image: "images/user-img/07-i.jpg"
-
-    - quote: "Lorem ipsum dolor amet, conseetur adipiscing elit. porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor faucibus"
-      name: "David Cameron"
-      designation: "CEO, Nexuspay"
-      image: "images/user-img/08-i.jpg"
-
-    - quote: "Lorem ipsum dolor ame conseetur. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor faucibus"
-      name: "David Cameron"
-      designation: "CEO, Nexuspay"
-      image: "images/user-img/09-i.jpg"
-
-    - quote: "Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue lectudbfs pellentesque vitae dolor faucibus"
-      name: "David Cameron"
-      designation: "CEO, Nexuspay"
-      image: "images/user-img/10-i.jpg"
 ---

@@ -1,287 +1,85 @@
 {{ define "main" }}
   {{ partial "components/page-header.html" . }}
 
-  {{ with .Params.who_we_are }}
-    {{ if .enable }}
-      <section class="section-sm">
-        <div class="container position-relative">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-4 col-md-6" data-aos="fade-up">
-              <div class="section-title">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-                <p>{{ .description | markdownify }}</p>
-              </div>
-            </div>
-            <div
-              class="col-lg-5 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="150">
-              <div class="about-image">
-                <div class="block">
-                  {{ partial "image.html" (dict "Src" .image "Alt" "about-image" "Size" "464x") }}
-
-                  <div class="has-circle">
-                    <span class="circle-4 ratio-20 fill"></span>
-                    <span class="circle-5 ratio-47"></span>
-                  </div>
-                </div>
-
-                <div class="has-circle">
-                  <span class="circle-1 ratio-85 fill"></span>
-                  <span class="circle-2 ratio-37"></span>
-                  <span class="circle-3 ratio-20 fill"></span>
-                  <span class="circle-6 ratio-85 fill"></span>
-                </div>
-              </div>
-            </div>
-          </div>
+  <!-- ABOUT INTRO SECTION -->
+  {{ with .Params.about_intro }}
+  <section class="section pt-5 pb-5 bg-white">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-9" data-aos="fade-up">
+          <span class="text-uppercase text-primary small font-weight-bold d-block mb-2">{{ .subtitle | markdownify }}</span>
+          <h2 class="font-weight-bold mb-4">{{ .title | markdownify }}</h2>
+          <p class="text-muted lead" style="line-height: 1.7;">{{ .text | markdownify }}</p>
         </div>
-      </section>
-    {{ end }}
+      </div>
+    </div>
+  </section>
   {{ end }}
 
-  {{ with .Params.what_we_do }}
-    {{ if .enable }}
-      <section data-aos="fade-in">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <div class="section-title text-center">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
+  <!-- NUMERICAL STATS COUNTERS -->
+  {{ with .Params.stats_section }}
+  <section class="section py-5 bg-light border-top border-bottom">
+    <div class="container">
+      <div class="row g-4 justify-content-center text-center">
+        {{ range .items }}
+          {{ if .number }}
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="p-4 bg-white rounded shadow-sm h-100">
+              <div class="display-4 font-weight-bold text-primary mb-2">
+                {{ .number }} <span style="font-size: 1.5rem; vertical-align: middle;">{{ .suffix }}</span>
               </div>
+              <p class="text-muted small mb-0" style="line-height: 1.4;">{{ .text | markdownify }}</p>
             </div>
-
-            {{ range .block }}
-              <div class="col-xl-5 col-lg-6">
-                <div class="text-center px-0 px-md-5 mt-4">
-                  <h3 class="text-capitalize">{{ .title | markdownify }}</h3>
-                  <p>{{ .content | markdownify }}</p>
-                </div>
-              </div>
-            {{ end }}
           </div>
-        </div>
-      </section>
-    {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
   {{ end }}
 
-  {{ with .Params.our_mission }}
-    {{ if .enable }}
-      <section class="section-sm">
-        <div class="container position-relative">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-5 col-md-6" data-aos="fade-up">
-              <div class="about-image">
-                <div class="block">
-                  {{ partial "image.html" (dict "Src" .image "Alt" "about-image" "Size" "4645x") }}
+  <!-- CORE SOLUTIONS / WHAT WE DO SECTION -->
+  {{ with .Params.solutions_section }}
+  <section class="section py-5 bg-white">
+    <div class="container">
+      
+      <!-- Grid Header -->
+      <div class="row mb-5">
+        <div class="col-lg-12 text-center" data-aos="fade-up">
+          <span class="text-uppercase text-primary small font-weight-bold d-block mb-2">{{ .subtitle | markdownify }}</span>
+          <h3 class="font-weight-bold mb-3">{{ .title | markdownify }}</h3>
+        </div>
+      </div>
 
-
-                  <div class="has-circle">
-                    <span class="circle-4 ratio-20 fill"></span>
-                    <span class="circle-5 ratio-47"></span>
-                  </div>
-                </div>
-
-                <div class="has-circle">
-                  <span class="circle-1 ratio-85 fill"></span>
-                  <span class="circle-2 ratio-37"></span>
-                  <span class="circle-3 ratio-20 fill"></span>
-                  <span class="circle-6 ratio-85 fill"></span>
-                </div>
+      <!-- Solutions 2x2 Grid -->
+      <div class="row g-4">
+        {{ range .items }}
+          <div class="col-md-6" data-aos="fade-up">
+            <div class="p-4 rounded-3 border h-100 bg-light d-flex align-items-start transition-hover shadow-sm">
+              <div class="icon-box text-primary me-3 bg-white p-3 rounded shadow-sm d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; flex-shrink: 0;">
+                <i class="{{ .icon }}" style="font-size: 1.8rem;"></i>
               </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="150">
-              <div class="section-title">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-                <p>{{ .description | markdownify }}</p>
+              <div>
+                <h4 class="h5 font-weight-bold text-dark mb-2">{{ .title | markdownify }}</h4>
+                <p class="text-muted small mb-0" style="line-height: 1.5;">{{ .description | markdownify }}</p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    {{ end }}
+        {{ end }}
+      </div>
+
+    </div>
+  </section>
   {{ end }}
 
-  {{ with .Params.about_video }}
-    {{ if .enable }}
-      <section class="video-popup video-popup-two has-bg-color">
-        <div class="container-xxl position-relative">
-          <div class="row justify-content-center">
-            <div class="col-lg-12">
-              <div class="block">
-                <div class="row justify-content-center align-items-center">
-                  <div class="col-lg-5">
-                    <div class="section-title" data-aos="fade-up">
-                      <p class="text-uppercase">
-                        {{ .subtitle | markdownify }}
-                      </p>
-                      <h2 class="title">{{ .title | markdownify }}</h2>
-                      <p>{{ .description | markdownify }}</p>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-5">
-                    <div
-                      class="video-block"
-                      data-aos="fade-up"
-                      data-aos-delay="100">
-                      <button
-                        type="button"
-                        title="Play Video Button"
-                        class="video-play-btn"
-                        data-src="{{ .video_url }}">
-                        <i class="las la-play"></i>
-                      </button>
-                      {{ partial "image.html" (dict "Src" .video_thumbnail "Alt" "Video Thumbnail" "Class" "video-thumb"
-                        "Size" "700x")
-                      }}
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="has-circle has-bg-anim" data-aos="fade-in">
-                <span class="circle-1 ratio-32"></span>
-                <span class="circle-2 ratio-20"></span>
-                <span class="circle-3 ratio-20"></span>
-                <span class="circle-4 ratio-20"></span>
-                <span class="circle-5 ratio-37"></span>
-                <span class="circle-6 ratio-20"></span>
-                <span class="circle-7 ratio-47"></span>
-                <span class="circle-8 ratio-37"></span>
-
-                <svg
-                  class="text-primary"
-                  style="opacity:.15"
-                  width="100%"
-                  height="100%"
-                  viewBox="0 0 1401 613"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M2 580C35.1785 462.015 166.359 247.408 425.652 332.866C749.767 439.688 890.318 302.84 946.338 181.583C1002.36 60.3256 1149.41 -52.8479 1400 35.4968"
-                    stroke="currentColor"
-                    stroke-width="4"
-                    stroke-dasharray="10 10" />
-                  <path
-                    d="M1398 0.999977C1364.87 125.95 1233.88 353.224 974.955 262.722C651.302 149.594 510.953 294.52 455.013 422.935C399.073 551.35 252.231 671.203 2.00002 577.644"
-                    stroke="currentColor"
-                    stroke-width="4"
-                    stroke-dasharray="10 10" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.brands_carousel }}
-    {{ if .enable }}
-      <section class="section-sm">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-title text-center" data-aos="fade-in">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-              </div>
-            </div>
-            {{ with site.GetPage (string .Params.clients.section) }}
-              {{ with .Params.brands_carousel }}
-                <div class="col-md-12" data-aos="fade-left">
-                  <div class="brand-carousel swiper-container border-0 mt-0">
-                    <div class="swiper-wrapper">
-                      {{ range .brand_images }}
-                        <div class="swiper-slide">
-                          <div class="brand-item">
-                            {{ partial "image.html" (dict "Src" . "Alt" "Brand Image") }}
-                          </div>
-                        </div>
-                      {{ end }}
-                    </div>
-                  </div>
-                </div>
-              {{ end }}
-            {{ end }}
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.our_team }}
-    {{ if .enable }}
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-title text-center" data-aos="fade-in">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-                <p>{{ .description | markdownify }}</p>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-around">
-            {{ range .team }}
-              <div class="col-lg-3 col-md-4 col-6">
-                <div class="team-item text-center">
-                  <div class="team-image">
-                    {{ partial "image.html" (dict "Src" .image "Alt" "Video Thumbnail" "Class" "w-100 rounded-circle" "Size"
-                      "175x")
-                    }}
-                  </div>
-                  <h3>{{ .name | markdownify }}</h3>
-                  <p>{{ .designation | markdownify }}</p>
-                </div>
-              </div>
-            {{ end }}
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.our_office }}
-    {{ if .enable }}
-      <section class="section-sm mb-4">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-8 col-md-10">
-              <div class="section-title text-center mb-0" data-aos="fade-in">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-                <p>{{ .description | markdownify }}</p>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div class="row">
-                {{ range .office_locations }}
-                  <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="office-loc-item">
-                      {{ partial "image.html" (dict "Src" .country_flag "Alt" "Flags" "Size" "80x") }}
-                      <h3>{{ .city | markdownify }}</h3>
-                      <p>{{ .address_line_one | markdownify }}</p>
-                      <p>{{ .address_line_two | markdownify }}</p>
-                    </div>
-                  </div>
-                {{ end }}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
+  <!-- BOTTOM CALL TO ACTION -->
+  <section class="section py-5 text-center bg-light">
+    <div class="container" data-aos="fade-up">
+      <h3 class="font-weight-bold mb-3">Sāksim sadarbību jau šodien?</h3>
+      <p class="text-muted mb-4">Uzticiet savas tirdzniecības vietas tehniskās sistēmas profesionāļiem.</p>
+      <a href="/lv/kontakti/" class="btn btn-primary font-weight-bold px-5 py-3 shadow">
+        Sazināties ar mums
+      </a>
+    </div>
+  </section>
 {{ end }}

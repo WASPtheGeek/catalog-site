@@ -27,143 +27,6 @@ form:invalid button[type="submit"] {
     font-weight: bold;
 }
 
-// banner style
-.banner {
-  position: relative;
-  // margin-top: 2rem;
-  // overflow: hidden;
-
-  .col-lg-10 {
-    height: fit-content;
-  }
-
-  .block {
-    padding: 5rem 11.25rem 2.5rem;
-
-    @include desktop-xl {
-      padding: 5rem 1.875rem 2.5rem;
-    }
-
-    @include mobile {
-      padding: 5rem 0.9rem 2.5rem;
-    }
-  }
-
-  .block,
-  .banner-image {
-    position: relative;
-    z-index: 3;
-
-    img {
-      display: none;
-      border-radius: 1.125rem;
-      box-shadow: 0px 0.375rem 6.8rem rgba($black, 0.15);
-      filter: brightness(1.05);
-      height: 55%;
-      width: auto;
-      margin: auto;
-    }
-  }
-
-  .has-circle {
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    background-color: rgba(254, 96, 25, 0.05);
-    background-image: 
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.85) 0%, rgba(254, 96, 25, 0.2) 100%),
-    url(/images/banner-app-static.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    // mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, black 45%, black 55%, rgba(0, 0, 0, 0) 100%);
-    height: 100%;
-    transform: translateX(-50%);
-    left: 50%;
-    width: 100%;
-
-    .wave-1 {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-
-    .circle-1 {
-      top: 3.125rem;
-      left: 11%;
-    }
-
-    .circle-2 {
-      top: 29%;
-      left: 3%;
-
-      @include desktop {
-        display: none;
-      }
-    }
-
-    .circle-3 {
-      top: 45%;
-      left: 22%;
-    }
-
-    .circle-4 {
-      bottom: 35%;
-      left: 15%;
-
-      @include desktop {
-        left: 5%;
-      }
-    }
-
-    .circle-5 {
-      bottom: 8%;
-      left: 6%;
-
-      @include mobile-xs {
-        left: 40%;
-      }
-    }
-
-    .circle-6 {
-      top: 6.25rem;
-      right: 12%;
-    }
-
-    .circle-7 {
-      top: 30%;
-      right: 2%;
-
-      @include tablet {
-        display: none;
-      }
-    }
-
-    .circle-8 {
-      top: 52%;
-      right: 19%;
-    }
-
-    .circle-9 {
-      top: 55%;
-      right: 33%;
-
-      @include mobile-xs {
-        display: none;
-      }
-    }
-
-    .circle-10 {
-      bottom: 20%;
-      right: 5%;
-
-      @include mobile-xs {
-        display: none;
-      }
-    }
-  }
-}
-
 // page header
 .page-header {
   position: relative;
@@ -426,7 +289,7 @@ form:invalid button[type="submit"] {
   border-left: 0;
   border-right: 0;
   padding: 1.25rem 0;
-  margin-top: 3.125rem;
+  margin-top: 1rem;
 
   .brand-item {
     display: flex;
@@ -451,6 +314,15 @@ form:invalid button[type="submit"] {
 
 // features
 .features {
+  .feature-list {
+    align-items: center;
+    text-align: start;
+    
+    .check-point {
+      margin-right: 1rem;
+    }
+  }
+
   .features-carousel {
     padding-bottom: 2.5rem;
   }
@@ -463,7 +335,9 @@ form:invalid button[type="submit"] {
     margin: 1.25rem 0.9rem;
     border-radius: 0.375rem;
     transition: 0.3s ease;
-    min-height: 400px;
+    min-height: 550px;    
+    display: flex;
+    flex-direction: column;
 
     @include tablet {
       padding: 2.5rem 1.5rem;
@@ -1053,14 +927,15 @@ footer.footer {
 
 @media (min-width: 1400px) {
   .banner {
-    .banner-image img {
-      display: block
-    }
+    // .banner-image img {
+    //   display: block
+    // }
 
     .has-circle {
-      background-image: none;
-      height: calc(50% + 10rem);
-      width: calc(100% - 1.875rem);
+      // background-image: none;
+      // height: calc(70% + 10rem);
+      // width: calc(100% - 1.875rem);
     }
   };
 }
+

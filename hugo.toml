@@ -8,6 +8,10 @@ pagination.pagerSize = 2 # see https://gohugo.io/templates/pagination/#configura
 # post excerpt
 summaryLength = 10 # see https://gohugo.io/content-management/excerpts/
 
+
+# enable robots.txt
+enableRobotsTXT = true
+
 # disable language
 disableLanguages = [] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
 
@@ -124,7 +128,7 @@ light = "#FAFAFA"
 
 # font variables
 # base font size for full website, 
-font_size = "16px" # default is 16px
+font_size = "18px" # default is 16px
 
 # Font Scale Sizes
 # "minorSecond": 1.067,

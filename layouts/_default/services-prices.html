@@ -1,0 +1,57 @@
+{{ define "main" }}
+  {{ partial "components/page-header.html" . }}
+
+  {{ with .Params.prices_section }}
+    {{ if .enable }}
+      <section class="section py-5 bg-white">
+        <div class="container">
+          
+          <div class="row mb-5">
+            <div class="col-lg-12 text-center" data-aos="fade-up">
+              <span class="text-uppercase text-primary small font-weight-bold d-block mb-2">{{ .subtitle | markdownify }}</span>
+              <h1 class="font-weight-bold mb-3">{{ .title | markdownify }}</h1>
+              <p class="text-muted small">{{ .note | markdownify }}</p>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-9">
+              
+              {{ range .categories }}
+                <div class="mb-5" data-aos="fade-up">
+                  <h3 class="h5 font-weight-bold text-primary border-bottom pb-2 mb-4">{{ .name | markdownify }}</h3>
+                  
+                  <div class="price-list-wrapper">
+                    {{ range .items }}
+                      <div class="price-item d-flex align-items-baseline justify-content-between mb-3">
+                        <div class="price-name text-dark pe-3">
+                          {{ .service | markdownify }}
+                        </div>
+                        <div class="price-leader flex-grow-1 border-bottom border-dotted mx-2" style="border-style: dotted !important; border-color: #ccc !important; height: 1px;"></div>
+                        <div class="price-value font-weight-bold text-nowrap text-dark">
+                          {{ .price }} €
+                        </div>
+                      </div>
+                    {{ end }}
+                  </div>
+
+                </div>
+              {{ end }}
+
+            </div>
+          </div>
+
+          <div class="row mt-5" data-aos="fade-up">
+            <div class="col-lg-12 text-center">
+              <p class="text-muted mb-4">Nepieciešama steidzama palīdzība vai nestandarta darbu tāmēšana?</p>
+              <a href="/lv/contact/" class="btn btn-primary font-weight-bold px-5 py-3 shadow-sm">
+                Sazināties ar servisu
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+{{ end }}

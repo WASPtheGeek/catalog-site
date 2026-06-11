@@ -86,13 +86,13 @@
 
 ######## call-to-action ########
 - id: cta_title
-  translation: "Vēlaties redzēt ALPOS darbībā?"
+  translation: "Ir jautājumi par ALPOS sistēmām?"
 
 - id: cta_content
-  translation: "Atstājiet pieteikumu, un mūsu speciālists nodrošinās īsu tiešsaistes demonstrāciju, atbildēs uz visiem jautājumiem un palīdzēs pielāgot izvēlni Jūsu biznesa specifikai."
+  translation: "Mūsu komanda ir gatava palīdzēt Jums darba dienās no 9:00 līdz 18:00."
 
 - id: cta_button
-  translation: "Sazināties ar mums"
+  translation: "Skatīt kontaktus un adreses"
 
 ######## Footer ########
 - id: footer_info

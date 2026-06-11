@@ -1,0 +1,78 @@
+.banner {
+  position: relative;
+  padding: 5rem 0;
+  background-color: #ffffff;
+
+  @media (max-width: 991px) {
+    padding: 3.5rem 0 2rem 0;
+  }
+
+  .banner-side-image-wrapper {
+    position: relative;
+    z-index: 5;
+    display: inline-block;
+    width: 100%;
+    
+    @media (min-width: 992px) {
+      max-width: 100%;
+      margin-top: 0;
+    }
+
+    @media (max-width: 991px) {
+      max-width: 280px; 
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 1rem 2.5rem rgba($black, 0.08);
+    }
+  }
+
+  .has-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+    pointer-events: none;
+    background-color: rgba(254, 96, 25, 0.03);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(254, 96, 25, 0.1) 100%);
+
+    @media (max-width: 991px) {
+      height: 100%;
+    }
+
+    .wave-1 {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .circle-1 { top: 3.125rem; left: 11%; }
+    .circle-2 { 
+      top: 21%; left: 3%; 
+      
+      @media (max-width: 1199px) {
+        top: 31%;
+        left: 53%;
+      }
+
+      @media (max-width: 991px) {
+        top: 67%;
+        left: 5%;
+      }
+    }
+    .circle-3 { top: 47%; left: 2%; }
+    .circle-4 { bottom: 35%; left: 15%; }
+    .circle-5 { bottom: 8%; left: 8%; }
+    .circle-6 { top: 3rem; right: 12%; }
+    .circle-7 { top: 30%; right: 2%; }
+    .circle-8 { top: 4%; right: 19%; }
+    .circle-9 { top: 58%; right: 4%; }
+    .circle-10 { bottom: 14%; right: 1%; }
+  }
+}

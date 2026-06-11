@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow old url
+Disallow: /html/
+
+# Path to the sitemap
+Sitemap: {{ "sitemap.xml" | absURL }}

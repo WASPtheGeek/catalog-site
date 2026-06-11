@@ -1,8 +1,9 @@
 ---
 # banner
 banner:
+  title: "Mūsdienīgi kases aparāti un POS sistēmas Jūsu biznesam"
   subtitle: "Gatavi risinājumi tirdzniecībai un pakalpojumiem, individuālas integrācijas automazgātavām un uzticams serviss visā Latvijā"
-  title: "Sertificētas kases sistēmas un POS aprīkojums Jūsu biznesam"
+
   button: "Risinājumi"
   button_link: "/lv/solutions"
   image: "images/banner-app.png"
@@ -24,7 +25,7 @@ brands_carousel:
     - "images/brands/brand-12.png"
 
 top_products:
-  enable: true
+  enable: false
   subtitle: ""
   title: "Top preces"
   description: ""
@@ -90,46 +91,39 @@ features:
 business_directions:
   enable: true
   subtitle: "Biznesa virzieni"
-  title: "Gatavi risinājumi un individuāla pieeja"
-  description: "Nodrošinām visu nepieciešamo Jūsu uzņēmuma efektivitātei — no sertificētām kases sistēmām līdz sarežģītiem tehnoloģiskiem specprojektiem."
+  title: "Gatavi risinājumi un POS tehnoloģijas"
+  description: "Nodrošinām visu nepieciešamo Jūsu uzņēmuma efektivitātei — no sertificētiem kases aparātiem līdz viedai noliktavas programmatūrai."
   directions_blocks:
     - icon: "las la-key"
-      title: "Kases sistēmas «zem atslēgas»"
-      link: "/lv/solutions"
+      title: "Kases sistēmas un POS programmatūra"
+      link: "/lv/solutions/retail-services"
+      button_text: "Uzzināt vairāk"
       features_list:
-        - "Gatavi risinājumi tirdzniecībai un pakalpojumiem"
-        - "Pilnīga atbilstība VID prasībām (MK Nr. 95/96)"
-        - "Pilns tehniskais atbalsts un uzstādīšana"
+        - "Gatavas POS sistēmas kafejnīcām, bāriem un veikaliem"
+        - "Mobilie kases aparāti un bezkontakta maksājumu termināļi"
+        - "Pilnīga atbilstība VID prasībām un attālināta vadība"
     
     - icon: "las la-cash-register"
-      title: "POS aprīkojuma iegāde"
+      title: "Tirdzniecības aprīkojuma iegāde"
       link: "/lv/products"
+      button_text: "Uzzināt vairāk"
       features_list:
-        - "Izturīgi monobloki, čeku printeri un perifērija"
-        - "Oficiālā garantija un iekārtu apkope"
-        - "Ātra piegāde un pieslēgšana visā Latvijā"
+        - "Sertificēti kases aparāti, čeku printeri un kases kastes"
+        - "Svītrkodu lasītāji un elektroniskie tirdzniecības svari"
+        - "Oficiālā garantija, konfigurēšana un piegāde Latvijā"
 
     - icon: "las la-tools"
-      title: "Individuāli integrācijas risinājumi"
-      link: "/lv/integrations"
+      title: "Individuālas sistēmas un integrācija"
+      link: "/lv/solutions/custom-projects"
+      button_text: "Uzzināt vairāk"
       features_list:
-        - "Sistēmas automazgātavām un pašapkalpošanās kioskiem"
-        - "Unikālu funkciju izstrāde pēc specprojekta"
-        - "Tehniskais atbalsts un monitorings 24/7"
-
-# intro_video
-intro_video:
-  enable: false
-  subtitle: "Short Intro Video"
-  title: "Built exclusively for you"
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas <br> Werat viverra id et aliquet. vulputate egestas sollicitudin."
-  video_url: "https://www.youtube.com/embed/dyZcRRWiuuw"
-  video_thumbnail: "images/features/video-popup.jpg"
-
+        - "Inventory management (noliktavas uzskaites) integrācija"
+        - "Risinājumi pašapkalpošanās kioskiem un automazgātavām"
+        - "Īstenojam nestandarta specprojektus pēc vienošanās"
 
 # products
 products:   
-  enable: true
+  enable: false
   title: "Profesionāls aprīkojums Jūsu biznesam"
   subtitle: "Produkti"
   description: "Pilns aparatūras klāsts, kas ir ideāli piemērots un tehniski salāgots darbam ar ALPOS sistēmu"
@@ -163,45 +157,4 @@ products:
     description: "Papildaprīkojums pilnvērtīgam darbam: naudas lādes, svītru kodu skeneri, klientu displeji un karšu termināļu statīvi"
     image: "images/features/features-03.png"
     link: "products/peripherals"
-
-
-# testimonials
-testimonials:
-  enable: false
-  subtitle: "Our Testimonial"
-  title: "Don't take our word for it"
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas <br> Werat viverra id et aliquet. vulputate egestas sollicitudin."
-  image_left: "images/features/testimonials-01.png"
-  image_right: "images/features/testimonials-02.png"
-
-  testimonials_quotes:
-    - quote: "Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs dolor faucibus"
-      name: "David Cameron"
-      designation: "CEO, Nexuspay"
-      image: "images/features/user-img/05-i.jpg"
-
-    - quote: "Conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor faucibus"
-      name: "David Cameron"
-      designation: "CEO, Nexuspay"
-      image: "images/features/user-img/06-i.jpg"
-
-    - quote: "Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor"
-      name: "David Cameron"
-      designation: "CEO, Nexuspay"
-      image: "images/features/user-img/07-i.jpg"
-
-    - quote: "Lorem ipsum dolor amet, conseetur adipiscing elit. porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor faucibus"
-      name: "David Cameron"
-      designation: "CEO, Nexuspay"
-      image: "images/features/user-img/08-i.jpg"
-
-    - quote: "Lorem ipsum dolor ame conseetur. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor faucibus"
-      name: "David Cameron"
-      designation: "CEO, Nexuspay"
-      image: "images/features/user-img/09-i.jpg"
-
-    - quote: "Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue lectudbfs pellentesque vitae dolor faucibus"
-      name: "David Cameron"
-      designation: "CEO, Nexuspay"
-      image: "images/features/user-img/10-i.jpg"
 ---

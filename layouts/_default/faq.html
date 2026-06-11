@@ -1,0 +1,74 @@
+{{ define "main" }}
+  {{ partial "components/page-header.html" . }}
+
+  <!-- FAQ ACCORDION SECTION -->
+  {{ with .Params.faq_section }}
+  <section class="section py-5 bg-white">
+    <div class="container">
+      
+      <div class="row mb-5">
+        <div class="col-lg-12 text-center" data-aos="fade-up">
+          <span class="text-uppercase text-primary small font-weight-bold d-block mb-2">{{ .subtitle | markdownify }}</span>
+          <h1 class="font-weight-bold mb-3">{{ .title | markdownify }}</h1>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          
+          <div class="faq-accordion">
+            {{ range .items }}
+              <details class="mb-3 border rounded bg-light" style="transition: all 0.3s ease;">
+                <!-- Accordion Header -->
+                <summary class="p-4 font-weight-bold text-dark d-flex justify-content-between align-items-center" style="cursor: pointer; list-style: none;">
+                  <span>{{ .question | markdownify }}</span>
+                  <span class="icon text-primary font-weight-bold" style="font-size: 1.2rem;">+</span>
+                </summary>
+                
+                <!-- Accordion Content -->
+                <div class="p-4 bg-white border-top text-muted" style="line-height: 1.6;">
+                  {{ .answer | markdownify }}
+                </div>
+              </details>
+            {{ end }}
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Support CTA Box -->
+      <div class="row mt-5" data-aos="fade-up">
+        <div class="col-lg-12 text-center">
+          <p class="text-muted mb-4">Neatradāt atbildi uz savu jautājumu?</p>
+          <a href="/lv/contact/" class="btn btn-primary font-weight-bold px-5 py-3 shadow-sm">
+            Uzdot jautājumu servisam
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- SCHEMA.ORG FAQPAGE INJECTION FOR GOOGLE SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {{ range $index, $element := .Params.faq_section.items }}
+      {{ if $index }},{{ end }}
+      {
+        "@type": "Question",
+        "name": {{ $element.question | plainify }},
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": {{ $element.answer | plainify }}
+        }
+      }
+      {{ end }}
+    ]
+  }
+  </script>
+
+{{ end }}

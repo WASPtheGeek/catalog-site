@@ -3,7 +3,7 @@ body {
   background-color: $white;
   font-family: $font-primary;
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.7;
 }
 
@@ -81,11 +81,7 @@ img {
 }
 
 .section {
-  padding: 5rem 0;
-
-  &-sm {
-    padding: 4rem 0;
-  }
+  padding: 1rem 0;
 }
 
 .section-title {
@@ -290,7 +286,7 @@ img {
 }
 
 .content {
-  font-size: 0.9rem;
+  font-size: 1rem;
 
   a {
     color: #888;

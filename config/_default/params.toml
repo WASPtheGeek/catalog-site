@@ -18,7 +18,7 @@ footer_info = "footer_info" # see i18n files for translation
 contact_form_action = "" # contact form works with https://formspree.io
 
 # enable or disable popup module
-popup = true
+popup = false
 
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
 custom_script= "" 

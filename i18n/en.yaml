@@ -83,13 +83,13 @@
 
 ######## call-to-action ########
 - id: cta_title
-  translation: "Want to see ALPOS in action?"
+  translation: "Have questions about ALPOS systems?"
 
 - id: cta_content
-  translation: "Submit a request, and our specialist will provide a brief online demonstration, answer all your questions, and help tailor the menu to your specific business needs."
+  translation: "Our team is ready to help you on business days from 9:00 AM to 6:00 PM."
 
 - id: cta_button
-  translation: "Book a Demo"
+  translation: "View contacts and addresses"
 
 ######## Footer ########
 - id: footer_info
