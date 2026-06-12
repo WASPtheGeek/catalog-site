@@ -6,14 +6,21 @@
   itemscope
   itemtype="http://schema.org/WebPage">
   <head>
+    <link rel="canonical" href="{{ .Permalink }}">
     {{ partial "essentials/head.html" . }}
-
 
     <!-- cache partial only in production -->
     {{ if hugo.IsProduction }}
       {{ partialCached "essentials/style.html" . }}
     {{ else }}
       {{ partial "essentials/style.html" . }}
+    {{ end }}
+
+    {{ if .IsTranslated }}
+      {{ range .Translations }}
+        <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+      {{ end }}
+      <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
     {{ end }}
   </head>
 
