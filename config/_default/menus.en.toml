@@ -14,71 +14,71 @@ hasChildren = true
 
   [[main]]
   parent = "Solutions"
-  name = "Retail & Services"
+  name = "Retail and Services"
   url = "/solutions/retail-services"
   weight = 1
 
   [[main]]
   parent = "Solutions"
-  name = "Car Washes & Custom Projects"
+  name = "Car Washes and Custom Projects"
   url = "/solutions/custom-projects"
   weight = 2
 
   [[main]]
   parent = "Solutions"
-  name = "Services & Prices"
+  name = "Services and Prices"
   url = "/solutions/services-and-prices"
-  weight = 3
+  weight = 2
 
 [[main]]
-name = "ALPOS Software"
+name = "Software"
 url = "/software"
 weight = 3
 
 [[main]]
-name = "POS Hardware"
+name = "Hardware"
 url = "/hardware"
 weight = 4
 hasChildren = true
 
-  [[main]]
-  parent = "POS Hardware"
-  name = "POS Monoblocks"
-  url = "/products/monoblocks/"
-  weight = 1
+  # [[main]]
+  # parent = "Hardware"
+  # name = "POS Monoblocks"
+  # url = "/products/monoblocks/"
+  # weight = 1
 
-  [[main]]
-  parent = "POS Hardware"
-  name = "Receipt Printers"
-  url = "/products/printers/"
-  weight = 2
+  # [[main]]
+  # parent = "Hardware"
+  # name = "Receipt Printers"
+  # url = "/products/printers/"
+  # weight = 2
 
-  [[main]]
-  parent = "POS Hardware"
-  name = "POS Systems"
-  url = "/products/pos-systems/"
-  weight = 3
+  # [[main]]
+  # parent = "Hardware"
+  # name = "POS Systems"
+  # url = "/products/pos-systems/"
+  # weight = 3
 
-  [[main]]
-  parent = "POS Hardware"
-  name = "Self-Service Kiosks"
-  url = "/products/kiosks/"
-  weight = 4
+  # [[main]]
+  # parent = "Hardware"
+  # name = "Self-Service Kiosks"
+  # url = "/products/kiosks/"
+  # weight = 4
 
-  [[main]]
-  parent = "POS Hardware"
-  name = "POS Peripherals"
-  url = "/products/peripherals/"
-  weight = 5
+  # [[main]]
+  # parent = "Hardware"
+  # name = "POS Peripherals"
+  # url = "/products/peripherals/"
+  # weight = 5
 
 [[main]]
-name = "Contacts"
+name = "Contact"
 url = "contact/"
-weight = 6
+weight = 5
 
 # footer menu
 [[footer]]
-name = "FAQ"
+name = "FAQ - Frequently Asked Questions"
 url = "faq/"
 weight = 1
 
@@ -93,12 +93,12 @@ url = "about/"
 weight = 3
 
 [[footer]]
-name = "Contacts"
+name = "Contact"
 url = "contact/"
 weight = 4
 
 [[footer]]
-name = "Services & Prices"
+name = "Services and Prices"
 url = "/solutions/services-and-prices"
 weight = 5
 

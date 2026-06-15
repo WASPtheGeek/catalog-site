@@ -28,10 +28,10 @@ hasChildren = true
   parent = "Решения"
   name = "Услуги и цены"
   url = "/solutions/services-and-prices"
-  weight = 3
+  weight = 2
 
 [[main]]
-name = "Софт"
+name = "Программное обеспечение"
 url = "/software"
 weight = 3
 
@@ -41,44 +41,44 @@ url = "/hardware"
 weight = 4
 hasChildren = true
 
-  [[main]]
-  parent = "Оборудование"
-  name = "POS-моноблоки"
-  url = "/products/monoblocks/"
-  weight = 1
+  # [[main]]
+  # parent = "Оборудование"
+  # name = "POS Моноблоки"
+  # url = "/products/monoblocks/"
+  # weight = 1
 
-  [[main]]
-  parent = "Оборудование"
-  name = "Принтеры чеков"
-  url = "/products/printers/"
-  weight = 2
+  # [[main]]
+  # parent = "Оборудование"
+  # name = "Чековые принтеры"
+  # url = "/products/printers/"
+  # weight = 2
 
-  [[main]]
-  parent = "Оборудование"
-  name = "Кассовые системы"
-  url = "/products/pos-systems/"
-  weight = 3
+  # [[main]]
+  # parent = "Оборудование"
+  # name = "Кассовые системы"
+  # url = "/products/pos-systems/"
+  # weight = 3
 
-  [[main]]
-  parent = "Оборудование"
-  name = "Киоски самообслуживания"
-  url = "/products/kiosks/"
-  weight = 4
+  # [[main]]
+  # parent = "Оборудование"
+  # name = "Киоски самообслуживания"
+  # url = "/products/kiosks/"
+  # weight = 4
 
-  [[main]]
-  parent = "Оборудование"
-  name = "POS-периферия"
-  url = "/products/peripherals/"
-  weight = 5
+  # [[main]]
+  # parent = "Оборудование"
+  # name = "POS Периферия"
+  # url = "/products/peripherals/"
+  # weight = 5
 
 [[main]]
 name = "Контакты"
 url = "contact/"
-weight = 6
+weight = 5
 
 # footer menu
 [[footer]]
-name = "FAQ - Часто задаваемые вопросы"
+name = "Чаво - Часто задаваемые вопросы"
 url = "faq/"
 weight = 1
 

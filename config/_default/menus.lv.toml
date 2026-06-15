@@ -7,14 +7,9 @@ url = ""
 weight = 1
 
 [[main]]
-name = "Par mums"
-url = "/about"
-weight = 2
-
-[[main]]
 name = "Risinājumi"
 url = "/solutions"
-weight = 3
+weight = 2
 hasChildren = true
 
   [[main]]
@@ -38,12 +33,12 @@ hasChildren = true
 [[main]]
 name = "Programmatūra"
 url = "/software"
-weight = 4
+weight = 3
 
 [[main]]
 name = "Aprīkojums"
 url = "/hardware"
-weight = 5
+weight = 4
 hasChildren = true
 
   # [[main]]
@@ -79,7 +74,7 @@ hasChildren = true
 [[main]]
 name = "Kontakti"
 url = "contact/"
-weight = 6
+weight = 5
 
 
 
