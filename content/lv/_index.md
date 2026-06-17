@@ -6,7 +6,7 @@ banner:
 
   button: "Risinājumi"
   button_link: "/lv/solutions"
-  image: "images/banner-app.png"
+  image: "images/banner-app.jpeg"
 
 # brands
 brands_carousel:

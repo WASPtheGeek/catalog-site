@@ -6,7 +6,7 @@ banner:
 
   button: "Решения"
   button_link: "/ru/solutions"
-  image: "images/banner-app.png"
+  image: "images/banner-app.jpeg"
 
 # brands
 brands_carousel:

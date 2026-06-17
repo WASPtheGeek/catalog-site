@@ -117,12 +117,49 @@
 - id: our_clients
   translation: "Our Clients"
 
-######## Contacts page ########
-- id: contact_agree
-  translation: "I have read and agree to the"
+######## Contacts page & Form ########
+- id: interest_in_plan
+  translation: "Hello! I would like to sign a service agreement for:"
 
-- id: contact_to_terms
-  translation: "privacy policy"
+- id: company_name
+  translation: "Company name"
 
-- id: contact_need_to_agree
-  translation: "To submit an application, you must agree to the privacy policy"
+- id: phone_label
+  translation: "Phone number"
+
+- id: business_type_label
+  translation: "Business Type / Industry"
+
+- id: select_option
+  translation: "Select an option..."
+
+- id: biz_office
+  translation: "Office"
+
+- id: biz_retail
+  translation: "Shop / Retail"
+
+- id: biz_horeca
+  translation: "Cafe / Restaurant / HoReCa"
+
+- id: biz_industrial
+  translation: "Warehouse / Manufacturing / Logistics"
+
+- id: biz_other
+  translation: "Other business type"
+  
+  ######## Prices page details ########
+- id: currency_symbol
+  translation: "€"
+
+- id: sign_agreement
+  translation: "Sign an agreement"
+
+- id: by_agreement
+  translation: "By agreement"
+
+- id: urgent_help_note
+  translation: "Need urgent help or an estimate for custom assignments?"
+
+- id: contact_service
+  translation: "Contact service team"

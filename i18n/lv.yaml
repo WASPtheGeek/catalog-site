@@ -117,7 +117,7 @@
 - id: our_clients
   translation: "Mūsu klienti"
 
-######## Contacts page ########
+######## Contacts page & Form ########
 - id: contact_agree
   translation: "Esmu iepazinies un piekrītu"
 
@@ -126,3 +126,49 @@
 
 - id: contact_need_to_agree
   translation: "Lai nosūtītu pieteikumu, Jums jāpiekrīt privātuma politikai"
+
+- id: interest_in_plan
+  translation: "Labdien! Vēlos noslēgt apkalpošanas līgumu:"
+
+- id: company_name
+  translation: "Uzņēmuma nosaukums"
+
+- id: phone_label
+  translation: "Tālruņa numurs"
+
+- id: business_type_label
+  translation: "Biznesa veids / Nozare"
+
+- id: select_option
+  translation: "Izvēlieties no saraksta..."
+
+- id: biz_office
+  translation: "Ofiss / Birojs"
+
+- id: biz_retail
+  translation: "Veikals / Mazumtirdzniecība"
+
+- id: biz_horeca
+  translation: "Kafejnīca / Restorāns / HoReCa"
+
+- id: biz_industrial
+  translation: "Noliktava / Ražošana / Loģistika"
+
+- id: biz_other
+  translation: "Cits biznesa veids"
+
+  ######## Prices page details ########
+- id: currency_symbol
+  translation: "€"
+
+- id: sign_agreement
+  translation: "Noslēgt līgumu"
+
+- id: by_agreement
+  translation: "Pēc vienošanās"
+
+- id: urgent_help_note
+  translation: "Nepieciešama steidzama palīdzība vai nestandarta darbu tāmēšana?"
+
+- id: contact_service
+  translation: "Sazināties ar servisu"

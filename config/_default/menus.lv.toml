@@ -36,37 +36,37 @@ url = "/software"
 weight = 3
 
 [[main]]
-name = "Aprīkojums"
+name = "Iekārtas"
 url = "/hardware"
 weight = 4
 hasChildren = true
 
   # [[main]]
-  # parent = "Aprīkojums"
+  # parent = "Iekārtas"
   # name = "POS Monobloki"
   # url = "/products/monoblocks/"
   # weight = 1
 
   # [[main]]
-  # parent = "Aprīkojums"
+  # parent = "Iekārtas"
   # name = "Čeku printeri"
   # url = "/products/printers/"
   # weight = 2
 
   # [[main]]
-  # parent = "Aprīkojums"
+  # parent = "Iekārtas"
   # name = "Kases sistēmas"
   # url = "/products/pos-systems/"
   # weight = 3
 
   # [[main]]
-  # parent = "Aprīkojums"
+  # parent = "Iekārtas"
   # name = "Pašapkalpošanās kioski"
   # url = "/products/kiosks/"
   # weight = 4
 
   # [[main]]
-  # parent = "Aprīkojums"
+  # parent = "Iekārtas"
   # name = "POS Perifērija"
   # url = "/products/peripherals/"
   # weight = 5

@@ -18,9 +18,11 @@
               <div class="mb-4">
                 <h3>{{ T `send_a_message` }}</h3>
               </div>
-              <form id="contact-form" action="{{ . }}" method="POST">
-                {{/*  <input type="hidden" name="_next" value="paldies/">  */}}
-                <p id="form-status" class="form-status"></p>
+              
+
+              <!-- The Form. -->
+              <form id="contact-form" action="{{ . }}" method="POST">                
+                <!-- Full Name Field (Required) -->
                 <div class="form-group mb-4">
                   <label class="mb-2" for="name">{{ T `full_name` }}</label>
                   <input
@@ -31,6 +33,48 @@
                     placeholder="{{ T `full_name` }}"
                     required />
                 </div>
+
+                <!-- Business Type Dropdown Field (Optional) -->
+                <div class="form-group mb-4">
+                  <label class="mb-2" for="business_type">{{ T `business_type_label` }}</label>
+                  <select 
+                    class="form-control form-select shadow-none" 
+                    id="business_type" 
+                    name="{{ T `business_type_label` }}">
+                    <!-- Removed 'disabled' and 'required' so users can leave it or clear it -->
+                    <option value="" selected hidden>{{ T `select_option` }}</option>
+                    <option value="Ofiss">{{ T `biz_office` }}</option>
+                    <option value="Veikals / Mazumtirdzniecība">{{ T `biz_retail` }}</option>
+                    <option value="Kafejnīca / Restorāns">{{ T `biz_horeca` }}</option>
+                    <option value="Noliktava / Ražošana">{{ T `biz_industrial` }}</option>
+                    <option value="Cits">{{ T `biz_other` }}</option>
+                  </select>
+                </div>
+
+                <!-- Company Name Field (Optional) -->
+                <div class="form-group mb-4">
+                  <label class="mb-2" for="company">{{ T `company_name` }}</label>
+                  <input
+                    class="form-control shadow-none"
+                    id="company"
+                    name="{{ T `company_name` }}"
+                    type="text"
+                    placeholder="SIA / AS / IK ..." />
+                </div>
+
+                <!-- Phone Number Field (Required) -->
+                <div class="form-group mb-4">
+                  <label class="mb-2" for="phone">{{ T `phone_label` }}</label>
+                  <input
+                    class="form-control shadow-none"
+                    id="phone"
+                    name="{{ T `phone_label` }}"
+                    type="tel"
+                    placeholder="+371 XXXXXXXX"
+                    required />
+                </div>
+
+                <!-- Email Field (Required) -->
                 <div class="form-group mb-4">
                   <label class="mb-2" for="email">{{ T `email` }}</label>
                   <input
@@ -41,10 +85,10 @@
                     placeholder="{{ T `email` }}"
                     required />
                 </div>
+
+                <!-- Message / Selected Plan Field (Required) -->
                 <div class="form-group mb-4">
-                  <label class="mb-2" for="message"
-                    >{{ T `your_message` }}</label
-                  >
+                  <label class="mb-2" for="message">{{ T `your_message` }}</label>
                   <textarea
                     class="form-control shadow-none h-auto"
                     id="message"
@@ -53,6 +97,8 @@
                     placeholder="{{ T `message` }}"
                     required></textarea>
                 </div>
+
+                <!-- Privacy Policy Checkbox -->
                 <div class="form-check mb-3 text-left">
                   <input class="form-check-input" type="checkbox" id="privacyPolicy" name="privacy_policy_agreement" required>
                   <label class="form-check-label small text-muted" for="privacyPolicy">
@@ -61,14 +107,19 @@
                   <div class="invalid-feedback" style="display: block; color: #dc3545; font-size: 80%; margin-top: 5px;">
                     {{T `contact_need_to_agree`}}
                   </div>
+                </div>
+
+                <!-- Form Status Message -->
+                <p id="form-status" class="form-status fw-bold text-center mt-3 mb-0" style="min-height: 24px; transition: all 0.3s ease;"></p>
                 
                 <button
-                  class="btn btn-primary w-100 mt-4"
+                  class="btn btn-primary w-100 mt-3"
                   type="submit"
                   aria-label="Send Message">
                   {{ T `send_message` }}
                 </button>
               </form>
+
             </div>
           </div>
 
@@ -91,24 +142,43 @@
             status.innerHTML = "{{T `form_error_message`}}";
           });
         }
-        form.addEventListener("submit", handleSubmit)
+        form.addEventListener("submit", handleSubmit);
 
 
-      (function () {
-        'use strict'
-        var forms = document.querySelectorAll('.needs-validation')
+        (function () {
+          'use strict'
+          var forms = document.querySelectorAll('.needs-validation')
 
-        Array.prototype.slice.call(forms)
-          .forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-              if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-              }
-              form.classList.add('was-validated')
-            }, false)
-          })
-      })()
+          Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+              form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })();
+
+        // Автозаполнение поля сообщения на основе параметров URL
+        document.addEventListener("DOMContentLoaded", function() {
+          var urlParams = new URLSearchParams(window.location.search);
+          var planName = urlParams.get('plan');
+          var messageField = document.getElementById('message');
+          
+          if (planName && messageField) {
+            // Формируем текст сообщения. Текст подстроится под язык сайта
+            var localizedText = "{{ T `interest_in_plan` }}";
+            
+            // Если перевод interest_in_plan не задан в i18n, используем дефолтный шаблон
+            if (localizedText === "interest_in_plan" || !localizedText) {
+              localizedText = "Labdien! Vēlos pieteikties apkalpošanas līgumam:";
+            }
+            
+            messageField.value = localizedText + " " + planName + ".\n";
+          }
+        });
       </script>
         {{ end }}
       </div>

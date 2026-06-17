@@ -116,12 +116,49 @@
 - id: our_clients
   translation: "Наши клиенты"
 
-######## Contacts page ########
-- id: contact_agree
-  translation: "Я ознакомился и согласен с"
+######## Contacts page & Form ########
+- id: interest_in_plan
+  translation: "Здравствуйте! Я хочу заключить договор на обслуживание:"
 
-- id: contact_to_terms
-  translation: "политикой конфиденциальности"
+- id: company_name
+  translation: "Название компании"
 
-- id: contact_need_to_agree
-  translation: "Для подачи заявки необходимо согласиться с политикой конфиденциальности"
+- id: phone_label
+  translation: "Номер телефона"
+
+- id: business_type_label
+  translation: "Тип бизнеса / Сфера деятельности"
+
+- id: select_option
+  translation: "Выберите из списка..."
+
+- id: biz_office
+  translation: "Офис"
+
+- id: biz_retail
+  translation: "Магазин / Розничная торговля"
+
+- id: biz_horeca
+  translation: "Кафе / Ресторан / Общепит"
+
+- id: biz_industrial
+  translation: "Склад / Производство / Логистика"
+
+- id: biz_other
+  translation: "Другой тип бизнеса"
+  
+  ######## Prices page details ########
+- id: currency_symbol
+  translation: "€"
+
+- id: sign_agreement
+  translation: "Заключить договор"
+
+- id: by_agreement
+  translation: "По договоренности"
+
+- id: urgent_help_note
+  translation: "Требуется срочная помощь или оценка нестандартных работ?"
+
+- id: contact_service
+  translation: "Связаться с сервисом"

@@ -770,9 +770,56 @@ img {
 }
 
 // form-control
+.form-select {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  // SVG custom arrow encoded directly into CSS (clean and cross-browser)
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  // Disables the default system dropdown arrow
+  appearance: none; 
+
+  &:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  // Styles for the hidden/disabled placeholder option
+  option[hidden] {
+    display: none;
+  }
+
+  option {
+    color: #212529;
+    padding: 10px;
+  }
+}
+
+// Adjustments specifically for your theme inside form-groups
+.form-group {
+  .form-select.shadow-none {
+    &:focus {
+      // Keeps a subtle custom border highlight if shadow-none is active
+      border-color: #5c85ff !important; 
+      box-shadow: none !important;
+    }
+  }
+}
+
 .form-control {
   border: 0;
-  padding: 1.25rem;
   border: 2px solid rgba($color-primary, 0.1);
   border-left-color: rgba($color-primary, 0.5);
   height: 3.5rem;

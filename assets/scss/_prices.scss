@@ -1,0 +1,55 @@
+.price-page-note {
+  letter-spacing: 1px;
+}
+
+.pricing-card {
+  border-width: 2px !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+
+  .pricing-card-header {
+    border-color: rgba(0, 0, 0, 0.08) !important;
+  }
+
+  .pricing-badge {
+    letter-spacing: 1px;
+  }
+
+  .pricing-amount {
+    font-size: 2.5rem;
+
+    .pricing-period {
+      font-size: 1.1rem;
+      font-weight: normal;
+    }
+  }
+
+  .pricing-feature-item {
+    font-size: 0.95rem;
+  }
+
+  .pricing-checkmark {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    color: #28a745 !important;
+    margin-top: 0.2rem;
+  }
+  
+  .pricing-val-free {
+    font-weight: 800;
+    white-space: nowrap;
+    margin-left: auto;
+    color: #28a745 !important;
+    letter-spacing: 0.5px;
+  }
+
+  .pricing-btn {
+    border-width: 2px;
+  }
+}
+
+.pricing-table-leader {
+  border-style: dotted !important;
+  border-color: #ccc !important;
+  height: 1px;
+}
