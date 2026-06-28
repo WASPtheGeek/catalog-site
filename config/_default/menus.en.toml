@@ -14,19 +14,19 @@ hasChildren = true
 
   [[main]]
   parent = "Solutions"
-  name = "Retail and Services"
+  name = "Retail & Services"
   url = "/solutions/retail-services"
   weight = 1
 
   [[main]]
   parent = "Solutions"
-  name = "Car Washes and Custom Projects"
+  name = "Car Washes & Custom Projects"
   url = "/solutions/custom-projects"
   weight = 2
 
   [[main]]
   parent = "Solutions"
-  name = "Services and Prices"
+  name = "Services & Prices"
   url = "/solutions/services-and-prices"
   weight = 2
 
@@ -44,37 +44,42 @@ hasChildren = true
   # [[main]]
   # parent = "Hardware"
   # name = "POS Monoblocks"
-  # url = "/products/monoblocks/"
+  # url = "/hardware/monoblocks/"
   # weight = 1
 
   # [[main]]
   # parent = "Hardware"
   # name = "Receipt Printers"
-  # url = "/products/printers/"
+  # url = "/hardware/printers/"
   # weight = 2
 
-  # [[main]]
-  # parent = "Hardware"
-  # name = "POS Systems"
-  # url = "/products/pos-systems/"
-  # weight = 3
+  [[main]]
+  parent = "Hardware"
+  name = "POS Terminals"
+  url = "/hardware/pos-systems/"
+  weight = 3
 
   # [[main]]
   # parent = "Hardware"
   # name = "Self-Service Kiosks"
-  # url = "/products/kiosks/"
+  # url = "/hardware/kiosks/"
   # weight = 4
 
   # [[main]]
   # parent = "Hardware"
   # name = "POS Peripherals"
-  # url = "/products/peripherals/"
+  # url = "/hardware/peripherals/"
   # weight = 5
 
 [[main]]
-name = "Contact"
+name = "Contacts"
 url = "contact/"
 weight = 5
+
+
+
+
+
 
 # footer menu
 [[footer]]
@@ -92,13 +97,14 @@ name = "About Us"
 url = "about/"
 weight = 3
 
+
 [[footer]]
-name = "Contact"
+name = "Contacts"
 url = "contact/"
 weight = 4
 
 [[footer]]
-name = "Services and Prices"
+name = "Services & Prices"
 url = "/solutions/services-and-prices"
 weight = 5
 

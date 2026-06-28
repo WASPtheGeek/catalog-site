@@ -6,69 +6,71 @@
   translation: "Home"
 
 - id: send_message
-  translation: Send Message
+  translation: "Send message"
 
 - id: message
-  translation: Message
+  translation: "Message"
+
+- id: quick_links
+  translation: "Quick links"
 
 - id: contacts
-  translation: Contacts
+  translation: "Contacts"
 
 - id: bank_details
-  translation: Bank Details
+  translation: "Bank details"
 
 - id: office_address
-  translation: Office Address
+  translation: "Office address"
 
 - id: legal_address
-  translation: Legal Address
+  translation: "Legal address"
 
 - id: legal_information
-  translation: Legal Information
+  translation: "Legal information"
 
 - id: recent_posts
-  translation: Recent Posts by
+  translation: "Latest news from"
 
 - id: related_articles
-  translation: Related Articles
+  translation: "Related articles"
 
 - id: full_name
-  translation: Full Name
+  translation: "Full name"
 
 - id: email
-  translation: Email Address
+  translation: "Email address"
 
 - id: send_a_message
-  translation: Send A Message
+  translation: "Send a message"
 
 - id: your_message
-  translation: Your Message
+  translation: "Your message"
 
 - id: phone
-  translation: Phone
+  translation: "Phone"
 
 - id: contact_us
-  translation: Contact us
+  translation: "Contact info"
 
 - id: get_in_touch
-  translation: Get In Touch
+  translation: "Get in touch with us"
 
 - id: form_thanks_message
-  translation: Thanks for your submission!
+  translation: "Thank you for your submission!"
 
 - id: form_error_message
-  translation: Oops! There was a problem submitting your form
+  translation: "Oops! There was a problem submitting your form"
 
 - id: min_read
-  translation: Min read
+  translation: "min read"
 
 ######## Cookie Policy ########
 - id: cookie_message
-  translation: "This site uses cookies. By continuing to use this website, you agree to their use."
+  translation: "This website uses cookies. By continuing to use this site, you agree to their use."
 
 - id: cookie_accept
-  translation: "I Accept"
-
+  translation: "Accept"
 
 ######## Terms & Conditions ########
 - id: valid_from
@@ -76,31 +78,61 @@
 
 ######## 404 page ########
 - id: page_not_found
-  translation: "Page Not Found"
+  translation: "Page not found"
 
 - id: back_to_home
-  translation: "Back To Home"
+  translation: "Back to home"
 
 ######## call-to-action ########
 - id: cta_title
   translation: "Have questions about ALPOS systems?"
 
 - id: cta_content
-  translation: "Our team is ready to help you on business days from 9:00 AM to 6:00 PM."
+  translation: "Our team is ready to help you on business days from 9:00 to 18:00."
 
 - id: cta_button
   translation: "View contacts and addresses"
 
+- id: cta_consultation_title
+  translation: "Need a custom estimate or a professional consultation?"
+
+- id: cta_consultation_button
+  translation: "Request a consultation"
+
+- id: cta_consultation_message
+  translation: "Hello! I would like to request a consultation and receive a custom estimate."
+
+- id: demo_cta_title
+  translation: "Would you like to see a live system demonstration?"
+
+- id: demo_cta_description
+  translation: "Apply for a free consultation, book a software presentation, or receive a custom quote tailored to your business."
+
+- id: demo_cta_button
+  translation: "Book a presentation"
+
+- id: demo_cta_message
+  translation: "Hello! I would like to request a system presentation and a free consultation regarding the software."
+
+- id: collab_cta_title
+  translation: "Shall we start our cooperation today?"
+
+- id: collab_cta_description
+  translation: "Entrust the technical systems of your point of sale to experienced professionals."
+
+- id: collab_cta_button
+  translation: "Contact us"
+
+- id: collab_cta_message
+  translation: "Hello! I am interested in starting a cooperation and would like to discuss technical solutions for my business."
+
 ######## Footer ########
 - id: footer_info
-  translation: "Smart POS solutions designed to boost efficiency for retail businesses"
-
-- id: quick_links
-  translation: Quick Links
+  translation: "Smart solutions to increase the efficiency of your retail business"
 
 ######## Popup ########
 - id: popup_button
-  translation: "Get a Free Consultation"
+  translation: "Get a consultation"
 
 ######## Common ########
 - id: last_updated
@@ -108,18 +140,27 @@
 
 ######## Products ########
 - id: see_product_button
-  translation: "See Product Description"
+  translation: "View description"
 
 - id: open_catalog
-  translation: "Open Catalog"
+  translation: "Open catalog"
 
 ######## Brands ########
 - id: our_clients
-  translation: "Our Clients"
+  translation: "Our clients"
 
 ######## Contacts page & Form ########
+- id: contact_agree
+  translation: "I have read and agree to the"
+
+- id: contact_to_terms
+  translation: "privacy policy"
+
+- id: contact_need_to_agree
+  translation: "To send the application, you must agree to the privacy policy"
+
 - id: interest_in_plan
-  translation: "Hello! I would like to sign a service agreement for:"
+  translation: "Hello! I would like to sign a service contract:"
 
 - id: company_name
   translation: "Company name"
@@ -128,38 +169,72 @@
   translation: "Phone number"
 
 - id: business_type_label
-  translation: "Business Type / Industry"
+  translation: "Business type / Industry"
 
 - id: select_option
-  translation: "Select an option..."
+  translation: "Select from the list..."
 
 - id: biz_office
   translation: "Office"
 
 - id: biz_retail
-  translation: "Shop / Retail"
+  translation: "Store / Retail"
 
 - id: biz_horeca
   translation: "Cafe / Restaurant / HoReCa"
 
 - id: biz_industrial
-  translation: "Warehouse / Manufacturing / Logistics"
+  translation: "Warehouse / Production / Logistics"
 
 - id: biz_other
   translation: "Other business type"
-  
+
+- id: interest_in_product
+  translation: "Hello! I would like to receive a price quote and additional information about the product:"
+
+- id: interest_in_plan
+  translation: "Hello! I would like to apply for a service plan:"
+
   ######## Prices page details ########
 - id: currency_symbol
   translation: "€"
 
 - id: sign_agreement
-  translation: "Sign an agreement"
+  translation: "Sign agreement"
 
 - id: by_agreement
   translation: "By agreement"
 
 - id: urgent_help_note
-  translation: "Need urgent help or an estimate for custom assignments?"
+  translation: "Need urgent help or an estimate for non-standard work?"
 
 - id: contact_service
-  translation: "Contact service team"
+  translation: "Contact support"
+
+  ######## Product Detailed View ########
+- id: key_features
+  translation: "Key features"
+
+- id: technical_specifications
+  translation: "Technical specifications"
+
+- id: get_quote_or_consultation
+  translation: "Get a quote / Consultation"
+
+- id: spec_change_notice
+  translation: "Product design and technical specifications are subject to change without prior notice."
+
+- id: technical_specifications
+  translation: "Technical specifications"
+
+- id: downloads
+  translation: "Downloads"
+
+- id: user_manual_title
+  translation: "User Manual & Technical Passport"
+
+- id: product_brochure_title
+  translation: "Product Booklet / Brochure"
+
+- id: open_or_download
+  translation: "Open / Download"

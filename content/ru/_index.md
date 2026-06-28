@@ -105,7 +105,7 @@ business_directions:
     
     - icon: "las la-cash-register"
       title: "Покупка торгового оборудования"
-      link: "/ru/products"
+      link: "/ru/hardware"
       button_text: "Узнать больше"
       features_list:
         - "Сертифицированные кассовые аппараты, принтеры чеков и денежные ящики"

@@ -6,7 +6,7 @@ layout: "custom-projects"
 hero:
   subtitle: "POS solutions and cash registers for car washes"
   description: "The self-service business requires a special approach — maximum autonomy, durability, and continuous operation without the presence of staff. We design and install specialized retail technology nodes, ensuring that cash registers for car washes and self-service areas operate stably and without failures."
-  image: "/images/solutions/mazgatavas-terminals.jpg"
+  image: "/images/solutions/solutions.png"
 
 features_section:
   title: "Technical Advantages and Security"
@@ -30,7 +30,7 @@ projects_section:
   
   case_loyalty_title: "Integration of Customer Loyalty Systems"
   case_loyalty_text: "We develop and implement smart solutions, such as **loyalty card systems for shops and retail networks**. This allows combining physical and digital environments, ensuring customer retention and flexible discount management regardless of the point of sale complexity."
-  case_loyalty_image: "/images/solutions/lojalitates-kartes.jpg"
+  case_loyalty_image: "/images/solutions/shop.png"
 
 support_section:
   title: "Full Support Cycle and Service throughout Latvia"

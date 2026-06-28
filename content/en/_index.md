@@ -105,7 +105,7 @@ business_directions:
     
     - icon: "las la-cash-register"
       title: "Purchase of Commercial Equipment"
-      link: "/en/products"
+      link: "/en/hardware"
       button_text: "Learn more"
       features_list:
         - "Certified cash registers, receipt printers, and cash drawers"

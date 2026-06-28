@@ -6,7 +6,7 @@ layout: "about"
 # Hero and intro block
 about_intro:
   subtitle: "A trusted partner in the world of cash systems"
-  title: "More than just technology — full-service support for your business"
+  title: "Full-service support for your business"
   text: "We are a company specializing in the implementation of modern retail technologies, cash registers, and POS systems. Our goal is to provide businesses with secure, stable, and fully SRS-compliant solutions that help them grow and develop without technical downtime."
 
 # Key business metrics (digits)
@@ -15,7 +15,7 @@ stats_section:
     - number: "10+"
       suffix: "Years"
       text: "Experience and stability in the Latvian market"
-    - number: "100s"
+    - number: "100+"
       suffix: "POS"
       text: "Installed and registered cash systems across Latvia"
     - number: "1"

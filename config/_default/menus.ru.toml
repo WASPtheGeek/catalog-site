@@ -44,31 +44,31 @@ hasChildren = true
   # [[main]]
   # parent = "Оборудование"
   # name = "POS Моноблоки"
-  # url = "/products/monoblocks/"
+  # url = "/hardware/monoblocks/"
   # weight = 1
 
   # [[main]]
   # parent = "Оборудование"
   # name = "Чековые принтеры"
-  # url = "/products/printers/"
+  # url = "/hardware/printers/"
   # weight = 2
 
-  # [[main]]
-  # parent = "Оборудование"
-  # name = "Кассовые системы"
-  # url = "/products/pos-systems/"
-  # weight = 3
+  [[main]]
+  parent = "Оборудование"
+  name = "POS-терминалы"
+  url = "/hardware/pos-systems/"
+  weight = 3
 
   # [[main]]
   # parent = "Оборудование"
   # name = "Киоски самообслуживания"
-  # url = "/products/kiosks/"
+  # url = "/hardware/kiosks/"
   # weight = 4
 
   # [[main]]
   # parent = "Оборудование"
   # name = "POS Периферия"
-  # url = "/products/peripherals/"
+  # url = "/hardware/peripherals/"
   # weight = 5
 
 [[main]]
@@ -76,9 +76,14 @@ name = "Контакты"
 url = "contact/"
 weight = 5
 
+
+
+
+
+
 # footer menu
 [[footer]]
-name = "Чаво - Часто задаваемые вопросы"
+name = "Часто задаваемые вопросы"
 url = "faq/"
 weight = 1
 
@@ -91,6 +96,7 @@ weight = 2
 name = "О нас"
 url = "about/"
 weight = 3
+
 
 [[footer]]
 name = "Контакты"

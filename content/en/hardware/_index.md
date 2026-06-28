@@ -1,20 +1,21 @@
 ---
-title: "Equipment and Products"
-description: "Cash registers, POS systems, barcode scanners, and other retail equipment. The catalog is currently being updated."
-layout: "products-placeholder"
+title: "Equipment"
+subtitle: "Professional equipment for retail and commerce"
+description: "Cash registers, POS systems, barcode scanners, and other retail equipment to enhance your business efficiency."
+layout: "list"
 
-# Placeholder section translations
-placeholder:
-  badge: "Exclusive Offer"
+# Global translations for product grid
+btn_see_product: "View description"
+no_products_message: "The product list is currently empty."
+
+# Info banner (Top)
+catalog_notice:
   title: "Our product catalog is currently being updated"
-  subtitle: "Preparing the best solutions for your business!"
-  text: "We are working on developing a new, convenient, and complete product catalog, which will feature the most modern cash registers, POS terminals, weighing systems, and barcode scanners at the best prices."
-  
-  # Urgent callout box
-  urgent_title: "Need equipment right now?"
-  urgent_text: "If you urgently need to check product availability, prices, or find a specific cash system for your business, please proceed to the contact section! Our specialists will promptly prepare an individual offer."
-  
-  # Action buttons
-  btn_contact: "Contact Us"
-  btn_call: "View Contacts"
+  text: "We are actively working on expanding our online product range. The first available models are listed below, and our full assortment is updated regularly."
+
+# Urgent callout (Bottom)
+urgent_callout:
+  title: "Need equipment right away or couldn't find the model you need?"
+  text: "If you urgently need to check product availability, specifications, and prices, or if you need help choosing a specific solution, contact us! Our specialists will promptly prepare a comprehensive and tailored offer."
+  btn_text: "Contact us"
 ---

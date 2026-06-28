@@ -61,8 +61,7 @@ h2.spec-title-main {
     }
 
     .spec-card-value {
-      color: #000000; 
-      font-weight: 500; 
+      color: #000000;
     }
   }
 }
@@ -138,4 +137,162 @@ h2.spec-title-main {
     border-color: #ff6a00 !important; // Outline matches current index reference
     box-shadow: 0 0 0 2px rgba(255, 106, 0, 0.15);
   }
+}
+
+/* ==========================================================================
+   1. MASTER MAIN VIEW TABS (Desktop Default)
+   ========================================================================== */
+#mainProductTabs {
+    border-bottom: 2px solid #dee2e6 !important;
+    gap: 8px;
+}
+#mainProductTabs .nav-link {
+    color: #6c757d !important;
+    font-weight: 700 !important;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    padding: 10px 20px !important;
+    background-color: rgba(0, 0, 0, 0.02) !important;
+    border: 1px solid #e9ecef !important;
+    border-bottom: none !important;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: -2px; 
+    transition: all 0.15s ease-in-out;
+}
+#mainProductTabs .nav-link:hover {
+    color: #ff6a00 !important;
+    background-color: rgba(0, 0, 0, 0.04) !important;
+    border-color: #dee2e6 #dee2e6 transparent !important;
+}
+#mainProductTabs .nav-link.active {
+    color: #212529 !important;
+    background-color: #ffffff !important; 
+    border-color: #dee2e6 #dee2e6 transparent !important;
+    border-bottom: 3px solid #ff6a00 !important; 
+}
+
+/* ==========================================================================
+   2. SUB-MODEL VARIANT TABS (Desktop Default)
+   ========================================================================== */
+#productModelTabs {
+    border-bottom: 1px solid #dee2e6 !important;
+    gap: 5px;
+}
+#productModelTabs .nav-link {
+    font-weight: 700 !important;
+    color: #495057 !important;
+    background-color: transparent !important;
+    border: 1px solid #dee2e6 !important;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    transition: all 0.15s ease-in-out;
+}
+#productModelTabs .nav-link:hover {
+    color: #ff6a00 !important;
+    background-color: #f8f9fa !important;
+    border-color: #dee2e6 #dee2e6 transparent !important;
+}
+#productModelTabs .nav-link.active {
+    color: #ffffff !important;
+    background-color: #ff6a00 !important;
+    border-color: #ff6a00 !important;
+}
+
+/* ==========================================================================
+   3. RESPONSIVE MOBILE VIEW REFACTOR (Single Row Swipe System)
+   ========================================================================== */
+@media (max-width: 992px) {
+    /* Main Master Navigation (Specifikācijas / Lejupielādes) */
+    #mainProductTabs {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important; 
+        overflow-y: hidden !important; /* Forces vertical scroll bars to stay completely invisible */
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 0px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    #mainProductTabs .nav-item {
+        flex: 0 0 auto;
+    }
+    
+    #mainProductTabs .nav-link {
+        white-space: nowrap !important;
+        font-size: 1rem;
+        padding: 10px 18px !important;
+    }
+
+    /* Sub-Model Sub-Navigation Items */
+    #productModelTabs {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important; 
+        overflow-y: hidden !important; /* Forces vertical scroll bars to stay completely invisible */
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 0px !important;
+        border-bottom: 1px solid #dee2e6 !important;
+    }
+    
+    #productModelTabs .nav-item {
+        flex: 0 0 auto;
+    }
+    
+    #productModelTabs .nav-link {
+        white-space: nowrap !important;
+        padding: 8px 16px !important;
+    }
+
+    /* Track indicator layout styling rules */
+    #mainProductTabs::-webkit-scrollbar,
+    #productModelTabs::-webkit-scrollbar {
+        height: 3px; 
+    }
+    #mainProductTabs::-webkit-scrollbar-thumb,
+    #productModelTabs::-webkit-scrollbar-thumb {
+        background-color: #dee2e6;
+        border-radius: 2px;
+    }
+}
+
+/* ==========================================================================
+   PRODUCT SPECIFICATIONS SUMMARY CARD COMPONENT
+   ========================================================================== */
+.product-summary-card {
+  .summary-tier-box {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+    .title-element {
+      color: #212529;
+    }
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    // Dynamic highlight variation state flag
+    &.tier-highlighted {
+      border-color: rgba(255, 106, 0, 0.4) !important;
+      background-color: rgba(255, 106, 0, 0.01) !important;
+      
+      .title-element {
+        color: #ff6a00 !important;
+      }
+    }
+  }
+}
+
+.product-card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .09) !important;
+}
+
+.product-card-hover:hover .img-zoom-hover {
+  transform: scale(1.06);
+}
+
+.title-link-hover:hover {
+  color: #ff6b00 !important;
 }

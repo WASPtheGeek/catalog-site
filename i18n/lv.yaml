@@ -94,6 +94,39 @@
 - id: cta_button
   translation: "Skatīt kontaktus un adreses"
 
+- id: cta_consultation_title
+  translation: "Nepieciešams individuāls aprēķins vai konsultācija?"
+
+- id: cta_consultation_button
+  translation: "Pieteikties konsultācijai"
+
+- id: cta_consultation_message
+  translation: "Labdien! Vēlos pieteikties konsultācijai un saņemt individuālu aprēķinu."
+
+- id: demo_cta_title
+  translation: "Vēlaties redzēt sistēmas demonstrāciju?"
+
+- id: demo_cta_description
+  translation: "Pieteikties bezmaksas konsultācijai, programmatūras prezentācijai vai saņemt individuālu piedāvājumu."
+
+- id: demo_cta_button
+  translation: "Pieteikties prezentācijai"
+
+- id: demo_cta_message
+  translation: "Labdien! Vēlos pieteikties sistēmas prezentācijai un saņemt bezmaksas konsultāciju."
+
+- id: collab_cta_title
+  translation: "Sāksim sadarbību jau šodien?"
+
+- id: collab_cta_description
+  translation: "Uzticiet savas tirdzniecības vietas tehniskās sistēmas profesionāļiem."
+
+- id: collab_cta_button
+  translation: "Sazināties ar mums"
+
+- id: collab_cta_message
+  translation: "Labdien! Vēlos uzsākt sadarbību un apspriest tehniskos risinājumus manai tirdzniecības vietai."
+
 ######## Footer ########
 - id: footer_info
   translation: "Viedi risinājumi Jūsu tirdzniecības biznesa efektivitātes paaugstināšanai"
@@ -191,3 +224,18 @@
 
 - id: spec_change_notice
   translation: "Produkta dizains un tehniskie parametri var tikt mainīti bez iepriekšēja brīdinājuma."
+
+- id: technical_specifications
+  translation: "Tehniskās specifikācijas"
+
+- id: downloads
+  translation: "Lejupielādes"
+
+- id: user_manual_title
+  translation: "Lietotāja Instrukcija & Tehniskā Pase"
+
+- id: product_brochure_title
+  translation: "Produkta Buklets / Brošūra"
+
+- id: open_or_download
+  translation: "Atvērt / Lejupielādēt"

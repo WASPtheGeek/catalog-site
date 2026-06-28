@@ -6,7 +6,7 @@ layout: "custom-projects"
 hero:
   subtitle: "POS risinājumi un kases aparāti automazgātavām"
   description: "Pašapkalpošanās biznesam ir nepieciešama īpaša pieeja — maksimāla autonomija, izturība un nepārtraukta darbība bez personāla klātbūtnes. Mēs izstrādājam un uzstādām specializētus tirdzniecības tehnoloģiju mezglus, nodrošinot, ka kases aparāti automazgātavām un pašapkalpošanās zonām darbojas stabili un bez kļūmēm."
-  image: "/images/solutions/mazgatavas-terminals.jpg"
+  image: "/images/solutions/solutions.png"
 
 features_section:
   title: "Tehniskās priekšrocības un drošība"
@@ -30,7 +30,7 @@ projects_section:
   
   case_loyalty_title: "Klientu lojalitātes sistēmu integrācija"
   case_loyalty_text: "Izstrādājam un ieviešam viedos risinājumus, piemēram, **karti lojalitātes sistēmas veikaliem un tīkliem**. Tas ļauj apvienot fizisko un digitālo vidi, nodrošinot klientu saglabāšanu un elastīgu atlaižu pārvaldību neatkarīgi no tirdzniecības vietu sarežģītības."
-  case_loyalty_image: "/images/solutions/lojalitates-kartes.jpg"
+  case_loyalty_image: "/images/solutions/shop.png"
 
 support_section:
   title: "Pilns atbalsta cikls un serviss visā Latvijā"

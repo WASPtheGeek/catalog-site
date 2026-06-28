@@ -105,7 +105,7 @@ business_directions:
     
     - icon: "las la-cash-register"
       title: "Tirdzniecības aprīkojuma iegāde"
-      link: "/lv/products"
+      link: "/lv/hardware"
       button_text: "Uzzināt vairāk"
       features_list:
         - "Sertificēti kases aparāti, čeku printeri un kases kastes"

@@ -37,7 +37,7 @@ warehouse_software:
   title: "Noliktavas un Preču Uzskaites Programma"
   subtitle: "Pilna kontrole pār Jūsu biznesa atlikumiem un finansēm"
   description: "Mūsu noliktavas uzskaites sistēma nodrošina reāllaika kontroli pār preču plūsmu, iepirkumiem un inventarizāciju. Tā ir iebūvēta un ideāli integrēta ar ALPOS A3000 kases sistēmu, ļaujot vadītājam attālināti pārraudzīt tirdzniecības rezultātus, analizēt rentabilitāti un plānot preču pasūtījumus."
-  image: "/images/software/noliktava-backoffice.jpg"
+  image: "/images/software/logistics.jpg"
   
   doc_text: "Skatīt noliktavas programmas specifikāciju"
   doc_link: "/docs/noliktavas-programma-specifikacija.pdf"

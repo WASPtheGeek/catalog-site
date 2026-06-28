@@ -63,7 +63,7 @@
   {{ if .enable }}
   <section class="section py-4 bg-light border-top border-bottom">
     <div class="container">
-      <div class="row justify-content-center">
+      <div class="row">
         <div class="col-lg-10">
           <div class="p-4 bg-white rounded shadow-sm d-md-flex align-items-center justify-content-between">
             <div class="mb-3 mb-md-0 pe-md-4">
@@ -129,12 +129,15 @@
   {{ end }}
 
   <!-- SECTION 3: CALL TO ACTION BUTTON -->
-  <section class="section py-5 text-center bg-white">
+  <section class="section py-5 bg-white">
     <div class="container" data-aos="fade-up">
-      <h3 class="font-weight-bold mb-3">Vēlaties redzēt sistēmas demonstrāciju?</h3>
-      <p class="text-muted mb-4">Pieteikties bezmaksas konsultācijai, programmatūras prezentācijai vai saņemt individuālu piedāvājumu.</p>
-      <a href="/lv/contact/" class="btn btn-primary btn-lg font-weight-bold px-5 py-3 shadow">
-        Pieteikties prezentācijai
+      <h3 class="font-weight-bold mb-3">{{ T "demo_cta_title" }}</h3>
+      <p class="text-muted mb-4">{{ T "demo_cta_description" }}</p>
+      
+      <!-- Dynamic language prefix with pre-filled message parameter -->
+      <a href="{{ printf "/%s/contact/" .Language.Lang | relURL }}?message={{ T "demo_cta_message" }}" 
+         class="btn btn-primary btn-lg font-weight-bold px-5 py-3 shadow">
+        {{ T "demo_cta_button" }}
       </a>
     </div>
   </section>

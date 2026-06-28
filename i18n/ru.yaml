@@ -1,80 +1,80 @@
 ######## Navigation ########
 - id: navigation_button
-  translation: "Связаться с нами"
+  translation: "Связаться"
 
 - id: home
   translation: "Главная"
 
 - id: send_message
-  translation: Отправить сообщение
+  translation: "Отправить сообщение"
 
 - id: message
-  translation: Сообщение
+  translation: "Сообщение"
 
 - id: quick_links
-  translation: Быстрые ссылки
+  translation: "Быстрые ссылки"
 
 - id: contacts
-  translation: Контактная информация
+  translation: "Контакты"
 
 - id: bank_details
-  translation: Реквизиты
+  translation: "Реквизиты"
 
 - id: office_address
-  translation: Адрес офиса
+  translation: "Адрес офиса"
 
 - id: legal_address
-  translation: Юридический адрес
+  translation: "Юридический адрес"
 
 - id: legal_information
-  translation: Юридическая информация
+  translation: "Юридическая информация"
 
 - id: recent_posts
-  translation: Недавние сообщения от
+  translation: "Последние новости из"
 
 - id: related_articles
-  translation: Связанные статьи
+  translation: "Похожие статьи"
 
 - id: full_name
-  translation: Полное имя
+  translation: "Полное имя"
 
 - id: email
-  translation: Адрес электронной почты
+  translation: "Эл. почта"
 
 - id: send_a_message
-  translation: Отправить сообщение
+  translation: "Отправить сообщение"
 
 - id: your_message
-  translation: Ваше сообщение
+  translation: "Ваше сообщение"
 
 - id: phone
-  translation: Телефон
+  translation: "Телефон"
 
 - id: contact_us
-  translation: Связаться с нами
+  translation: "Контактная информация"
 
 - id: get_in_touch
-  translation: Связаться
+  translation: "Связаться с нами"
 
 - id: form_thanks_message
-  translation: Спасибо за вашу отправку!
+  translation: "Спасибо за вашу заявку!"
 
 - id: form_error_message
-  translation: Ой! Возникла проблема при отправке вашей формы
+  translation: "Упс! Возникла проблема при отправке формы"
 
 - id: min_read
-  translation: Min read
+  translation: "мин чтения"
 
 ######## Cookie Policy ########
 - id: cookie_message
-  translation: "Этот сайт использует файлы cookie. Продолжая использовать этот сайт, вы соглашаетесь с их использованием."
+  translation: "Этот сайт использует файлы cookie. Продолжая использовать сайт, вы соглашаетесь на их сбор и обработку."
 
 - id: cookie_accept
-  translation: "Я принимаю"
+  translation: "Согласен"
 
 ######## Terms & Conditions ########
 - id: valid_from
-  translation: "Действительно с"
+  translation: "Действует с"
 
 ######## 404 page ########
 - id: page_not_found
@@ -88,14 +88,47 @@
   translation: "Есть вопросы по системам ALPOS?"
 
 - id: cta_content
-  translation: "Наша команда готова помочь Вам по рабочим дням с 9:00 до 18:00."
+  translation: "Наша команда готова помочь вам в рабочие дни с 9:00 до 18:00."
 
 - id: cta_button
   translation: "Посмотреть контакты и адреса"
 
+- id: cta_consultation_title
+  translation: "Нужен индивидуальный расчет или консультация?"
+
+- id: cta_consultation_button
+  translation: "Подать заявку на консультацию"
+
+- id: cta_consultation_message
+  translation: "Здравствуйте! Меня интересует индивидуальная консультация и расчет стоимости."
+
+- id: demo_cta_title
+  translation: "Хотите увидеть демонстрацию системы?"
+
+- id: demo_cta_description
+  translation: "Подайте заявку на бесплатную консультацию, презентацию программного обеспечения или получите индивидуальное коммерческое предложение."
+
+- id: demo_cta_button
+  translation: "Записаться на презентацию"
+
+- id: demo_cta_message
+  translation: "Здравствуйте! Я хочу записаться на презентацию системы и получить бесплатную консультацию по программному обеспечению."
+
+- id: collab_cta_title
+  translation: "Начнем сотрудничество уже сегодня?"
+
+- id: collab_cta_description
+  translation: "Доверьте технические системы вашей торговой точки профессионалам."
+
+- id: collab_cta_button
+  translation: "Связаться с нами"
+
+- id: collab_cta_message
+  translation: "Здравствуйте! Я хочу начать сотрудничество и обсудить технические решения для моей торговой точки."
+
 ######## Footer ########
 - id: footer_info
-  translation: "Умные POS-решения для повышения эффективности Вашего торгового бизнеса"
+  translation: "Умные решения для повышения эффективности вашего торгового бизнеса"
 
 ######## Popup ########
 - id: popup_button
@@ -107,7 +140,7 @@
 
 ######## Products ########
 - id: see_product_button
-  translation: "Посмотреть описание"
+  translation: "Смотреть описание"
 
 - id: open_catalog
   translation: "Открыть каталог"
@@ -117,6 +150,15 @@
   translation: "Наши клиенты"
 
 ######## Contacts page & Form ########
+- id: contact_agree
+  translation: "Я ознакомлен и согласен с"
+
+- id: contact_to_terms
+  translation: "политикой конфиденциальности"
+
+- id: contact_need_to_agree
+  translation: "Для отправки заявки необходимо согласиться с политикой конфиденциальности"
+
 - id: interest_in_plan
   translation: "Здравствуйте! Я хочу заключить договор на обслуживание:"
 
@@ -127,26 +169,32 @@
   translation: "Номер телефона"
 
 - id: business_type_label
-  translation: "Тип бизнеса / Сфера деятельности"
+  translation: "Вид бизнеса / Отрасль"
 
 - id: select_option
   translation: "Выберите из списка..."
 
 - id: biz_office
-  translation: "Офис"
+  translation: "Офис / Бюро"
 
 - id: biz_retail
   translation: "Магазин / Розничная торговля"
 
 - id: biz_horeca
-  translation: "Кафе / Ресторан / Общепит"
+  translation: "Кафе / Ресторан / HoReCa"
 
 - id: biz_industrial
   translation: "Склад / Производство / Логистика"
 
 - id: biz_other
-  translation: "Другой тип бизнеса"
-  
+  translation: "Другой вид бизнеса"
+
+- id: interest_in_product
+  translation: "Здравствуйте! Я хочу получить ценовое предложение и дополнительную информацию о продукте:"
+
+- id: interest_in_plan
+  translation: "Здравствуйте! Я хочу подать заявку на тарифный план / план обслуживания:"
+
   ######## Prices page details ########
 - id: currency_symbol
   translation: "€"
@@ -158,7 +206,35 @@
   translation: "По договоренности"
 
 - id: urgent_help_note
-  translation: "Требуется срочная помощь или оценка нестандартных работ?"
+  translation: "Нужна срочная помощь или расчет стоимости нестандартных работ?"
 
 - id: contact_service
   translation: "Связаться с сервисом"
+
+  ######## Product Detailed View ########
+- id: key_features
+  translation: "Главные преимущества"
+
+- id: technical_specifications
+  translation: "Технические характеристики"
+
+- id: get_quote_or_consultation
+  translation: "Получить предложение / Консультацию"
+
+- id: spec_change_notice
+  translation: "Дизайн продукта и технические параметры могут быть изменены без предварительного уведомления."
+
+- id: technical_specifications
+  translation: "Технические спецификации"
+
+- id: downloads
+  translation: "Загрузки"
+
+- id: user_manual_title
+  translation: "Руководство пользователя и технический паспорт"
+
+- id: product_brochure_title
+  translation: "Буклет / Брошюра продукта"
+
+- id: open_or_download
+  translation: "Открыть / Скачать"

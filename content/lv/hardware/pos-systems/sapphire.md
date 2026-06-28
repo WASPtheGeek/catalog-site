@@ -1,77 +1,106 @@
 ---
 title: "SAM4S SAPPHIRE"
-description: "Jaudīgs un elegants skārienjūtīgais POS terminālis ar Intel Celeron J6412 procesoru tirdzniecībai un HoReCa."
+description: "Mūsdienīgs, kompakts un energoefektīvs skārienjūtīgais POS terminālis ar stabilu alumīnija pamatni uz uzticamas Intel Elkhart Lake arhitektūras bāzes."
 layout: "product-detail"
-image: "images/hardware/sapphire_5.jpg"
+image: "images/hardware/sapphire/sapphire_main.jpg"
 
 product:
-#   name: "SAM4S SAPPHIRE"
-  category: "POS termināļi"
-  tagline: "Premium klases veiktspēja un moderns dizains Jūsu biznesam"
+  category: "POS terminālis"
+  tagline: "Izcila veiktspēja un elegants dizains Jūsu tirdzniecības vietas efektivitātei"
+  video_embed_url: "https://www.youtube.com/embed/6v661b-rk1Y"
   
-  # New Marketing & Purpose Descriptions
-  description_intro: "SAM4S SAPPHIRE ir jaunās paaudzes All-in-One skārienjūtīgais POS terminālis, kas radīts intensīvam darbam un lielām slodzēm modernā tirdzniecības vai pakalpojumu vidē. Pateicoties tā robustajai konstrukcijai, elegantajam dizainam un jaudīgajam četru kodolu procesoram, šī iekārta kļūs par uzticamu Jūsu uzņēmuma sirdi, nodrošinot ātru klientu apkalpošanu bez aizturēm."
+  # Purpose & Business Value Descriptions
+  description_intro: "SAM4S SAPPHIRE ir jaunās paaudzes POS terminālis, kas apvieno elegantu bezapmales dizainu ar izcilu strukturālo stabilitāti. Pateicoties tā izturīgajai un smagajai statīva konstrukcijai, ekrāns nešūpojas pat intensīvas datu ievades laikā. Aprīkots ar modernu, energoefektīvu, bet ārkārtīgi jaudīgu procesoru un augstākās klases jutīgu PCAP skārienekrānu, SAPPHIRE ir lieliska izvēle uzņēmumiem, kas meklē uzticamu un vizuāli pievilcīgu risinājumu ilgtermiņam."
   
   when_to_use_title: "Kad šis risinājums ir vispiemērotākais?"
   when_to_use:
-    - title: "Intensīva tirdzniecība un pārtikas veikali"
-      text: "Ideāli piemērots vietām ar lielu pircēju plūsmu, kur katra sekunde ir svarīga. Ātra datu apstrāde samazina rindas pie kasēm."
-    - title: "Restorāni, kafejnīcas un HoReCa sektors"
-      text: "Izturīgais PCAP skārienjūtīgais ekrāns nebaidās no mitruma vai taukiem, nodrošinot precīzu vadību pat skarbākos virtuves un bāra apstākļos."
-    - title: "Pakalpojumu sniegšanas vietas un saloni"
-      text: "Kompaktais un estētiskais korpuss aizņem maz vietas un kabeļu vadības sistēma noslēpj visus vadus, uzturot leti vizuāli tīru."
-    - title: "Sistēmas modernizācija"
-      text: "Lieliska izvēle, ja esošā kase ir novecojusi un nepieciešama pāreja uz mūsdienīgu programmatūru, kas prasa jaudīgāku DDR4 un SSD platformu."
+    - title: "Intensīvas slodzes tirdzniecības vietas"
+      text: "Stablā un masīvā konstrukcija novērš jebkādu ekrāna kustību vai svārstības, nodrošinot ātru un precīzu kasiera darbu pārtikas veikalos un lielas plūsmas punktos."
+    - title: "Stilīgs un moderns interjers"
+      text: "Gludās, elegantās korpusa līnijas un pieejamās krāsu variācijas padara SAPPHIRE ideāli piemērotu moderniem modes preču veikaliem, dizaina saloniem un premium klases vietām."
+    - title: "HoReCa segments un restorāni"
+      text: "Ūdensizturīgais, pilnībā plakanas virsmas bezapmales priekšējais stikls aizsargā iekārtu pret mitrumu un putekļiem, atvieglojot ikdienas tīrīšanu un nodrošinot augstu higiēnas standartu izpildi."
+    - title: "Mūsdienīgu OS un aplikāciju prasības"
+      text: "Jaunākās paaudzes četrkodolu procesors nodrošina ātru moderno grāmatvedības un POS programmatūru darbību, kā arī pilnvērtīgu Windows 10/11 IoT sistēmu atbalstu."
 
-  price_notice: "Lai saņemtu individuālu cenu piedāvājumu Jūsu biznesa specifikai, komplektācijai vai papildaprīkojumam (klienta displeji, karšu lasītāji), lūdzu, sazinieties ar mūsu servisa komandu."
+  price_notice: "SAM4S SAPPHIRE piedāvā dažādas papildaprīkojuma komplektācijas (magnētisko karšu lasītājus, pircēju displejus un dažādus datu nesēju apjomus). Lūdzu, sazinieties ar mums, lai saņemtu individuālu piedāvājumu."
 
+  # Visual assets tracking list
   images:
-    - "images/hardware/sapphire_5.jpg"
-    - "images/hardware/sapphire_1.jpeg"
-    - "images/hardware/sapphire_2.jpg"
-    - "images/hardware/sapphire_4.jpeg"
-    - "images/hardware/sapphire_6.png"
+    - "images/hardware/sapphire/sapphire_main.jpg"
+    - "images/hardware/sapphire/sapphire_1.jpeg"
+    - "images/hardware/sapphire/sapphire_2.jpg"
+    - "images/hardware/sapphire/sapphire_4.jpeg"
+    - "images/hardware/sapphire/sapphire_6.png"
 
   features:
-    - text: "Jaudīgs Intel Celeron J6412 Quad-Core procesors (līdz 2.6GHz)"
-    - text: "Atsaucīgs un izturīgs 15” PCAP skārienjūtīgais ekrāns ar LED aizmugurgaismojumu"
-    - text: "Plašs pieslēgvietu klāsts (6x USB, 3x Serial, DP) perifērijas ierīcēm"
-    - text: "Kompakts, stabils dizains ar iebūvētu barošanas bloku kabeļu vadībai"
-    - text: "Savietojams ar Windows 10 IoT Enterprise operētājsistēmām"
+    - text: "Jaudīgs Intel Celeron J6412 procesors (Quad Core līdz 2.6GHz) ātrai datu apstrādei"
+    - text: "Spilgts 15 collu LED aizmugurgaismojuma displejs ar izšķirtspēju 1024x768"
+    - text: "Izturīgs un pret skrāpējumiem drošs Projected Capacitive (PCAP) daudzskārienu panelis"
+    - text: "Plašs iebūvēto pieslēgvietu klāsts perifērijas ierīču kontrolei"
+    - text: "Stabila un ergonomiska pamatne ar viedu kabeļu izvietošanas sistēmu"
 
   specs:
-    - group: "Sistēma"
+    - group: "Sistēma & Jauda"
       items:
         - label: "Procesors (CPU)"
           value: "Intel Celeron J6412 (Quad Core līdz 2.6GHz)"
         - label: "Operatīvā atmiņa (RAM)"
-          value: "DDR4 2 sloti (Līdz 32GB)"
+          value: "DDR4 2 sloti (Paplašināma līdz 32GB)"
         - label: "Datu nesējs (Storage)"
-          value: "SSD / M.2: 64GB / 128GB / 256GB"
+          value: "SSD: 256GB / 128GB / 64GB vai M.2: 256GB / 128GB / 64GB"
         - label: "Operētājsistēma (OS)"
           value: "Windows 10 IoT Enterprise LTSC 2019, 2021"
-    - group: "Ekrāns & Skāriens"
+        - label: "Barošanas bloks"
+          value: "AC 100~240V, 50~60Hz / DC 12V, 5A (60W)"
+        - label: "Sertifikācija"
+          value: "CE / FCC / CB / KC / RoHS"
+
+    - group: "Displejs & Skārienvirsma"
       items:
-        - label: "Displejs"
-          value: "15” LED Backlight LCD (1024x768)"
-        - label: "Skārienvirsma"
-          value: "PCAP Touch (Projekcijas kapacitatīvais)"
-    - group: "Pieslēgvietas (Saskarnes)"
+        - label: "Galvenais ekrāns (LCD)"
+          value: "15″ LED Backlight LCD (1024*768)"
+        - label: "Skārienvirsmas tips"
+          value: "PCAP Touch (Projected Capacitive)"
+
+    - group: "Fiziskie Parametri & Konstrukcija"
       items:
-        - label: "Virknētais (Serial)"
-          value: "3 porti (RS-232 RI/5V/12V BIOS selectable)"
-        - label: "USB"
-          value: "6 porti"
-        - label: "Lan (Ethernet)"
-          value: "1 ports"
-        - label: "Ārējais displejs"
-          value: "DP (DisplayPort) 1 ports"
-    - group: "Fiziskie parametri & Papildus"
-      items:
-        - label: "Izmēri"
-          value: "352(Pl) x 225(Aug) x 363(Dz) mm"
+        - label: "Izmēri (W x H x D)"
+          value: "352 x 225 x 363 mm"
         - label: "Svars"
           value: "5.3 kg"
-        - label: "Krāsa"
-          value: "Balta, Melna"
+        - label: "Korpusa krāsa"
+          value: "White / Black"
+        - label: "Skaņa / Audio"
+          value: "1 Port (Line out), Iebūvēts iekšējais skaļrunis (2W)"
+
+    - group: "Pieslēgvietas (Interface Matrix)"
+      items:
+        - label: "Seriālie porti (Serial)"
+          value: "3 Ports (RS-232 RI/5V/12V BIOS se-lectable) | Pieejama 3 papildus portu opcija"
+        - label: "Paralēlais ports (Parallel)"
+          value: "1 Port (Izvēles / Optional)"
+        - label: "USB pieslēgvietas"
+          value: "6 Ports"
+        - label: "Tīkla interfeiss (Ethernet)"
+          value: "1 Port"
+        - label: "Ārējais displejs (External)"
+          value: "DP 1 Port"
+        - label: "Naudas lādīte (Drawer)"
+          value: "1 Port / 2 CH (12V/24V se-lectable)"
+
+    - group: "Papildaprīkojums & Modifikācijas (Optional)"
+      items:
+        - label: "Karšu lasītājs (MSR)"
+          value: "1/2/3 Track Atbalsts"
+        - label: "Pircēju displejs (Rear Display)"
+          value: "2Line LCD (20 CH x 2 line) vai pilnais LCD (9.7″, 15″ ar Touch opciju)"
+        - label: "Sienas montāža"
+          value: "VESA Wall Mount atbalsts"
+
+  # --- DOWNLOAD LAYOUT SECTION ---
+  leaflets:
+    - title_key: "product_brochure_title"
+      description: "Oficiālā ražotāja specifikāciju un konfigurāciju informatīvā lapa par SAM4S SAPPHIRE POS termināli."
+      file_link: "/docs/sam4s_sapphire_brochure.pdf"
 ---

@@ -73,56 +73,216 @@
           </div>
         </div>
 
-        {{ if .when_to_use }}
-        <div class="row my-5 pt-4 border-top border-light" data-aos="fade-up">
-            <div class="col-lg-12">
-            <h2 class="h4 font-weight-bold text-dark mb-4">{{ .when_to_use_title }}</h2>
-            <div class="row">
-                {{ range .when_to_use }}
-                <div class="col-md-6 mb-4">
-                    <div class="h-100 p-3 rounded" style="background-color: #f9f9f9; border: 1px solid #e0e0e0;">
-                    <h4 class="h6 font-weight-bold text-dark mb-2" style="color: #ff6a00 !important;">{{ .title }}</h4>
-                    <p class="text-secondary small mb-0" style="line-height: 1.5;">{{ .text }}</p>
+        <!-- Combined Usability & Media Side-by-Side Row -->
+        {{ if or .when_to_use .video_embed_url }}
+        <div class="row my-5 pt-4 border-top border-light align-items-start" data-aos="fade-up">
+            
+            <!-- Left Side: Usability Points (Becomes narrower if video exists) -->
+            <div class="{{ if .video_embed_url }}col-lg-7{{ else }}col-lg-12{{ end }} mb-4">
+                {{ if .when_to_use }}
+                    <h2 class="h4 font-weight-bold text-dark mb-4">{{ .when_to_use_title }}</h2>
+                    <div class="row">
+                        {{ range .when_to_use }}
+                        <div class="{{ if $.Params.product.video_embed_url }}col-12{{ else }}col-md-6{{ end }} mb-3">
+                            <div class="p-3 rounded h-100" style="background-color: #f9f9f9; border: 1px solid #e0e0e0;">
+                                <h4 class="h6 font-weight-bold mb-2" style="color: #ff6a00 !important;">{{ .title }}</h4>
+                                <p class="text-secondary small mb-0" style="line-height: 1.5;">{{ .text }}</p>
+                            </div>
+                        </div>
+                        {{ end }}
                     </div>
-                </div>
                 {{ end }}
             </div>
+
+            <!-- Right Side: Sticky/Aligned Video Column -->
+            {{ if .video_embed_url }}
+            <div class="col-lg-5 mb-4 position-sticky" style="top: 20px;">
+                <h2 class="h4 font-weight-bold text-dark mb-4">{{ T `video_overview` | default "Video Apskats" }}</h2>
+                <div class="ratio ratio-16x9 rounded overflow-hidden bg-dark shadow-sm">
+                    <iframe 
+                        src="{{ .video_embed_url | safeURL }}" 
+                        title="Video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
+            {{ end }}
+
         </div>
         {{ end }}
 
         <div class="row mt-5" data-aos="fade-up">
             <div class="col-lg-12">
-            <h2 class="h3 font-weight-bold text-dark spec-title-main pb-3 mb-4">{{ T `technical_specifications` }}</h2>
-            
-            <div class="row">
-                {{ range .specs }}
-                <div class="col-md-6 mb-4">
-                    <div class="spec-card-clean">
-                    <div class="spec-card-header">
-                        <h3 class="mb-0">{{ .group }}</h3>
-                    </div>
+                
+                <!-- Master Section Tab Switchers (Inspired by image_174801.png) -->
+                <ul class="nav nav-tabs border-bottom mb-4" id="mainProductTabs" role="tablist" style="gap: 15px; border-width: 2px !important;">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active position-relative px-0 pb-2 h4 font-weight-bold mb-0 border-0 text-uppercase" 
+                                id="specs-view-tab" data-bs-toggle="tab" data-bs-target="#specs-view-pane" 
+                                type="button" role="tab" aria-controls="specs-view-pane" aria-selected="true"
+                                style="background: none; letter-spacing: 0.5px;">
+                            {{ T `technical_specifications` | default "Specifikācijas" }}
+                        </button>
+                    </li>
+                    {{ if .leaflets }}
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link position-relative px-0 pb-2 h4 font-weight-bold mb-0 border-0 text-uppercase" 
+                                id="downloads-view-tab" data-bs-toggle="tab" data-bs-target="#downloads-view-pane" 
+                                type="button" role="tab" aria-controls="downloads-view-pane" aria-selected="false"
+                                style="background: none; letter-spacing: 0.5px;">
+                            {{ T `downloads` | default "Lejupielādes" }}
+                        </button>
+                    </li>
+                    {{ end }}
+                </ul>
+
+                <!-- Master View Panes Layer Box -->
+                <div class="tab-content mt-4" id="mainProductTabsContent">
                     
-                    <div class="spec-card-body">
-                        {{ range .items }}
-                        <div class="spec-card-row">
-                            <div class="spec-card-label">{{ .label }}</div>
-                            <div class="spec-card-value">{{ .value }}</div>
+                    <!-- TAB 1: SPECIFICATIONS -->
+                    <div class="tab-pane fade show active" id="specs-view-pane" role="tabpanel" aria-labelledby="specs-view-tab">
+                                            
+                      <!-- Common specifications -->
+                        {{ if .specs }}
+                        <div class="row mb-4">
+                            {{ range .specs }}
+                            <div class="col-md-6 mb-4">
+                                <div class="spec-card-clean">
+                                    <div class="spec-card-header bg-light">
+                                        <h3 class="mb-0 text-muted small text-uppercase font-weight-bold">{{ .group }}</h3>
+                                    </div>
+                                    <div class="spec-card-body">
+                                        {{ range .items }}
+                                        <div class="spec-card-row">
+                                            <div class="spec-card-label font-weight-semibold">{{ .label }}</div>
+                                            <div class="spec-card-value text-dark">{{ .value }}</div>
+                                        </div>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                            </div>
+                            {{ end }}
                         </div>
                         {{ end }}
+
+                        {{ with .series_comparison }}
+                        <div class="product-summary-card bg-light p-4 rounded-3 border mb-5" data-aos="fade-up">
+                            <h3 class="h5 font-weight-bold text-dark mb-3">
+                                <i class="las la-info-circle text-primary me-2"></i> {{ .title | safeHTML }}
+                            </h3>
+                            <p class="text-muted small mb-4">
+                                {{ .description | safeHTML }}
+                            </p>
+                            
+                            <div class="row g-3">
+                                {{ range .tiers }}
+                                <div class="col-xl-3 col-md-6">
+                                    <div class="p-3 bg-white border rounded-3 h-100 summary-tier-box {{ if .highlight }}tier-highlighted{{ end }}">
+                                        <h4 class="h6 font-weight-bold mb-2 title-element">
+                                            {{ .name | safeHTML }}
+                                        </h4>
+                                        <p class="text-muted small mb-0">{{ .text | safeHTML }}</p>
+                                    </div>
+                                </div>
+                                {{ end }}
+                            </div>
+                        </div>
+                        {{ end }}  
+
+                        <!-- Inner Hardware sub-model variant selector tabs -->
+                        {{ if .models }}
+                            <ul class="nav nav-tabs border-bottom mb-4" id="productModelTabs" role="tablist" style="gap: 5px;">
+                                {{ range $index, $model := .models }}
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link px-4 py-2 border rounded-top {{ if eq $index 0 }}active{{ end }}" 
+                                            id="{{ $model.id }}-tab" data-bs-toggle="tab" data-bs-target="#{{ $model.id }}" 
+                                            type="button" role="tab" aria-controls="{{ $model.id }}" aria-selected="{{ if eq $index 0 }}true{{ end }}">
+                                        {{ $model.name }}
+                                    </button>
+                                </li>
+                                {{ end }}
+                            </ul>
+
+                            <div class="tab-content" id="productModelTabsContent">
+                                {{ range $index, $model := .models }}
+                                <div class="tab-pane fade {{ if eq $index 0 }}show active{{ end }}" id="{{ $model.id }}" role="tabpanel" aria-labelledby="{{ $model.id }}-tab">
+                                    <div class="row">
+                                        {{ range .specs }}
+                                        <div class="col-md-6 mb-4">
+                                            <div class="spec-card-clean border rounded shadow-sm">
+                                                <div class="spec-card-header p-3" style="background-color: rgba(255, 106, 0, 0.03); border-bottom: 1px solid rgba(0,0,0,0.08);">
+                                                    <h4 class="h6 mb-0 font-weight-bold" style="color: #ff6a00;">{{ .group }}</h4>
+                                                </div>
+                                                <div class="spec-card-body">
+                                                    {{ range .items }}
+                                                    <div class="spec-card-row">
+                                                        <div class="spec-card-label">{{ .label }}</div>
+                                                        <div class="spec-card-value font-weight-medium">{{ .value }}</div>
+                                                    </div>
+                                                    {{ end }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                                {{ end }}
+                            </div>
+                        {{ end }}
                     </div>
+
+                    <!-- TAB 2: DOWNLOADS CENTER -->
+                    {{ if .leaflets }}
+                    <div class="tab-pane fade" id="downloads-view-pane" role="tabpanel" aria-labelledby="downloads-view-tab">
+                        <div class="row">
+                            {{ range .leaflets }}
+                            <div class="col-md-6 mb-4">
+                                <div class="p-4 rounded border bg-light h-100 d-flex flex-column justify-content-between shadow-sm transition-hover">
+                                    <div class="mb-3">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <span class="text-danger me-2" style="font-size: 1.5rem; line-height: 1;">📄</span>
+                                            <h4 class="h6 font-weight-bold text-dark mb-0">
+                                                {{ T .title_key | default .title_key }}
+                                            </h4>
+                                        </div>
+                                        <p class="text-muted small mb-0" style="line-height: 1.5;">{{ .description }}</p>
+                                    </div>
+                                    
+                                    <div class="pt-2 d-flex align-items-center justify-content-between border-top mt-2">
+                                        
+                                        <!-- DYNAMIC FILE SIZE CALCULATION -->
+                                        <span class="badge text-muted small font-weight-bold px-2 py-1 rounded" style="background-color: rgba(108, 117, 125, 0.5);">
+                                            <!-- Clean leading slashes to prevent double-slashes when stitching 'static' path -->
+                                            {{ $trimmed_link := strings.TrimPrefix "/" .file_link }}
+                                            {{ $file_path := printf "static/%s" $trimmed_link }}
+                                            
+                                            {{ if fileExists $file_path }}
+                                                {{ $stat := os.Stat $file_path }}
+                                                {{ $size_mb := div (float $stat.Size) 1048576.0 }}
+                                                {{ printf "PDF ~%.1f MB" $size_mb }}
+                                            {{ else }}
+                                                PDF
+                                            {{ end }}
+                                        </span>
+
+                                        <a href="{{ .file_link | relURL }}" target="_blank" class="btn btn-outline-primary btn-sm font-weight-bold px-3">
+                                            {{ T "open_or_download" | default "Atvērt / Lejupielādēt" }}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{ end }}
+                        </div>
                     </div>
+                    {{ end }}
+
                 </div>
-                {{ end }}
-            </div>
 
-            <p class="text-muted small mt-4 italic text-center">
-                * {{ T `spec_change_notice` }}
-            </p>
+                <p class="text-muted small mt-4 italic text-center">* {{ T `spec_change_notice` }}</p>
 
             </div>
-        </div>
-
         </div>
     </section>
   </div>  

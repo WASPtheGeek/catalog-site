@@ -6,7 +6,7 @@ layout: "about"
 # Hero and intro block
 about_intro:
   subtitle: "Uzticams partneris kases sistēmu pasaulē"
-  title: "Vairāk nekā tikai tehnoloģijas — pilna servisa atbalsts Jūsu biznesam"
+  title: "Pilna servisa atbalsts Jūsu biznesam"
   text: "Mēs esam uzņēmums, kas specializējas modernu tirdzniecības tehnoloģiju, kases aparātu un POS sistēmu ieviešanā. Mūsu mērķis ir nodrošināt uzņēmējiem drošus, stabilus un VID prasībām pilnībā atbilstošus risinājumus, kas palīdz augt un attīstīties bez tehniskām dīkstāvēm."
 
 # Key business metrics (digits)
@@ -15,7 +15,7 @@ stats_section:
     - number: "10+"
       suffix: "Gadi"
       text: "Pieredze un stabilitāte Latvijas tirgū"
-    - number: "100s"
+    - number: "100+"
       suffix: "Kases"
       text: "Uzstādītas un reģistrētas kases sistēmas visā Latvijā"
     - number: "1"

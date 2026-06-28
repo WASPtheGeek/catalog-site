@@ -6,10 +6,10 @@
   <section class="section pt-5 pb-5 bg-white">
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-lg-9" data-aos="fade-up">
+        <div class="" data-aos="fade-up">
           <span class="text-uppercase text-primary small font-weight-bold d-block mb-2">{{ .subtitle | markdownify }}</span>
           <h2 class="font-weight-bold mb-4">{{ .title | markdownify }}</h2>
-          <p class="text-muted lead" style="line-height: 1.7;">{{ .text | markdownify }}</p>
+          <p class="text-start text-muted lead" style="line-height: 1.7;">{{ .text | markdownify }}</p>
         </div>
       </div>
     </div>
@@ -71,14 +71,17 @@
     </div>
   </section>
   {{ end }}
-
+  
   <!-- BOTTOM CALL TO ACTION -->
   <section class="section py-5 text-center bg-light">
     <div class="container" data-aos="fade-up">
-      <h3 class="font-weight-bold mb-3">Sāksim sadarbību jau šodien?</h3>
-      <p class="text-muted mb-4">Uzticiet savas tirdzniecības vietas tehniskās sistēmas profesionāļiem.</p>
-      <a href="/lv/contact/" class="btn btn-primary font-weight-bold px-5 py-3 shadow">
-        Sazināties ar mums
+      <h3 class="font-weight-bold mb-3">{{ T "collab_cta_title" }}</h3>
+      <p class="text-muted mb-4">{{ T "collab_cta_description" }}</p>
+      
+      <!-- Dynamic language prefix route with dynamic pre-filled contact message -->
+      <a href="{{ printf "/%s/contact/" .Language.Lang | relURL }}?message={{ T "collab_cta_message" }}" 
+         class="btn btn-primary font-weight-bold px-5 py-3 shadow">
+        {{ T "collab_cta_button" }}
       </a>
     </div>
   </section>
