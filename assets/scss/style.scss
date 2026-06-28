@@ -45,3 +45,7 @@ $font-icon: '{{.font_icon | default "Font Awesome 5 Free"}}';
 @import 'custom';
 
 @import 'prices';
+
+@import 'products-table';
+
+@import 'breadcrumb';

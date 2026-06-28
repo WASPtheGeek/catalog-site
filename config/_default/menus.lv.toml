@@ -44,31 +44,31 @@ hasChildren = true
   # [[main]]
   # parent = "Iekārtas"
   # name = "POS Monobloki"
-  # url = "/products/monoblocks/"
+  # url = "/hardware/monoblocks/"
   # weight = 1
 
   # [[main]]
   # parent = "Iekārtas"
   # name = "Čeku printeri"
-  # url = "/products/printers/"
+  # url = "/hardware/printers/"
   # weight = 2
 
-  # [[main]]
-  # parent = "Iekārtas"
-  # name = "Kases sistēmas"
-  # url = "/products/pos-systems/"
-  # weight = 3
+  [[main]]
+  parent = "Iekārtas"
+  name = "POS termināļi"
+  url = "/hardware/pos-systems/"
+  weight = 3
 
   # [[main]]
   # parent = "Iekārtas"
   # name = "Pašapkalpošanās kioski"
-  # url = "/products/kiosks/"
+  # url = "/hardware/kiosks/"
   # weight = 4
 
   # [[main]]
   # parent = "Iekārtas"
   # name = "POS Perifērija"
-  # url = "/products/peripherals/"
+  # url = "/hardware/peripherals/"
   # weight = 5
 
 [[main]]

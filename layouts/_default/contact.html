@@ -144,7 +144,6 @@
         }
         form.addEventListener("submit", handleSubmit);
 
-
         (function () {
           'use strict'
           var forms = document.querySelectorAll('.needs-validation')
@@ -161,22 +160,14 @@
             })
         })();
 
-        // Автозаполнение поля сообщения на основе параметров URL
+        // Safely extract and inject pre-translated message configurations from URL params
         document.addEventListener("DOMContentLoaded", function() {
           var urlParams = new URLSearchParams(window.location.search);
-          var planName = urlParams.get('plan');
+          var directMessage = urlParams.get('message');
           var messageField = document.getElementById('message');
           
-          if (planName && messageField) {
-            // Формируем текст сообщения. Текст подстроится под язык сайта
-            var localizedText = "{{ T `interest_in_plan` }}";
-            
-            // Если перевод interest_in_plan не задан в i18n, используем дефолтный шаблон
-            if (localizedText === "interest_in_plan" || !localizedText) {
-              localizedText = "Labdien! Vēlos pieteikties apkalpošanas līgumam:";
-            }
-            
-            messageField.value = localizedText + " " + planName + ".\n";
+          if (directMessage && messageField) {
+            messageField.value = directMessage;
           }
         });
       </script>

@@ -157,6 +157,12 @@
 - id: biz_other
   translation: "Cits biznesa veids"
 
+- id: interest_in_product
+  translation: "Labdien! Vēlos saņemt cenu piedāvājumu un papildus informāciju par produktu:"
+
+- id: interest_in_plan
+  translation: "Labdien! Vēlos pieteikties pakalpojumu / apkalpošanas plānam:"
+
   ######## Prices page details ########
 - id: currency_symbol
   translation: "€"
@@ -172,3 +178,16 @@
 
 - id: contact_service
   translation: "Sazināties ar servisu"
+
+  ######## Product Detailed View ########
+- id: key_features
+  translation: "Galvenās priekšrocības"
+
+- id: technical_specifications
+  translation: "Tehniskā specifikācija"
+
+- id: get_quote_or_consultation
+  translation: "Saņemt piedāvājumu / Konsultāciju"
+
+- id: spec_change_notice
+  translation: "Produkta dizains un tehniskie parametri var tikt mainīti bez iepriekšēja brīdinājuma."

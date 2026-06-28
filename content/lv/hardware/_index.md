@@ -1,5 +1,5 @@
 ---
-title: "Iekārtas un Preces"
+title: "Iekārtas"
 description: "Kases aparāti, POS sistēmas, svītrukodu skeneri un citas tirdzniecības iekārtas. Katalogs pašlaik tiek atjaunināts."
 layout: "products-placeholder"
 

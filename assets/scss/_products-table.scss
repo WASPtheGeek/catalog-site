@@ -1,0 +1,141 @@
+h2.spec-title-main {
+  position: relative;
+  border-bottom: 2px solid #ff6a00 !important; 
+  color: #1a202c;
+}
+
+.hardware-products .block {
+    padding: 2rem 0;
+}
+
+.spec-card-clean {
+  background: #ffffff;
+  border: 1px solid #e0e0e0; 
+  border-radius: 12px;       
+  overflow: hidden;          
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  height: 100%;
+}
+
+.spec-card-header {
+  background-color: #f5f5f5; /* Pure warm neutral gray instead of slate-blue */
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid #e0e0e0;
+
+  h3 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #ff6a00; 
+  }
+}
+
+.spec-card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-card-row {
+  display: flex;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.9rem;
+  align-items: center;
+  transition: all 0.2s ease-in-out; 
+
+  &:last-child {
+    border-bottom: none; 
+  }
+
+  &:nth-of-type(odd) {
+    background-color: #f9f9f9; /* Clean, colorless off-white */
+  }
+
+  &:hover {
+    background-color: rgba(255, 106, 0, 0.06) !important; 
+    cursor: default;
+
+    .spec-card-label {
+      color: #ff6a00; 
+      border-right-color: rgba(255, 106, 0, 0.15); 
+    }
+
+    .spec-card-value {
+      color: #000000; 
+      font-weight: 500; 
+    }
+  }
+}
+
+.spec-card-label {
+  width: 40%;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  color: #616161; /* Desaturated dark gray */
+  border-right: 1px solid #f0f0f0;
+  font-size: 0.85rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.spec-card-value {
+  width: 60%;
+  padding: 0.75rem 1.25rem;
+  color: #212121; /* Soft off-black */
+  transition: all 0.2s ease-in-out;
+}
+
+.main-product-image-container {
+  // Container wrapper bounds the absolute navigation controls
+  &:hover .gallery-nav-btn {
+    opacity: 1; // Arrows softly fade-in when the cursor hovers over the card area
+  }
+}
+
+.gallery-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid #e0e0e0;
+  color: #212121;
+  font-size: 1.25rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0; // Hidden by default for a clean presentation style
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: #ff6a00; // Transitions instantly into corporate profile orange
+    color: #ffffff;
+    border-color: #ff6a00;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.prev-btn {
+    left: 15px;
+  }
+
+  &.next-btn {
+    right: 15px;
+  }
+}
+
+// Visual feedback filter for thumbnail images
+.img-thumbnail-wrapper {
+  transition: all 0.2s ease;
+  
+  &.active-thumb {
+    border-color: #ff6a00 !important; // Outline matches current index reference
+    box-shadow: 0 0 0 2px rgba(255, 106, 0, 0.15);
+  }
+}

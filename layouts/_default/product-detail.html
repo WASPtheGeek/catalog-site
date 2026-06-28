@@ -1,0 +1,182 @@
+{{ define "main" }}
+<div class="hardware-products">
+    {{ partial "components/page-header.html" . }}
+
+    {{ with .Params.product }}
+    <section class="section py-5 bg-white">
+        <div class="container">
+        
+        <div class="row mb-5">
+            <div class="col-lg-6 mb-4" data-aos="fade-up">
+          {{ if .images }}
+            <div class="main-product-image-container position-relative mb-3 border rounded shadow-sm overflow-hidden bg-light">
+              
+              <button type="button" class="gallery-nav-btn prev-btn" onclick="navigateGallery(-1)" aria-label="Previous image">
+                &#10094; </button>
+
+              <div class="p-3 text-center d-flex align-items-center justify-content-center" style="min-height: 400px;">
+                <img id="mainImage" src="{{ index .images 0 | relURL }}" alt="{{ .name }}" class="img-fluid" style="max-height: 400px; object-fit: contain;">
+              </div>
+
+              <button type="button" class="gallery-nav-btn next-btn" onclick="navigateGallery(1)" aria-label="Next image">
+                &#10095; </button>
+              
+            </div>
+            
+            {{ if gt (len .images) 1 }}
+            <div class="row g-2 product-thumbnails justify-content-center">
+              {{ range $index, $element := .images }}
+                <div class="col-3 col-sm-2">
+                  <div class="img-thumbnail-wrapper border rounded p-1 bg-white cursor-pointer" data-index="{{ $index }}" onclick="selectThumbnail(this)">
+                    <img src="{{ $element | relURL }}" alt="Thumbnail" class="img-fluid d-block mx-auto" style="max-height: 60px; object-fit: contain;">
+                  </div>
+                </div>
+              {{ end }}
+            </div>
+            {{ end }}
+          {{ end }}
+        </div>
+
+            <div class="col-lg-6 mb-4" data-aos="fade-up">
+            <span class="text-uppercase text-primary small font-weight-bold d-block mb-1">{{ .category }}</span>
+            <h1 class="font-weight-bold text-dark mb-2">{{ .name }}</h1>
+            <p class="lead text-muted mb-4">{{ .tagline }}</p>
+            
+            <div class="product-description text-secondary mb-4" style="line-height: 1.6;">
+                {{ .description_intro | markdownify }}
+            </div>
+
+            <ul class="list-unstyled mb-4">
+                {{ range .features }}
+                <li class="mb-2 d-flex align-items-start">
+                    <span class="text-primary font-weight-bold me-2">✓</span>
+                    <span class="text-dark font-weight-medium">{{ .text }}</span>
+                </li>
+                {{ end }}
+            </ul>
+
+            <div class="p-3 rounded mb-4" style="background-color: #f9f9f9; border-left: 4px solid #ff6a00;">
+                <p class="text-dark small mb-0 font-weight-medium">
+                {{ .price_notice }}
+                </p>
+            </div>
+
+                          
+            <div class="product-actions">
+              <!-- Using the locked $pageTitle variable avoids any scope or context loss -->
+              {{ $messageText := printf "%s %s.\n\n" (T "interest_in_product") $.Page.Title }}
+              
+              <a href="{{ "/contact/" | relLangURL }}?message={{ $messageText | urlquery }}#contact-form" class="btn btn-primary font-weight-bold px-5 py-3 shadow-sm">
+                {{ T `get_quote_or_consultation` }}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {{ if .when_to_use }}
+        <div class="row my-5 pt-4 border-top border-light" data-aos="fade-up">
+            <div class="col-lg-12">
+            <h2 class="h4 font-weight-bold text-dark mb-4">{{ .when_to_use_title }}</h2>
+            <div class="row">
+                {{ range .when_to_use }}
+                <div class="col-md-6 mb-4">
+                    <div class="h-100 p-3 rounded" style="background-color: #f9f9f9; border: 1px solid #e0e0e0;">
+                    <h4 class="h6 font-weight-bold text-dark mb-2" style="color: #ff6a00 !important;">{{ .title }}</h4>
+                    <p class="text-secondary small mb-0" style="line-height: 1.5;">{{ .text }}</p>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            </div>
+        </div>
+        {{ end }}
+
+        <div class="row mt-5" data-aos="fade-up">
+            <div class="col-lg-12">
+            <h2 class="h3 font-weight-bold text-dark spec-title-main pb-3 mb-4">{{ T `technical_specifications` }}</h2>
+            
+            <div class="row">
+                {{ range .specs }}
+                <div class="col-md-6 mb-4">
+                    <div class="spec-card-clean">
+                    <div class="spec-card-header">
+                        <h3 class="mb-0">{{ .group }}</h3>
+                    </div>
+                    
+                    <div class="spec-card-body">
+                        {{ range .items }}
+                        <div class="spec-card-row">
+                            <div class="spec-card-label">{{ .label }}</div>
+                            <div class="spec-card-value">{{ .value }}</div>
+                        </div>
+                        {{ end }}
+                    </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+
+            <p class="text-muted small mt-4 italic text-center">
+                * {{ T `spec_change_notice` }}
+            </p>
+
+            </div>
+        </div>
+
+        </div>
+    </section>
+  </div>  
+  {{ end }}
+
+  <script>
+    // Accessing the product images explicitly via .Params.product to fix the context scope error
+    var galleryImages = [
+      {{ range .Params.product.images }} "{{ . | relURL }}", {{ end }}
+    ];
+    
+    var currentImageIndex = 0;
+    var mainImageElement = document.getElementById('mainImage');
+
+    // Initialize highlight
+    if (galleryImages.length > 0) {
+      updateThumbnailHighlight();
+    }
+
+    // Handles arrow logic cycles (loops seamlessly around list limits)
+    function navigateGallery(direction) {
+      if (galleryImages.length === 0) return;
+      
+      currentImageIndex += direction;
+      
+      if (currentImageIndex >= galleryImages.length) {
+        currentImageIndex = 0; 
+      } else if (currentImageIndex < 0) {
+        currentImageIndex = galleryImages.length - 1; 
+      }
+      
+      mainImageElement.src = galleryImages[currentImageIndex];
+      updateThumbnailHighlight();
+    }
+
+    // Handles direct user thumbnail clicks
+    function selectThumbnail(element) {
+      var index = parseInt(element.getAttribute('data-index'), 10);
+      currentImageIndex = index;
+      mainImageElement.src = galleryImages[currentImageIndex];
+      updateThumbnailHighlight();
+    }
+
+    // Applies orange active borders to match current selection status
+    function updateThumbnailHighlight() {
+      var thumbs = document.querySelectorAll('.img-thumbnail-wrapper');
+      thumbs.forEach(function(thumb) {
+        var idx = parseInt(thumb.getAttribute('data-index'), 10);
+        if (idx === currentImageIndex) {
+          thumb.classList.add('active-thumb');
+        } else {
+          thumb.classList.remove('active-thumb');
+        }
+      });
+    }
+  </script>
+{{ end }}

@@ -1,0 +1,12 @@
+.breadcrumb {
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: none;
+    }
+    
+    .breadcrumb-item + .breadcrumb-item::before {
+        float: right;
+        padding-left: var(--bs-breadcrumb-item-padding-x);
+        color: var(--bs-breadcrumb-divider-color);
+        content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
+    }
+}
