@@ -142,6 +142,9 @@
 - id: see_product_button
   translation: "View description"
 
+- id: no_products_message
+  translation: "The product list is currently empty"
+
 - id: open_catalog
   translation: "Open catalog"
 

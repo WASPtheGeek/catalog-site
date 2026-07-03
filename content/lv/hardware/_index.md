@@ -4,10 +4,6 @@ subtitle: "Profesionāls aprīkojums tirdzniecībai"
 description: "Kases aparāti, POS sistēmas, svītrukodu skeneri un citas tirdzniecības iekārtas Jūsu biznesa efektivitātei."
 layout: "list"
 
-# Global translations for product grid
-btn_see_product: "Skatīt aprakstu"
-no_products_message: "Pašlaik produktu saraksts ir tukšs."
-
 # Info banner (Top)
 catalog_notice:
   title: "Mūsu preču katalogs pašlaik tiek aktīvi papildināts"

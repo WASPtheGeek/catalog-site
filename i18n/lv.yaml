@@ -143,6 +143,9 @@
 - id: see_product_button
   translation: "Skatīt aprakstu"
 
+- id: no_products_message
+  translation: "Pašlaik produktu saraksts ir tukšs"
+
 - id: open_catalog
   translation: "Atvērt katalogu"
 

@@ -28,7 +28,7 @@ hasChildren = true
   parent = "Solutions"
   name = "Services & Prices"
   url = "/solutions/services-and-prices"
-  weight = 2
+  weight = 3
 
 [[main]]
 name = "Software"
@@ -41,35 +41,29 @@ url = "/hardware"
 weight = 4
 hasChildren = true
 
-  # [[main]]
-  # parent = "Hardware"
-  # name = "POS Monoblocks"
-  # url = "/hardware/monoblocks/"
-  # weight = 1
-
-  # [[main]]
-  # parent = "Hardware"
-  # name = "Receipt Printers"
-  # url = "/hardware/printers/"
-  # weight = 2
-
   [[main]]
   parent = "Hardware"
   name = "POS Terminals"
   url = "/hardware/pos-systems/"
+  weight = 1
+
+  [[main]]
+  parent = "Hardware"
+  name = "Receipt Printers"
+  url = "/hardware/printers/"
+  weight = 2
+
+  [[main]]
+  parent = "Hardware"
+  name = "Customer Displays"
+  url = "/hardware/displays/"
   weight = 3
 
-  # [[main]]
-  # parent = "Hardware"
-  # name = "Self-Service Kiosks"
-  # url = "/hardware/kiosks/"
-  # weight = 4
-
-  # [[main]]
-  # parent = "Hardware"
-  # name = "POS Peripherals"
-  # url = "/hardware/peripherals/"
-  # weight = 5
+  [[main]]
+  parent = "Hardware"
+  name = "Cash Drawers"
+  url = "/hardware/drawers/"
+  weight = 4
 
 [[main]]
 name = "Contacts"

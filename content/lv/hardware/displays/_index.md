@@ -1,0 +1,4 @@
+---
+title: "Klientu displeji"
+image: "images/hardware/displays.jpeg"
+---

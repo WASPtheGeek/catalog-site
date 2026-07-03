@@ -28,7 +28,7 @@ hasChildren = true
   parent = "Решения"
   name = "Услуги и цены"
   url = "/solutions/services-and-prices"
-  weight = 2
+  weight = 3
 
 [[main]]
 name = "Программное обеспечение"
@@ -41,35 +41,29 @@ url = "/hardware"
 weight = 4
 hasChildren = true
 
-  # [[main]]
-  # parent = "Оборудование"
-  # name = "POS Моноблоки"
-  # url = "/hardware/monoblocks/"
-  # weight = 1
-
-  # [[main]]
-  # parent = "Оборудование"
-  # name = "Чековые принтеры"
-  # url = "/hardware/printers/"
-  # weight = 2
-
   [[main]]
   parent = "Оборудование"
   name = "POS-терминалы"
   url = "/hardware/pos-systems/"
+  weight = 1
+
+  [[main]]
+  parent = "Оборудование"
+  name = "Принтеры чеков"
+  url = "/hardware/printers/"
+  weight = 2
+
+  [[main]]
+  parent = "Оборудование"
+  name = "Дисплеи покупателя"
+  url = "/hardware/displays/"
   weight = 3
 
-  # [[main]]
-  # parent = "Оборудование"
-  # name = "Киоски самообслуживания"
-  # url = "/hardware/kiosks/"
-  # weight = 4
-
-  # [[main]]
-  # parent = "Оборудование"
-  # name = "POS Периферия"
-  # url = "/hardware/peripherals/"
-  # weight = 5
+  [[main]]
+  parent = "Оборудование"
+  name = "Денежные ящики"
+  url = "/hardware/drawers/"
+  weight = 4
 
 [[main]]
 name = "Контакты"

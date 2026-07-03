@@ -142,6 +142,9 @@
 - id: see_product_button
   translation: "Смотреть описание"
 
+- id: no_products_message
+  translation: "На данный момент список продуктов пуст"
+
 - id: open_catalog
   translation: "Открыть каталог"
 

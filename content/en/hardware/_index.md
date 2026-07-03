@@ -4,10 +4,6 @@ subtitle: "Professional equipment for retail and commerce"
 description: "Cash registers, POS systems, barcode scanners, and other retail equipment to enhance your business efficiency."
 layout: "list"
 
-# Global translations for product grid
-btn_see_product: "View description"
-no_products_message: "The product list is currently empty."
-
 # Info banner (Top)
 catalog_notice:
   title: "Our product catalog is currently being updated"

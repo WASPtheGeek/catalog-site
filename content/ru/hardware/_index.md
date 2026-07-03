@@ -4,10 +4,6 @@ subtitle: "Профессиональное оборудование для то
 description: "Кассовые аппараты, POS-системы, сканеры штрихкодов и другое торговое оборудование для эффективности Вашего бизнеса."
 layout: "list"
 
-# Global translations for product grid
-btn_see_product: "Смотреть описание"
-no_products_message: "На данный момент список продуктов пуст."
-
 # Info banner (Top)
 catalog_notice:
   title: "Наш каталог товаров сейчас активно пополняется"

@@ -28,7 +28,7 @@ hasChildren = true
   parent = "Risinājumi"
   name = "Pakalpojumi un cenas"
   url = "/solutions/services-and-prices"
-  weight = 2
+  weight = 3
 
 [[main]]
 name = "Programmatūra"
@@ -41,35 +41,29 @@ url = "/hardware"
 weight = 4
 hasChildren = true
 
-  # [[main]]
-  # parent = "Iekārtas"
-  # name = "POS Monobloki"
-  # url = "/hardware/monoblocks/"
-  # weight = 1
-
-  # [[main]]
-  # parent = "Iekārtas"
-  # name = "Čeku printeri"
-  # url = "/hardware/printers/"
-  # weight = 2
-
   [[main]]
   parent = "Iekārtas"
   name = "POS termināļi"
   url = "/hardware/pos-systems/"
+  weight = 1
+
+  [[main]]
+  parent = "Iekārtas"
+  name = "Čeku printeri"
+  url = "/hardware/printers/"
+  weight = 2
+
+  [[main]]
+  parent = "Iekārtas"
+  name = "Klientu displeji"
+  url = "/hardware/displays/"
   weight = 3
 
-  # [[main]]
-  # parent = "Iekārtas"
-  # name = "Pašapkalpošanās kioski"
-  # url = "/hardware/kiosks/"
-  # weight = 4
-
-  # [[main]]
-  # parent = "Iekārtas"
-  # name = "POS Perifērija"
-  # url = "/hardware/peripherals/"
-  # weight = 5
+  [[main]]
+  parent = "Iekārtas"
+  name = "Naudas lādes"
+  url = "/hardware/drawers/"
+  weight = 4
 
 [[main]]
 name = "Kontakti"
