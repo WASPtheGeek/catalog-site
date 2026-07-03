@@ -1,4 +1,4 @@
 ---
 title: "Customer Displays"
-image: "images/hardware/displays.jpeg"
+image: "images/hardware/displays.png"
 ---

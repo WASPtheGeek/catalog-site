@@ -1,4 +1,4 @@
 ---
 title: "Принтеры чеков"
-image: "images/hardware/printers.jpeg"
+image: "images/hardware/printers.png"
 ---

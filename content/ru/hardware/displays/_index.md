@@ -1,4 +1,4 @@
 ---
 title: "Дисплеи покупателя"
-image: "images/hardware/displays.jpeg"
+image: "images/hardware/displays.png"
 ---

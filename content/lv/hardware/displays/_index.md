@@ -1,4 +1,4 @@
 ---
 title: "Klientu displeji"
-image: "images/hardware/displays.jpeg"
+image: "images/hardware/displays.png"
 ---

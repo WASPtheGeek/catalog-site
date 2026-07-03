@@ -1,4 +1,4 @@
 ---
 title: "Денежные ящики"
-image: "images/hardware/cash-drawers.jpeg"
+image: "images/hardware/cash-drawers.jpg"
 ---
