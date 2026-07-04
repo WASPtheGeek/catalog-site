@@ -13,10 +13,10 @@ features_section:
   items:
     - icon: "las la-file-invoice"
       title: "Full Preparation"
-      text: "Cash register registration with SRS (VID), configuration, and official cash register servicing / technical maintenance."
+      text: "Cash system registration with SRS (VID), configuration, and official cash system servicing / technical maintenance."
     - icon: "las la-credit-card"
       title: "Acquiring and Payments"
-      text: "Fast connection of bank terminals to the cash register, supporting all modern contactless payment terminals."
+      text: "Fast connection of bank terminals to the cash system, supporting all modern contactless payment terminals."
     - icon: "las la-code"
       title: "Software Compatibility"
       text: "Full integration with modern POS software (including our specialized ALPOS system) and inventory management."
@@ -27,13 +27,13 @@ features_section:
 mobility_section:
   enable: true
   badge: "Seasonal Trends & Mobility"
-  title: "Modern cash registers for cafes and shops"
+  title: "Modern cash systems for cafes and shops"
   text: "Each type of business has its own specifics, so our systems and equipment are easily customizable. This solution is ideal for cafes, take-away points, bakeries, bars, shops, and beauty salons. We focus on fast and compact service at the counter."
   image: "/images/solutions/mobilais-kases-aparats.png"
   accent_title: "Operating in Riga, Jurmala, or remotely?"
-  accent_text: "If your operations involve seasonal terraces, mobile trade, beach cafes, food trucks, or delivery — a mobile cash system / cash register on a tablet will help you. This is a compact two-in-one solution (cash register and payment terminal in a single Android device) for flexible work under any conditions."
+  accent_text: "If your operations involve seasonal terraces, mobile trade, beach cafes, food trucks, or delivery — a mobile cash system on a tablet will help you. This is a compact two-in-one solution (cash system and payment terminal in a single Android device) for flexible work under any conditions."
 
 law_section:
   title: "100% security and SRS compliance"
-  text: "All our solutions fully comply with the legislation (Cabinet Regulation No. 95 on cash registers). The company ensures the maintenance of the electronic cash register log according to the strict cash system requirements in 2026. If necessary, we also perform deregistration of old equipment and official sealing."
+  text: "All our solutions fully comply with the legislation (Cabinet Regulation No. 95). The company ensures the maintenance of the electronic cash system log according to the strict cash system requirements in 2026. If necessary, we also perform deregistration of old equipment and official sealing."
 ---

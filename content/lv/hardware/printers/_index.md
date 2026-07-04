@@ -1,4 +1,4 @@
 ---
 title: "Čeku printeri"
-image: "images/hardware/printers.png"
+image: "images/hardware/printers.webp"
 ---

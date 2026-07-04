@@ -1,6 +1,6 @@
 ---
 title: "Instrukcijas un Dokumentācija"
-description: "Lejupielādējiet kases aparātu lietotāja rokasgrāmatas, POS sistēmu instrukcijas un datu apmaiņas programmu dokumentāciju."
+description: "Lejupielādējiet kases sistēmas lietotāja rokasgrāmatas, POS sistēmu instrukcijas un datu apmaiņas programmu dokumentāciju."
 layout: "instructions"
 
 downloads_section:

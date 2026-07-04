@@ -7,7 +7,7 @@ layout: "about"
 about_intro:
   subtitle: "Uzticams partneris kases sistēmu pasaulē"
   title: "Pilna servisa atbalsts Jūsu biznesam"
-  text: "Mēs esam uzņēmums, kas specializējas modernu tirdzniecības tehnoloģiju, kases aparātu un POS sistēmu ieviešanā. Mūsu mērķis ir nodrošināt uzņēmējiem drošus, stabilus un VID prasībām pilnībā atbilstošus risinājumus, kas palīdz augt un attīstīties bez tehniskām dīkstāvēm."
+  text: "Mēs esam uzņēmums, kas specializējas modernu tirdzniecības tehnoloģiju, kases sistēmu un POS sistēmu ieviešanā. Mūsu mērķis ir nodrošināt uzņēmējiem drošus, stabilus un VID prasībām pilnībā atbilstošus risinājumus, kas palīdz augt un attīstīties bez tehniskām dīkstāvēm."
 
 # Key business metrics (digits)
 stats_section:

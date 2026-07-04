@@ -4,8 +4,8 @@ description: "Pašapkalpošanās mazgātavu kases sistēmas, viedie termināļi 
 layout: "custom-projects"
 
 hero:
-  subtitle: "POS risinājumi un kases aparāti automazgātavām"
-  description: "Pašapkalpošanās biznesam ir nepieciešama īpaša pieeja — maksimāla autonomija, izturība un nepārtraukta darbība bez personāla klātbūtnes. Mēs izstrādājam un uzstādām specializētus tirdzniecības tehnoloģiju mezglus, nodrošinot, ka kases aparāti automazgātavām un pašapkalpošanās zonām darbojas stabili un bez kļūmēm."
+  subtitle: "POS risinājumi un kases sistēmas automazgātavām"
+  description: "Pašapkalpošanās biznesam ir nepieciešama īpaša pieeja — maksimāla autonomija, izturība un nepārtraukta darbība bez personāla klātbūtnes. Mēs izstrādājam un uzstādām specializētus tirdzniecības tehnoloģiju mezglus, nodrošinot, ka kases sistēmas automazgātavām un pašapkalpošanās zonām darbojas stabili un bez kļūmēm."
   image: "/images/solutions/solutions.png"
 
 features_section:
@@ -34,5 +34,5 @@ projects_section:
 
 support_section:
   title: "Pilns atbalsta cikls un serviss visā Latvijā"
-  text: "Katram klientam tiek nodrošināts atbalsts no idejas un skicēm līdz reģistrācijai VID. Ja rodas tehniski jautājumi, mūsu operatīvais **kases aparātu remonts Rīgā** un tehniskais atbalsts visā Latvijā ātri novērsīs jebkuru problēmu. Pie mums vienmēr ir pieejami arī nepieciešamie materiāli, piemēram, sertificēts **termopapīrs kases aparātiem / kases lentes**."
+  text: "Katram klientam tiek nodrošināts atbalsts no idejas un skicēm līdz reģistrācijai VID. Ja rodas tehniski jautājumi, mūsu operatīvais **kases sistēmu remonts Rīgā** un tehniskais atbalsts visā Latvijā ātri novērsīs jebkuru problēmu. Pie mums vienmēr ir pieejami arī nepieciešamie materiāli, piemēram, sertificēts **termopapīrs kases sistēmam / kases lentes**."
 ---

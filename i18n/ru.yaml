@@ -145,8 +145,14 @@
 - id: no_products_message
   translation: "На данный момент список продуктов пуст"
 
+- id: video_overview
+  translation: "Видеообзор"
+
 - id: open_catalog
   translation: "Открыть каталог"
+
+- id: models_count
+  translation: "Модели"
 
 ######## Brands ########
 - id: our_clients

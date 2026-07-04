@@ -296,3 +296,97 @@ h2.spec-title-main {
 .title-link-hover:hover {
   color: #ff6b00 !important;
 }
+
+
+// Variables
+$orange-primary: #fd7e14;
+$orange-dark: #e8590c;
+$text-dark-gray: #495057;
+$border-light-gray: #f1f1f1;
+$transition-speed: 0.25s;
+
+.product-sidebar {
+  border: 0 !important;
+  border-radius: 1rem !important;
+  padding: 1.5rem !important;
+  top: 100px;
+  z-index: 10;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.075) !important;
+
+  .sidebar-header {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+
+    .decorator-line {
+      display: block;
+      background-color: $orange-primary;
+      width: 30px;
+      height: 4px;
+      border-radius: 0.25rem;
+      position: absolute;
+      top: -10px;
+    }
+
+    .sidebar-title {
+      font-weight: 700;
+      color: #212529;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0;
+      font-size: 1.25rem;
+    }
+  }
+
+  .product-category-link {
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0.65rem 1rem !important;
+    border-radius: 0.5rem !important;
+    transition: all $transition-speed ease-in-out;
+    background-color: #ffffff;
+    color: $text-dark-gray;
+    border: 1px solid $border-light-gray;
+
+    .arrow-icon {
+      color: #ced4da;
+      transition: transform $transition-speed ease;
+    }
+
+    // Hover state (inactive links)
+    &:not(.active):hover {
+      background-color: #fff9f4 !important;
+      color: $orange-primary !important;
+      border-color: #ffe8cc !important;
+
+      .arrow-icon {
+        color: $orange-primary;
+        transform: translateX(3px);
+      }
+    }
+
+    // Active state (matches the image layout)
+    &.active {
+      background: linear-gradient(135deg, $orange-primary, $orange-dark) !important;
+      color: #ffffff !important;
+      border-color: transparent !important;
+
+      .arrow-icon {
+        color: #ffffff;
+        transform: translateX(2px);
+      }
+    }
+  }
+}
+
+// Global utility helper for dashed blocks
+.notice-dashed-box {
+  border-style: dashed !important;
+  border-color: #dee2e6 !important;
+}
+
+@media (max-width: 992px) {
+  .product-sidebar {
+    display: none; // Hide the sidebar on smaller screens for a cleaner layout
+  }
+}

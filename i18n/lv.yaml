@@ -149,6 +149,12 @@
 - id: open_catalog
   translation: "Atvērt katalogu"
 
+- id: video_overview
+  translation: "Video pārskats"
+
+- id: models_count
+  translation: "Modeļi"
+
 ######## Brands ########
 - id: our_clients
   translation: "Mūsu klienti"

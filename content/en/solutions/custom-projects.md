@@ -4,8 +4,8 @@ description: "Cash systems for self-service car washes, smart terminals, and cus
 layout: "custom-projects"
 
 hero:
-  subtitle: "POS solutions and cash registers for car washes"
-  description: "The self-service business requires a special approach — maximum autonomy, durability, and continuous operation without the presence of staff. We design and install specialized retail technology nodes, ensuring that cash registers for car washes and self-service areas operate stably and without failures."
+  subtitle: "POS solutions and cash systems for car washes"
+  description: "The self-service business requires a special approach — maximum autonomy, durability, and continuous operation without the presence of staff. We design and install specialized retail technology nodes, ensuring that cash systems for car washes and self-service areas operate stably and without failures."
   image: "/images/solutions/solutions.png"
 
 features_section:
@@ -34,5 +34,5 @@ projects_section:
 
 support_section:
   title: "Full Support Cycle and Service throughout Latvia"
-  text: "Each client is provided with support from the initial idea and sketches up to registration with SRS (VID). If technical questions arise, our prompt **cash register repair in Riga** and technical support throughout Latvia will quickly resolve any issue. We also always have the necessary supplies available, such as certified **thermal paper for cash registers / till rolls**."
+  text: "Each client is provided with support from the initial idea and sketches up to registration with SRS (VID). If technical questions arise, our prompt **cash register repair in Riga** and technical support throughout Latvia will quickly resolve any issue. We also always have the necessary supplies available, such as certified **thermal paper for cash systems / till rolls**."
 ---

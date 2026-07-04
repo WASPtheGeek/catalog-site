@@ -1,7 +1,7 @@
 ---
 title: "Equipment"
 subtitle: "Professional equipment for retail and commerce"
-description: "Cash registers, POS systems, barcode scanners, and other retail equipment to enhance your business efficiency."
+description: "Cash systems, POS systems, barcode scanners, and other retail equipment to enhance your business efficiency."
 layout: "list"
 
 # Info banner (Top)

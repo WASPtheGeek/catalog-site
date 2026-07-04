@@ -1,6 +1,6 @@
 ---
 title: "Instructions and Documentation"
-description: "Download cash register user manuals, POS system instructions, and data exchange software documentation."
+description: "Download cash system user manuals, POS system instructions, and data exchange software documentation."
 layout: "instructions"
 
 downloads_section:

@@ -1,7 +1,7 @@
 ---
 # banner
 banner:
-  title: "Modern Cash Registers and POS Systems for Your Business"
+  title: "Modern Cash and POS Systems for Your Business"
   subtitle: "Turnkey solutions for retail and services, custom integrations for car washes, and reliable technical support throughout Latvia"
 
   button: "Solutions"
@@ -92,7 +92,7 @@ business_directions:
   enable: true
   subtitle: "Business Fields"
   title: "Turnkey Solutions and POS Technologies"
-  description: "We provide everything necessary for your company's efficiency — from certified cash registers to smart inventory management software."
+  description: "We provide everything necessary for your company's efficiency — from certified receipt printers to smart inventory management software."
   directions_blocks:
     - icon: "las la-key"
       title: "POS Systems & Cash Software"
@@ -100,7 +100,7 @@ business_directions:
       button_text: "Learn more"
       features_list:
         - "Turnkey POS systems for cafes, bars, and retail stores"
-        - "Mobile cash registers and contactless payment terminals"
+        - "Mobile receipt printers and contactless payment terminals"
         - "Full SRS (VID) compliance and remote management capabilities"
     
     - icon: "las la-cash-register"
@@ -108,7 +108,7 @@ business_directions:
       link: "/en/hardware"
       button_text: "Learn more"
       features_list:
-        - "Certified cash registers, receipt printers, and cash drawers"
+        - "Certified client displays, receipt printers, and cash drawers"
         - "Barcode scanners and electronic commercial scales"
         - "Official warranty, custom configuration, and delivery across Latvia"
 

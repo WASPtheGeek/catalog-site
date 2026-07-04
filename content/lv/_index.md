@@ -1,7 +1,7 @@
 ---
 # banner
 banner:
-  title: "Mūsdienīgi kases aparāti un POS sistēmas Jūsu biznesam"
+  title: "Mūsdienīgi kases un POS sistēmas Jūsu biznesam"
   subtitle: "Gatavi risinājumi tirdzniecībai un pakalpojumiem, individuālas integrācijas automazgātavām un uzticams serviss visā Latvijā"
 
   button: "Risinājumi"
@@ -92,7 +92,7 @@ business_directions:
   enable: true
   subtitle: "Biznesa virzieni"
   title: "Gatavi risinājumi un POS tehnoloģijas"
-  description: "Nodrošinām visu nepieciešamo Jūsu uzņēmuma efektivitātei — no sertificētiem kases aparātiem līdz viedai noliktavas programmatūrai."
+  description: "Nodrošinām visu nepieciešamo Jūsu uzņēmuma efektivitātei — no sertificētiem čeku printeriem līdz viedai noliktavas programmatūrai."
   directions_blocks:
     - icon: "las la-key"
       title: "Kases sistēmas un POS programmatūra"
@@ -100,7 +100,7 @@ business_directions:
       button_text: "Uzzināt vairāk"
       features_list:
         - "Gatavas POS sistēmas kafejnīcām, bāriem un veikaliem"
-        - "Mobilie kases aparāti un bezkontakta maksājumu termināļi"
+        - "Mobilie čeku printeri un bezkontakta maksājumu termināļi"
         - "Pilnīga atbilstība VID prasībām un attālināta vadība"
     
     - icon: "las la-cash-register"
@@ -108,7 +108,7 @@ business_directions:
       link: "/lv/hardware"
       button_text: "Uzzināt vairāk"
       features_list:
-        - "Sertificēti kases aparāti, čeku printeri un kases kastes"
+        - "Sertificēti klientu displeji, čeku printeri un naudas lādes"
         - "Svītrkodu lasītāji un elektroniskie tirdzniecības svari"
         - "Oficiālā garantija, konfigurēšana un piegāde Latvijā"
 

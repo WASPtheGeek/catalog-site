@@ -13,7 +13,7 @@ features_section:
   items:
     - icon: "las la-file-invoice"
       title: "Pilna sagatavošana"
-      text: "Kases aparātu reģistrācija VID, konfigurēšana un oficiālā kases aparātu apkalpošana / tehniskā apkope."
+      text: "Kases sistēmu reģistrācija VID, konfigurēšana un oficiālā kases sistēmu apkalpošana / tehniskā apkope."
     - icon: "las la-credit-card"
       title: "Ekvairings un maksājumi"
       text: "Ātra bankas termināļu pieslēgšana kasei, atbalstot visus mūsdienu bezkontakta maksājumu termināļus."
@@ -27,13 +27,13 @@ features_section:
 mobility_section:
   enable: true
   badge: "Sezonas trendi & Mobilitāte"
-  title: "Mūsdienīgi kases aparāti kafejnīcām un veikaliem"
+  title: "Mūsdienīgas kases sistēmas kafejnīcām un veikaliem"
   text: "Katram biznesa veidam ir sava specifika, tāpēc mūsu sistēmas un iekārtas ir viegli pielāgojamas. Šis risinājums ie ideāli piemērots kafejnīcām, *take-away* punktiem, konditorejām, bāriem, veikaliem un skaistumkopšanas saloniem. Mēs koncentrējamies uz ātru un kompaktu apkalpošanu pie letes."
   image: "/images/solutions/mobilais-kases-aparats.png"
   accent_title: "Strādājat Rīgā, Jūrmalā vai attālināti?"
-  accent_text: "Ja Jūsu darbība ir saistīta ar sezonas terasēm, izbraukuma tirdzniecību, pludmales kafejnīcām, fuādrākiem (*food-trucks*) vai piegādi — Jums palīdzēs mobilā kases sistēma / kases aparāts planšetdatorā. Tas ir kompakts «divi vienā» risinājums (kase un bankas terminālis vienā Android ierīcē) elastīgam darbam jebkuros apstākļos."
+  accent_text: "Ja Jūsu darbība ir saistīta ar sezonas terasēm, izbraukuma tirdzniecību, pludmales kafejnīcām, fuādrākiem (*food-trucks*) vai piegādi — Jums palīdzēs mobilā kases sistēma planšetdatorā. Tas ir kompakts «divi vienā» risinājums (kase un bankas terminālis vienā Android ierīcē) elastīgam darbam jebkuros apstākļos."
 
 law_section:
   title: "100% drošība un atbilstība VID"
-  text: "Visi mūsu risinājumi pilnībā atbilst tiesību aktiem (MK noteikumi Nr. 95 kases aparāti). Uzņēmumā tiek nodrošināta elektroniskā kases aparāta žurnāla uzturēšana atbilstoši stingrajām kases sistēmas prasībām 2026. gadā. Nepieciešamības gadījumā veicam arī veco iekārtu noņemšanu no uzskaites un oficiālu plombēšanu."
+  text: "Visi mūsu risinājumi pilnībā atbilst tiesību aktiem (MK noteikumi Nr. 95). Uzņēmumā tiek nodrošināta elektroniskā kases aparāta žurnāla uzturēšana atbilstoši stingrajām kases sistēmas prasībām 2026. gadā. Nepieciešamības gadījumā veicam arī veco iekārtu noņemšanu no uzskaites un oficiālu plombēšanu."
 ---

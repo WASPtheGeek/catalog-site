@@ -145,8 +145,14 @@
 - id: no_products_message
   translation: "The product list is currently empty"
 
+- id: video_overview
+  translation: "Video overview"
+
 - id: open_catalog
   translation: "Open catalog"
+
+- id: models_count
+  translation: "Models"
 
 ######## Brands ########
 - id: our_clients

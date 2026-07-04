@@ -1,7 +1,7 @@
 ---
 title: "Iekārtas"
 subtitle: "Profesionāls aprīkojums tirdzniecībai"
-description: "Kases aparāti, POS sistēmas, svītrukodu skeneri un citas tirdzniecības iekārtas Jūsu biznesa efektivitātei."
+description: "Kases sistēmas, POS sistēmas, svītrukodu skeneri un citas tirdzniecības iekārtas Jūsu biznesa efektivitātei."
 layout: "list"
 
 # Info banner (Top)

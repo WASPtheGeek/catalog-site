@@ -53,11 +53,11 @@ hasChildren = true
   url = "/hardware/printers/"
   weight = 2
 
-  [[main]]
-  parent = "Iekārtas"
-  name = "Klientu displeji"
-  url = "/hardware/displays/"
-  weight = 3
+  # [[main]]
+  # parent = "Iekārtas"
+  # name = "Klientu displeji"
+  # url = "/hardware/displays/"
+  # weight = 3
 
   [[main]]
   parent = "Iekārtas"

@@ -28,7 +28,7 @@ pos_software:
 driver_section:
   enable: true
   title: "Sinhronizācijas programma AL_ADriver"
-  description: "Programma **AL_ADriver.exe** ir paredzēta preču ielādei ALPOS A3000 kases sistēmas datu bāzē, kā arī preču realizācijas datu iegūšanai. Tā nodrošina automatizētu datu apmaiņu starp kases aparātu un Jūsu uzskaites sistēmu."
+  description: "Programma **AL_ADriver.exe** ir paredzēta preču ielādei ALPOS A3000 kases sistēmas datu bāzē, kā arī preču realizācijas datu iegūšanai. Tā nodrošina automatizētu datu apmaiņu starp kasi un Jūsu uzskaites sistēmu."
   instruction_text: "Lejupielādēt AL_ADriver instrukciju (PDF)"
   instruction_link: "/docs/al-adriver-instrukcija.pdf"
 
