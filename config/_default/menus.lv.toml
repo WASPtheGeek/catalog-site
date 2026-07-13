@@ -37,32 +37,32 @@ weight = 3
 
 [[main]]
 name = "Iekārtas"
-url = "/hardware"
+url = "/product"
 weight = 4
 hasChildren = true
 
   [[main]]
   parent = "Iekārtas"
-  name = "POS termināļi"
-  url = "/hardware/pos-systems/"
+  name = "Klientu displeji"
+  url = "/product/displays/"
   weight = 1
 
   [[main]]
   parent = "Iekārtas"
-  name = "Čeku printeri"
-  url = "/hardware/printers/"
+  name = "Perifērija"
+  url = "/product/periphery/"
   weight = 2
-
-  # [[main]]
-  # parent = "Iekārtas"
-  # name = "Klientu displeji"
-  # url = "/hardware/displays/"
-  # weight = 3
 
   [[main]]
   parent = "Iekārtas"
-  name = "Naudas lādes"
-  url = "/hardware/drawers/"
+  name = "POS termināļi"
+  url = "/product/pos-systems/"
+  weight = 3
+
+  [[main]]
+  parent = "Iekārtas"
+  name = "Printeri"
+  url = "/product/printers/"
   weight = 4
 
 [[main]]

@@ -154,6 +154,15 @@
 - id: models_count
   translation: "Модели"
 
+- id: view_details
+  translation: "Просмотреть детали"
+
+- id: related_products_or_accessories
+  translation: "Связанные продукты / Аксессуары"
+
+- id: products
+  translation: "продукты"
+
 ######## Brands ########
 - id: our_clients
   translation: "Наши клиенты"

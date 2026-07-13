@@ -385,6 +385,22 @@ $transition-speed: 0.25s;
   border-color: #dee2e6 !important;
 }
 
+
+.product-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08) !important;
+  border-color: #dee2e6 !important;
+}
+.product-card-hover:hover .img-zoom-hover {
+  transform: scale(1.06);
+}
+.title-link-hover {
+  transition: color 0.2s ease;
+}
+.product-card-hover:hover .title-link-hover {
+  color: var(--bs-primary, #fd7e14) !important;
+}
+
 @media (max-width: 992px) {
   .product-sidebar {
     display: none; // Hide the sidebar on smaller screens for a cleaner layout

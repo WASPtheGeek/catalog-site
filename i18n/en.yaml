@@ -154,6 +154,15 @@
 - id: models_count
   translation: "Models"
 
+- id: view_details
+  translation: "View details"
+
+- id: related_products_or_accessories
+  translation: "Related products / Accessories"
+
+- id: products
+  translation: "Products"
+
 ######## Brands ########
 - id: our_clients
   translation: "Our clients"

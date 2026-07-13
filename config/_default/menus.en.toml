@@ -36,33 +36,33 @@ url = "/software"
 weight = 3
 
 [[main]]
-name = "Hardware"
-url = "/hardware"
+name = "Products"
+url = "/product"
 weight = 4
 hasChildren = true
 
   [[main]]
-  parent = "Hardware"
-  name = "POS Terminals"
-  url = "/hardware/pos-systems/"
+  parent = "Products"
+  name = "Customer Displays"
+  url = "/product/displays/"
   weight = 1
 
   [[main]]
-  parent = "Hardware"
-  name = "Receipt Printers"
-  url = "/hardware/printers/"
+  parent = "Products"
+  name = "Peripherals"
+  url = "/product/periphery/"
   weight = 2
 
-  # [[main]]
-  # parent = "Hardware"
-  # name = "Customer Displays"
-  # url = "/hardware/displays/"
-  # weight = 3
+  [[main]]
+  parent = "Products"
+  name = "POS Terminals"
+  url = "/product/pos-systems/"
+  weight = 3
 
   [[main]]
-  parent = "Hardware"
-  name = "Cash Drawers"
-  url = "/hardware/drawers/"
+  parent = "Products"
+  name = "Printers"
+  url = "/product/printers/"
   weight = 4
 
 [[main]]

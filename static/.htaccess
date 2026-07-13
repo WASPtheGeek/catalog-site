@@ -5,8 +5,8 @@ RewriteEngine On
 RewriteBase /
 
 # Redirect specific old product and section pages to the new layout
-RewriteRule ^html/lv/products/sam4s_NR-320B\.html$ /lv/products/ [R=301,L]
-RewriteRule ^html/lv/sections/boxs\.html$ /lv/products/ [R=301,L]
+RewriteRule ^html/lv/products/sam4s_NR-320B\.html$ /lv/product/ [R=301,L]
+RewriteRule ^html/lv/sections/boxs\.html$ /lv/product/ [R=301,L]
 RewriteRule ^html/en/nav/about_us\.html$ /en/about/ [R=301,L]
 
 # Global rule for the legacy /html/ folder (redirects everything else to homepage)

@@ -155,6 +155,15 @@
 - id: models_count
   translation: "Modeļi"
 
+- id: view_details
+  translation: "Skatīt"
+
+- id: related_products_or_accessories
+  translation: "Saistītie produkti / Aksesuāri"
+
+- id: products
+  translation: "produkti"
+
 ######## Brands ########
 - id: our_clients
   translation: "Mūsu klienti"

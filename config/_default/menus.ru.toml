@@ -37,32 +37,32 @@ weight = 3
 
 [[main]]
 name = "Оборудование"
-url = "/hardware"
+url = "/product"
 weight = 4
 hasChildren = true
 
   [[main]]
   parent = "Оборудование"
-  name = "POS-терминалы"
-  url = "/hardware/pos-systems/"
+  name = "Дисплеи покупателя"
+  url = "/product/displays/"
   weight = 1
 
   [[main]]
   parent = "Оборудование"
-  name = "Принтеры чеков"
-  url = "/hardware/printers/"
+  name = "Периферия"
+  url = "/product/periphery/"
   weight = 2
-
-  # [[main]]
-  # parent = "Оборудование"
-  # name = "Дисплеи покупателя"
-  # url = "/hardware/displays/"
-  # weight = 3
 
   [[main]]
   parent = "Оборудование"
-  name = "Денежные ящики"
-  url = "/hardware/drawers/"
+  name = "POS-терминалы"
+  url = "/product/pos-systems/"
+  weight = 3
+
+  [[main]]
+  parent = "Оборудование"
+  name = "Принтеры"
+  url = "/product/printers/"
   weight = 4
 
 [[main]]

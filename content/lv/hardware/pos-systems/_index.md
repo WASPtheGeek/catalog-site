@@ -1,4 +1,0 @@
----
-title: "POS termināļi"
-image: "images/hardware/pos-systems.jpeg"
----
